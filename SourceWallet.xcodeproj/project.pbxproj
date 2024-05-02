@@ -56,15 +56,55 @@
 		CD0DCE5B2BE3A092008A5F27 /* SourceWallet */ = {
 			isa = PBXGroup;
 			children = (
-				CD0DCE5C2BE3A092008A5F27 /* AppDelegate.swift */,
-				CD0DCE5E2BE3A092008A5F27 /* SceneDelegate.swift */,
-				CD0DCE602BE3A092008A5F27 /* ViewController.swift */,
-				CD0DCE622BE3A092008A5F27 /* Main.storyboard */,
-				CD0DCE652BE3A093008A5F27 /* Assets.xcassets */,
-				CD0DCE672BE3A093008A5F27 /* LaunchScreen.storyboard */,
-				CD0DCE6A2BE3A093008A5F27 /* Info.plist */,
+				CD0DCE722BE3A22B008A5F27 /* ViewControllers */,
+				CD0DCE712BE3A1BA008A5F27 /* Storyboards */,
+				CD0DCE702BE3A192008A5F27 /* App */,
+				CD0DCE742BE3A38D008A5F27 /* Resources */,
 			);
 			path = SourceWallet;
+			sourceTree = "<group>";
+		};
+		CD0DCE702BE3A192008A5F27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DCE5C2BE3A092008A5F27 /* AppDelegate.swift */,
+				CD0DCE5E2BE3A092008A5F27 /* SceneDelegate.swift */,
+				CD0DCE6A2BE3A093008A5F27 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CD0DCE712BE3A1BA008A5F27 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DCE672BE3A093008A5F27 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CD0DCE722BE3A22B008A5F27 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DCE732BE3A23E008A5F27 /* FirstViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CD0DCE732BE3A23E008A5F27 /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DCE602BE3A092008A5F27 /* ViewController.swift */,
+				CD0DCE622BE3A092008A5F27 /* Main.storyboard */,
+			);
+			path = FirstViewController;
+			sourceTree = "<group>";
+		};
+		CD0DCE742BE3A38D008A5F27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD0DCE652BE3A093008A5F27 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,12 +334,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3YK82Q5NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SourceWallet/Info.plist;
+				INFOPLIST_FILE = SourceWallet/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Source Wallet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +350,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.SourceWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +369,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V3YK82Q5NN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SourceWallet/Info.plist;
+				INFOPLIST_FILE = SourceWallet/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Source Wallet";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +385,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = broski43.SourceWallet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
