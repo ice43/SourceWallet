@@ -91,18 +91,18 @@
 		CD0DCE722BE3A22B008A5F27 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CD0DCE732BE3A23E008A5F27 /* FirstViewController */,
+				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CD0DCE732BE3A23E008A5F27 /* FirstViewController */ = {
+		CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */ = {
 			isa = PBXGroup;
 			children = (
 				CD0DCE602BE3A092008A5F27 /* WelcomeViewController.swift */,
 				CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */,
 			);
-			path = FirstViewController;
+			path = WelcomeViewController;
 			sourceTree = "<group>";
 		};
 		CD0DCE742BE3A38D008A5F27 /* Resources */ = {
