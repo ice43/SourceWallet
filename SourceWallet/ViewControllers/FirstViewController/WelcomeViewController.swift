@@ -30,11 +30,9 @@ final class WelcomeViewController: UIViewController {
         getStartedButton.isEnabled = isChecked
         
         // Changing the alpha of the button depending on the checkmark
-        if getStartedButton.isEnabled {
-            getStartedButton.backgroundColor = getStartedButton.tintColor
-        } else {
-            getStartedButton.backgroundColor = getStartedButton.tintColor.withAlphaComponent(0.5)
-        }
+        getStartedButton.backgroundColor = getStartedButton.isEnabled
+                                                ? .tintColor
+                                                : .tintColor.withAlphaComponent(0.5)
     }
 }
 
@@ -42,19 +40,29 @@ final class WelcomeViewController: UIViewController {
 private extension WelcomeViewController {
     // MARK: Initial setup of GetStartedButton
     func initialSetupGetStartedButton() {
-        getStartedButton.setTitleColor(.white.withAlphaComponent(0.5), for: .disabled)
+        getStartedButton.setTitleColor(
+            .white.withAlphaComponent(0.5),
+            for: .disabled
+        )
         getStartedButton.backgroundColor = getStartedButton.tintColor.withAlphaComponent(0.5)
     }
     
     // MARK: Allows the direction of URLs
-    func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+    func textView(
+        _ textView: UITextView,
+        shouldInteractWith URL: URL,
+        in characterRange: NSRange,
+        interaction: UITextItemInteraction
+    ) -> Bool {
         UIApplication.shared.open(URL)
         return false
     }
     
     // MARK: Sets text near checkmark button
     func setAgreeText() {
-        let attributedString = NSMutableAttributedString(string: "I agree to Terms of Service and Privacy Policy")
+        let attributedString = NSMutableAttributedString(
+            string: "I agree to Terms of Service and Privacy Policy"
+        )
         
         // First link - Terms of Service
         attributedString.addAttribute(
