@@ -16,12 +16,8 @@ final class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        definesPresentationContext = true
-        
         initialSetupGetStartedButton()
         setAgreeText()
-        
-//        getStartedButton.addTarget(self, action: #selector(getStartedButtonPressed), for: .touchUpInside)
     }
     
     @IBAction private func setCheckmark(_ sender: UIButton) {
@@ -38,19 +34,6 @@ final class WelcomeViewController: UIViewController {
                                                 ? .tintColor
                                                 : .tintColor.withAlphaComponent(0.5)
     }
-    
-//    @objc func getStartedButtonPressed() {
-//        let allowDataCollectionVC = AllowDataCollectionViewController()
-//        
-//        // Установите размеры модального экрана
-//        allowDataCollectionVC.preferredContentSize = CGSize(width: 200, height: 500)
-//        
-//        // Определите стиль презентации модального экрана
-//        allowDataCollectionVC.modalPresentationStyle = .overCurrentContext
-//        
-//        // Откройте модальный экран
-//        present(allowDataCollectionVC, animated: true, completion: nil)
-//    }
 }
 
 // MARK: - Private functions
