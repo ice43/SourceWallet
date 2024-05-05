@@ -14,6 +14,9 @@
 		CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0DCE672BE3A093008A5F27 /* LaunchScreen.storyboard */; };
 		CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD0DCE752BE3AA79008A5F27 /* .gitignore */; };
 		CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = CD0DCE762BE3AA79008A5F27 /* .gitattributes */; };
+		CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7ADE2BE7AE2600A9403A /* WhatsCollectedView.swift */; };
+		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
+		CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		CD0DCE6A2BE3A093008A5F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD0DCE752BE3AA79008A5F27 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CD0DCE762BE3AA79008A5F27 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		CD2C7ADE2BE7AE2600A9403A /* WhatsCollectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsCollectedView.swift; sourceTree = "<group>"; };
+		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
+		CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllowDataCollection.storyboard; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
+				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,6 +118,24 @@
 				CD0DCE652BE3A093008A5F27 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD2C7AE02BE7B6A100A9403A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C7ADE2BE7AE2600A9403A /* WhatsCollectedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */,
+				CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */,
+				CD2C7AE02BE7B6A100A9403A /* Views */,
+			);
+			path = AllowDataCollectionViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
 				CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */,
@@ -188,7 +214,9 @@
 			files = (
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
+				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
+				CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

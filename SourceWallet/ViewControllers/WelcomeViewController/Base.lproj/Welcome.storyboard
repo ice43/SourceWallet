@@ -28,7 +28,7 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="oI5-LW-b71">
-                                <rect key="frame" x="26" y="179" width="341" height="424"/>
+                                <rect key="frame" x="26" y="169" width="341" height="434"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="qBO-vK-EKC">
                                         <rect key="frame" x="45.666666666666686" y="0.0" width="250" height="84"/>
@@ -63,13 +63,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="M7C-AO-Jv0">
-                                        <rect key="frame" x="0.0" y="304" width="341" height="120"/>
+                                        <rect key="frame" x="0.0" y="304" width="341" height="130"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKA-hT-MRV">
-                                                <rect key="frame" x="0.0" y="0.0" width="341" height="54"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="64"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="54" id="5c9-2t-6Jz"/>
+                                                    <constraint firstAttribute="height" constant="64" id="5c9-2t-6Jz"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="341" id="nir-6J-SBR"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -83,9 +83,12 @@
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="enabled" value="NO"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="gcR-x0-Ez4" kind="presentation" id="8Yk-EM-lPo"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-ke-vxS">
-                                                <rect key="frame" x="39.666666666666686" y="68" width="262" height="52"/>
+                                                <rect key="frame" x="39.666666666666686" y="78" width="262" height="52"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAH-Nh-Dd7">
                                                         <rect key="frame" x="0.0" y="11.333333333333291" width="32" height="30"/>
@@ -137,6 +140,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="113.74045801526717" y="-28.169014084507044"/>
+        </scene>
+        <!--AllowDataCollection-->
+        <scene sceneID="zlG-P3-H2G">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AllowDataCollection" id="gcR-x0-Ez4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="God-ny-obw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-28"/>
         </scene>
     </scenes>
     <resources>
