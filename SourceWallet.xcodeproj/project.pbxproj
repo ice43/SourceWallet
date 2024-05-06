@@ -18,6 +18,7 @@
 		CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */; };
 		CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */; };
 		CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */; };
+		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
 		CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
@@ -37,6 +38,7 @@
 		CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFundsViewController.swift; sourceTree = "<group>"; };
 		CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecureFunds.storyboard; sourceTree = "<group>"; };
 		CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFunds.swift; sourceTree = "<group>"; };
+		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
 		CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllowDataCollection.storyboard; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
 				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
+				CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -151,6 +154,14 @@
 				CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */,
+			);
+			path = RestoreOrNewViewController;
 			sourceTree = "<group>";
 		};
 		CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */ = {
@@ -240,6 +251,7 @@
 			files = (
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
+				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,

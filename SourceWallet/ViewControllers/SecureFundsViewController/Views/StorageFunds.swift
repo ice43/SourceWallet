@@ -11,8 +11,7 @@ final class StorageFunds: UIView {
     let titleLabel = UILabel()
     let descriptionLabel = UILabel()
     let securityLabel = UILabel()
-    
-    private let button = UIButton()
+    let button = UIButton()
     
     override init(frame: CGRect) {
         super.init(frame: frame)

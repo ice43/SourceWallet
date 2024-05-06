@@ -17,8 +17,21 @@ final class SecureFundsViewController: UIViewController {
         setWatchOnlyButton()
     }
     
+    // MARK: IB Actions
     @IBAction func dismiss() {
         dismiss(animated: true)
+    }
+    
+    @IBAction func watchOnlyButtonTapped() {
+        let alertController = UIAlertController(
+            title: "Not found",
+            message: "This way is temporarily not supported",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
     }
 }
 
@@ -38,6 +51,11 @@ private extension SecureFundsViewController {
         onThisDeviceView.securityLabel.text = "For Ease of Use"
         onThisDeviceView.backgroundColor = .backModal
         onThisDeviceView.layer.cornerRadius = 10
+        onThisDeviceView.button.addTarget(
+            self,
+            action: #selector(onThisDeviceViewButtonTapped),
+            for: .touchUpInside
+        )
         view.addSubview(onThisDeviceView)
         
         let onHardwareWalletView = StorageFunds(
@@ -53,11 +71,37 @@ private extension SecureFundsViewController {
         onHardwareWalletView.securityLabel.text = "For Higher Security"
         onHardwareWalletView.backgroundColor = .backModal
         onHardwareWalletView.layer.cornerRadius = 10
+        onHardwareWalletView.button.addTarget(
+            self,
+            action: #selector(onHardwareWalletViewButtonTapped),
+            for: .touchUpInside
+        )
         view.addSubview(onHardwareWalletView)
     }
     
     func setWatchOnlyButton() {
         watchOnlyButton.layer.borderWidth = 2
         watchOnlyButton.layer.borderColor = UIColor.white.cgColor
+    }
+}
+
+// MARK: - Navigation
+private extension SecureFundsViewController {
+    @objc func onThisDeviceViewButtonTapped() {
+        guard let restoreOrNewVC = storyboard?.instantiateViewController(withIdentifier: "RestoreOrNew") as? RestoreOrNewViewController else { return }
+        
+        navigationController?.pushViewController(restoreOrNewVC, animated: true)
+    }
+    
+    @objc func onHardwareWalletViewButtonTapped() {
+        let alertController = UIAlertController(
+            title: "Not found",
+            message: "This way is temporarily not supported",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
     }
 }

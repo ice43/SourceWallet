@@ -115,6 +115,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Nps-sO-SI2" kind="presentation" modalPresentationStyle="fullScreen" id="5Hd-HH-KaG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -156,6 +159,9 @@
             <point key="canvasLocation" x="3095" y="-397"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5Hd-HH-KaG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="chevron.down" catalog="system" width="128" height="70"/>
         <namedColor name="AccentColor">
