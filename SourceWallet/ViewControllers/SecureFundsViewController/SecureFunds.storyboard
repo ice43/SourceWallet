@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Secure Funds View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SecureFundsViewController" customModule="SourceWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you want to secure your funds?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-6d-mbV">
+                                <rect key="frame" x="48" y="108" width="297" height="76.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9S-sS-ygk">
+                                <rect key="frame" x="26" y="688" width="341" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="BTB-BI-1Th"/>
+                                    <constraint firstAttribute="width" constant="341" id="OdF-eH-CSs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Watch only">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucb-YQ-BNO">
+                                <rect key="frame" x="7" y="59" width="77.333333333333329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title="Back"/>
+                                <connections>
+                                    <action selector="dismiss" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8h6-tx-FW6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="backColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u9S-sS-ygk" secondAttribute="trailing" constant="26" id="2nX-0d-9Hh"/>
+                            <constraint firstItem="OjA-6d-mbV" firstAttribute="top" secondItem="ucb-YQ-BNO" secondAttribute="bottom" constant="14" id="6Hl-fg-TVe"/>
+                            <constraint firstItem="ucb-YQ-BNO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="C0d-VV-NRg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="u9S-sS-ygk" secondAttribute="bottom" constant="17" id="DMn-HI-KbS"/>
+                            <constraint firstItem="OjA-6d-mbV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="FXg-Ye-OSL"/>
+                            <constraint firstItem="ucb-YQ-BNO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="7" id="Y30-5W-ZXF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OjA-6d-mbV" secondAttribute="trailing" constant="48" id="jki-C4-0VC"/>
+                            <constraint firstItem="u9S-sS-ygk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="q7a-jF-QZa"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="watchOnlyButton" destination="u9S-sS-ygk" id="hkL-Jz-H9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3834.3511450381679" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
+        <namedColor name="backColor">
+            <color red="0.070588235294117646" green="0.082352941176470587" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

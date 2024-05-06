@@ -15,6 +15,9 @@
 		CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = CD0DCE752BE3AA79008A5F27 /* .gitignore */; };
 		CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = CD0DCE762BE3AA79008A5F27 /* .gitattributes */; };
 		CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7ADE2BE7AE2600A9403A /* WhatsCollectedView.swift */; };
+		CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */; };
+		CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */; };
+		CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
 		CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
@@ -31,6 +34,9 @@
 		CD0DCE752BE3AA79008A5F27 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		CD0DCE762BE3AA79008A5F27 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		CD2C7ADE2BE7AE2600A9403A /* WhatsCollectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsCollectedView.swift; sourceTree = "<group>"; };
+		CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFundsViewController.swift; sourceTree = "<group>"; };
+		CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecureFunds.storyboard; sourceTree = "<group>"; };
+		CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFunds.swift; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
 		CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllowDataCollection.storyboard; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 			children = (
 				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
+				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,6 +131,24 @@
 			isa = PBXGroup;
 			children = (
 				CD2C7ADE2BE7AE2600A9403A /* WhatsCollectedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */,
+				CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */,
+				CD2C7AE82BE7BE5200A9403A /* Views */,
+			);
+			path = SecureFundsViewController;
+			sourceTree = "<group>";
+		};
+		CD2C7AE82BE7BE5200A9403A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +224,7 @@
 				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
+				CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */,
 				CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */,
 				CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */,
 				CD0DCE662BE3A093008A5F27 /* Assets.xcassets in Resources */,
@@ -212,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
+				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,

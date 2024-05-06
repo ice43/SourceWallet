@@ -50,6 +50,11 @@ final class AllowDataCollectionViewController: UIViewController {
             self.collectButtonStack.frame.origin.y = self.whatsCollectedView.frame.maxY
         }
     }
+    
+    @IBAction func learnMoreButtonPressed() {
+        guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
+        UIApplication.shared.open(url)
+    }
 }
 
 // MARK: - UI

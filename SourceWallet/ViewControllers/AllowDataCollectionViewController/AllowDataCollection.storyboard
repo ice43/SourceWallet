@@ -71,6 +71,9 @@
                                 <rect key="frame" x="141" y="271" width="111" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Learn more"/>
+                                <connections>
+                                    <action selector="learnMoreButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qQ9-QC-qnB"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c51-2h-pJ1">
                                 <rect key="frame" x="26" y="359.33333333333331" width="341" height="143"/>
@@ -92,6 +95,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="Nps-sO-SI2" kind="presentation" modalPresentationStyle="fullScreen" id="QIA-Gy-kAU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xf2-3R-7Y3">
                                         <rect key="frame" x="0.0" y="79" width="341" height="64"/>
@@ -127,6 +133,7 @@
                             <constraint firstItem="Yk3-OB-p4x" firstAttribute="top" secondItem="ZMK-dU-3Tp" secondAttribute="bottom" constant="20" id="qTv-JN-1cX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Bii-t2-ua8"/>
                     <connections>
                         <outlet property="collectButtonStack" destination="c51-2h-pJ1" id="GWD-gT-vKv"/>
                         <outlet property="dontCollectDataButton" destination="xf2-3R-7Y3" id="BiG-l7-Aet"/>
@@ -136,7 +143,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14.503816793893129" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="2383.969465648855" y="-397.18309859154931"/>
+        </scene>
+        <!--SecureFunds-->
+        <scene sceneID="JEc-gz-o0R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SecureFunds" id="Nps-sO-SI2" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="j9t-6i-V7L"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMA-bw-Gut" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3095" y="-397"/>
         </scene>
     </scenes>
     <resources>

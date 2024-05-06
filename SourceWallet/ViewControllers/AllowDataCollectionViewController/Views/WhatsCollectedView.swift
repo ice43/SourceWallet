@@ -30,13 +30,23 @@ final class WhatsCollectedView: UIView {
         firstTitle.text = "What's collected"
         firstTitle.textAlignment = .left
         firstTitle.font = .systemFont(ofSize: 17)
-        firstTitle.frame = CGRect(x: 20, y: 10, width: 200, height: 30)
+        firstTitle.frame = CGRect(
+            x: 20,
+            y: 10,
+            width: 200,
+            height: 30
+        )
         addSubview(firstTitle)
         
         secondTitle.text = "What's NOT collected"
         secondTitle.textAlignment = .left
         secondTitle.font = .systemFont(ofSize: 17)
-        secondTitle.frame = CGRect(x: 20, y: 130, width: 200, height: 30)
+        secondTitle.frame = CGRect(
+            x: 20,
+            y: 130,
+            width: 200,
+            height: 30
+        )
         addSubview(secondTitle)
     }
     
@@ -46,7 +56,12 @@ final class WhatsCollectedView: UIView {
         firstDescription.font = .systemFont(ofSize: 15)
         firstDescription.textColor = .lightGray
         firstDescription.numberOfLines = 0
-        firstDescription.frame = CGRect(x: 20, y: 40, width: 300, height: 90)
+        firstDescription.frame = CGRect(
+            x: 20,
+            y: 40,
+            width: 300,
+            height: 90
+        )
         addSubview(firstDescription)
         
         secondDescription.text = "Recovery phrases, key material, addresses, balances, user contact info, IP address, detailed location"
@@ -54,7 +69,12 @@ final class WhatsCollectedView: UIView {
         secondDescription.font = .systemFont(ofSize: 15)
         secondDescription.textColor = .lightGray
         secondDescription.numberOfLines = 0
-        secondDescription.frame = CGRect(x: 20, y: 150, width: 300, height: 90)
+        secondDescription.frame = CGRect(
+            x: 20,
+            y: 150,
+            width: 300,
+            height: 90
+        )
         addSubview(secondDescription)
     }
     

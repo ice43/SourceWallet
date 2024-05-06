@@ -132,6 +132,7 @@
                             <constraint firstItem="GFO-nK-hmH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jmX-DO-I57"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wd1-nZ-2jT"/>
                     <connections>
                         <outlet property="checkText" destination="ANg-F6-qe2" id="hnm-9L-JsK"/>
                         <outlet property="getStartedButton" destination="PKA-hT-MRV" id="flf-I5-l3D"/>
@@ -139,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.74045801526717" y="-28.169014084507044"/>
+            <point key="canvasLocation" x="1967.175572519084" y="-28.169014084507044"/>
         </scene>
         <!--AllowDataCollection-->
         <scene sceneID="zlG-P3-H2G">
@@ -147,7 +148,7 @@
                 <viewControllerPlaceholder storyboardName="AllowDataCollection" id="gcR-x0-Ez4" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="God-ny-obw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="-28"/>
+            <point key="canvasLocation" x="2625.1908396946565" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
