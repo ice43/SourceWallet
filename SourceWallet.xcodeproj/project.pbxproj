@@ -21,8 +21,10 @@
 		CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */; };
 		CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
+		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
 		CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */; };
+		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -43,8 +45,10 @@
 		CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppSettings.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
+		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
 		CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllowDataCollection.storyboard; sourceTree = "<group>"; };
+		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,10 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
+				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
 				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */,
-				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
+				CD4E08D72BE9CD8B00837AFC /* LoginViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +181,15 @@
 				CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */,
 			);
 			path = RestoreOrNewViewController;
+			sourceTree = "<group>";
+		};
+		CD4E08D72BE9CD8B00837AFC /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD7B68902BE9D72500A36129 /* LoginViewController.swift */,
+				CD4E08D82BE9CDA200837AFC /* Login.storyboard */,
+			);
+			path = LoginViewController;
 			sourceTree = "<group>";
 		};
 		CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */ = {
@@ -254,6 +268,7 @@
 				CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */,
 				CD0DCE662BE3A093008A5F27 /* Assets.xcassets in Resources */,
 				CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */,
+				CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +287,7 @@
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
+				CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */,
 				CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
