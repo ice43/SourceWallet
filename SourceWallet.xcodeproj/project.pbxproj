@@ -18,6 +18,8 @@
 		CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */; };
 		CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */; };
 		CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */; };
+		CD405A242BEA24950045779A /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD405A232BEA24950045779A /* MainProfileViewController.swift */; };
+		CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD405A262BEA24AE0045779A /* MainProfile.storyboard */; };
 		CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */; };
 		CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
@@ -42,6 +44,8 @@
 		CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFundsViewController.swift; sourceTree = "<group>"; };
 		CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecureFunds.storyboard; sourceTree = "<group>"; };
 		CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFunds.swift; sourceTree = "<group>"; };
+		CD405A232BEA24950045779A /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
+		CD405A262BEA24AE0045779A /* MainProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainProfile.storyboard; sourceTree = "<group>"; };
 		CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppSettings.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +123,7 @@
 				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */,
 				CD4E08D72BE9CD8B00837AFC /* LoginViewController */,
+				CD405A252BEA249A0045779A /* MainProfileViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -164,6 +169,15 @@
 				CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CD405A252BEA249A0045779A /* MainProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD405A232BEA24950045779A /* MainProfileViewController.swift */,
+				CD405A262BEA24AE0045779A /* MainProfile.storyboard */,
+			);
+			path = MainProfileViewController;
 			sourceTree = "<group>";
 		};
 		CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */ = {
@@ -261,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
+				CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
 				CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */,
@@ -281,6 +296,7 @@
 			files = (
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */,
+				CD405A242BEA24950045779A /* MainProfileViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
