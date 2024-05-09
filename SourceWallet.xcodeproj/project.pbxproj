@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A005E1492BED6AC900DAD45B /* BeforeBackup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */; };
+		A005E14B2BED6B0000DAD45B /* BeforeBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */; };
 		CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCE5C2BE3A092008A5F27 /* AppDelegate.swift */; };
 		CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCE5E2BE3A092008A5F27 /* SceneDelegate.swift */; };
 		CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCE602BE3A092008A5F27 /* WelcomeViewController.swift */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeforeBackup.storyboard; sourceTree = "<group>"; };
+		A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeBackupViewController.swift; sourceTree = "<group>"; };
 		CD0DCE592BE3A092008A5F27 /* SourceWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0DCE5C2BE3A092008A5F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD0DCE5E2BE3A092008A5F27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A005E1472BED6AA600DAD45B /* BeforeBackupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */,
+				A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */,
+			);
+			path = BeforeBackupViewController;
+			sourceTree = "<group>";
+		};
 		CD0DCE502BE3A092008A5F27 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 		CD0DCE722BE3A22B008A5F27 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A005E1472BED6AA600DAD45B /* BeforeBackupViewController */,
 				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
 				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
@@ -347,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
+				A005E1492BED6AC900DAD45B /* BeforeBackup.storyboard in Resources */,
 				CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
@@ -370,6 +385,7 @@
 				CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */,
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */,
+				A005E14B2BED6B0000DAD45B /* BeforeBackupViewController.swift in Sources */,
 				CD405A292BEA43FA0045779A /* TransactionViewCell.swift in Sources */,
 				CD405A302BEA4C650045779A /* BottomMenuView.swift in Sources */,
 				CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */,
