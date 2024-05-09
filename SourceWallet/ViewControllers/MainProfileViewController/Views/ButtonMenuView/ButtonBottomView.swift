@@ -25,7 +25,7 @@ final class ButtonBottomView: UIButton {
         buttonConfiguration.contentInsets = contentInsets
         
         self.configuration = buttonConfiguration
-        self.tintColor = .almostWhite
+        self.tintColor = .white
         // this action is necessary to reduce the size of the custom image
         self.imageView?.layer.transform = CATransform3DMakeScale(0.3, 0.3, 0.3)
     }
