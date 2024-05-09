@@ -721,8 +721,11 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enabled" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="enabled" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Tgi-Q5-JgF" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vyZ-TQ-7fQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -775,6 +778,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="14.503816793893129" y="-28.169014084507044"/>
+        </scene>
+        <!--MainProfile-->
+        <scene sceneID="Igp-TZ-kAi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainProfile" id="Tgi-Q5-JgF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oa2-4q-vjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824" y="-28"/>
         </scene>
     </scenes>
     <resources>
