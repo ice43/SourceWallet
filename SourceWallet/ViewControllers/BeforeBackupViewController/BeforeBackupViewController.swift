@@ -8,4 +8,7 @@
 import UIKit
 
 final class BeforeBackupViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
