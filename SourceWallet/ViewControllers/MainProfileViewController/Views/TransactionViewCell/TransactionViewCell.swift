@@ -30,6 +30,13 @@ final class TransactionViewCell: UITableViewCell {
         )
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        selectedBackgroundView?.layer.cornerRadius = 10
+        selectedBackgroundView?.layer.masksToBounds = true
+    }
+    
     func configureCell(withData data: Transaction) {
         typeLabel.text = data.type
         amountLabel.text = data.amount
