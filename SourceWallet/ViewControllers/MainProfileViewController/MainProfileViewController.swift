@@ -8,19 +8,28 @@
 import UIKit
 
 final class MainProfileViewController: UIViewController {
+    // MARK: IB Outlets
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var balanceLabel: UILabel!
     @IBOutlet private weak var fiatLabel: UILabel!
     @IBOutlet private weak var hideButton: UIButton!
+    @IBOutlet private weak var sideMenuView: UIView!
+    @IBOutlet private weak var backViewForSideMenu: UIView!
+    @IBOutlet private weak var leadingConstraintSideMenu: NSLayoutConstraint!
     
+    // MARK: Private properties
     private let bottomMenuView = BottomMenuView()
-    private let transactions = Transaction.getTransactions()
     private let user = User.getUser()
     private var isHidden = false
+    private var sideMenuViewController: SideMenuViewController?
     
+    var selectedWallet: Wallet?
+    
+    // MARK: View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupSideMenu()
         setupUserInfo()
         setupBottomMenu()
         setupTableView()
@@ -28,6 +37,7 @@ final class MainProfileViewController: UIViewController {
         setupLabelTapRecognition()
     }
     
+    // MARK: IB Actions
     @IBAction func hideButtonTapped(_ sender: UIButton) {
         isHidden.toggle()
         
@@ -44,21 +54,49 @@ final class MainProfileViewController: UIViewController {
                 )
                 sender.setImage(closedEyeImage, for: .normal)
             } else {
-                balanceLabel.text = user.balance + " BTC"
-                fiatLabel.text = user.fiat
+                guard let wallet = selectedWallet else { return }
+                
+                balanceLabel.text = wallet.balance + " BTC"
+                fiatLabel.text = wallet.fiat
                 transactionCell.showAmountLabel()
                 
                 sender.setImage(UIImage(systemName: "eye"), for: .normal)
             }
         }
     }
+    
+    @IBAction func showSideMenu(_ sender: UIBarButtonItem) {
+        sideMenuView.isHidden = false
+        leadingConstraintSideMenu.constant = .zero
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+        
+        bottomMenuView.isHidden = true
+        navigationController?.navigationBar.isHidden = true
+        backViewForSideMenu.isHidden = false
+    }
+    
+    @IBAction func tapOutOfSideMenu(_ sender: UITapGestureRecognizer) {
+        hideSideMenu()
+    }
 }
 
 // MARK: - UI
 private extension MainProfileViewController {
+    func setupSideMenu() {
+        sideMenuView.isHidden = true
+        backViewForSideMenu.isHidden = true
+    }
+    
     func setupUserInfo() {
-        balanceLabel.text = user.balance + " BTC"
-        fiatLabel.text = user.fiat
+        selectedWallet = selectedWallet ?? user.wallets.first
+        
+        guard let wallet = selectedWallet else { return }
+        
+        balanceLabel.text = wallet.balance + " BTC"
+        fiatLabel.text = wallet.fiat
     }
     
     func setupBottomMenu() {
@@ -89,7 +127,13 @@ private extension MainProfileViewController {
     }
     
     func setupTableView() {
-        tableView.register(UINib(nibName: "TransactionViewCell", bundle: nil), forCellReuseIdentifier: "TransactionViewCell")
+        tableView.register(
+            UINib(
+                nibName: "TransactionViewCell",
+                bundle: nil
+            ),
+            forCellReuseIdentifier: "TransactionViewCell"
+        )
         tableView.isScrollEnabled = false
         tableView.backgroundColor = .none
     }
@@ -123,15 +167,16 @@ private extension MainProfileViewController {
 // MARK: - UITableViewDataSource
 extension MainProfileViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        transactions.count
+        selectedWallet?.transactions.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionViewCell") as? TransactionViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionViewCell", for: indexPath) as? TransactionViewCell,
+              let transaction = selectedWallet?.transactions[indexPath.row] else {
             return UITableViewCell()
         }
         
-        cell.configureCell(withData: transactions[indexPath.row])
+        cell.configureCell(withData: transaction)
         cell.backgroundColor = .clear
         
         return cell
@@ -146,5 +191,34 @@ extension MainProfileViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+// MARK: - Navigation
+extension MainProfileViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSideMenu" {
+            guard let controller = segue.destination as? SideMenuViewController else { return }
+            
+            sideMenuViewController = controller
+            sideMenuViewController?.delegate = self
+        }
+    }
+}
+
+// MARK: - SideMenuViewControllerDelegate
+extension MainProfileViewController: SideMenuViewControllerDelegate {
+    func hideSideMenu() {
+        leadingConstraintSideMenu.constant = -320
+        
+        navigationController?.navigationBar.isHidden = false
+        
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        } completion: { _ in
+            self.backViewForSideMenu.isHidden = true
+            self.bottomMenuView.isHidden = false
+            self.sideMenuView.isHidden = true
+        }
     }
 }
