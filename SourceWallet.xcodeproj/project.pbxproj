@@ -154,8 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				A005E1472BED6AA600DAD45B /* BeforeBackupViewController */,
-				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
-				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
 				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
 				CD4E08D72BE9CD8B00837AFC /* LoginViewController */,
@@ -585,7 +583,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = MainProfile;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -620,7 +618,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = MainProfile;
+				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
