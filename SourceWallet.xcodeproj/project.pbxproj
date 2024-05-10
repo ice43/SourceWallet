@@ -117,13 +117,13 @@
 		CD0DCE5B2BE3A092008A5F27 /* SourceWallet */ = {
 			isa = PBXGroup;
 			children = (
-				CD0DCE722BE3A22B008A5F27 /* ViewControllers */,
-				CD0DCE712BE3A1BA008A5F27 /* Storyboards */,
+				CD0DCE702BE3A192008A5F27 /* App */,
 				CD52EBD92BED297400A2F0FA /* Extensions */,
 				CD405A2E2BEA444B0045779A /* Models */,
-				CD52EBCA2BECBE0800A2F0FA /* Services */,
-				CD0DCE702BE3A192008A5F27 /* App */,
 				CD0DCE742BE3A38D008A5F27 /* Resources */,
+				CD52EBCA2BECBE0800A2F0FA /* Services */,
+				CD0DCE712BE3A1BA008A5F27 /* Storyboards */,
+				CD0DCE722BE3A22B008A5F27 /* ViewControllers */,
 			);
 			path = SourceWallet;
 			sourceTree = "<group>";
@@ -149,14 +149,14 @@
 		CD0DCE722BE3A22B008A5F27 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A005E1472BED6AA600DAD45B /* BeforeBackupViewController */,
-				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
-				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
-				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
-				CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */,
+				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
+				A005E1472BED6AA600DAD45B /* BeforeBackupViewController */,
 				CD4E08D72BE9CD8B00837AFC /* LoginViewController */,
 				CD405A252BEA249A0045779A /* MainProfileViewController */,
+				CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */,
+				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
+				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
