@@ -38,6 +38,8 @@
 		CD52EBDD2BEE179400A2F0FA /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBDC2BEE179400A2F0FA /* SideMenuViewController.swift */; };
 		CD52EBE22BEE6FD200A2F0FA /* WalletViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBE12BEE6FD200A2F0FA /* WalletViewCell.swift */; };
 		CD52EBE52BEE702600A2F0FA /* WalletViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */; };
+		CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */; };
+		CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,8 @@
 		CD52EBDC2BEE179400A2F0FA /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		CD52EBE12BEE6FD200A2F0FA /* WalletViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewCell.swift; sourceTree = "<group>"; };
 		CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewCell.xib; sourceTree = "<group>"; };
+		CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,13 +95,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A005E1472BED6AA600DAD45B /* BeforeBackupViewController */ = {
+		A005E1472BED6AA600DAD45B /* BeforeBackup */ = {
 			isa = PBXGroup;
 			children = (
 				A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */,
 				A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */,
 			);
-			path = BeforeBackupViewController;
+			path = BeforeBackup;
 			sourceTree = "<group>";
 		};
 		CD0DCE502BE3A092008A5F27 = {
@@ -153,25 +157,26 @@
 		CD0DCE722BE3A22B008A5F27 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */,
-				CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */,
-				A005E1472BED6AA600DAD45B /* BeforeBackupViewController */,
-				CD4E08D72BE9CD8B00837AFC /* LoginViewController */,
-				CD405A252BEA249A0045779A /* MainProfileViewController */,
-				CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */,
-				CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */,
-				CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */,
+				CD52EBE82BEF9AC900A2F0FA /* About */,
+				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
+				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
+				A005E1472BED6AA600DAD45B /* BeforeBackup */,
+				CD4E08D72BE9CD8B00837AFC /* Login */,
+				CD405A252BEA249A0045779A /* MainProfile */,
+				CD0DCE732BE3A23E008A5F27 /* Welcome */,
+				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
+				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		CD0DCE732BE3A23E008A5F27 /* WelcomeViewController */ = {
+		CD0DCE732BE3A23E008A5F27 /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
 				CD0DCE602BE3A092008A5F27 /* WelcomeViewController.swift */,
 				CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */,
 			);
-			path = WelcomeViewController;
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		CD0DCE742BE3A38D008A5F27 /* Resources */ = {
@@ -190,14 +195,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CD2C7AE32BE7BB2D00A9403A /* SecureFundsViewController */ = {
+		CD2C7AE32BE7BB2D00A9403A /* SecureFunds */ = {
 			isa = PBXGroup;
 			children = (
 				CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */,
 				CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */,
 				CD2C7AE82BE7BE5200A9403A /* Views */,
 			);
-			path = SecureFundsViewController;
+			path = SecureFunds;
 			sourceTree = "<group>";
 		};
 		CD2C7AE82BE7BE5200A9403A /* Views */ = {
@@ -208,14 +213,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CD405A252BEA249A0045779A /* MainProfileViewController */ = {
+		CD405A252BEA249A0045779A /* MainProfile */ = {
 			isa = PBXGroup;
 			children = (
 				CD405A232BEA24950045779A /* MainProfileViewController.swift */,
 				CD405A262BEA24AE0045779A /* MainProfile.storyboard */,
 				CD405A332BEA4CC00045779A /* Views */,
 			);
-			path = MainProfileViewController;
+			path = MainProfile;
 			sourceTree = "<group>";
 		};
 		CD405A2E2BEA444B0045779A /* Models */ = {
@@ -235,60 +240,60 @@
 			path = TransactionViewCell;
 			sourceTree = "<group>";
 		};
-		CD405A322BEA4CB40045779A /* ButtonMenuView */ = {
+		CD405A322BEA4CB40045779A /* ButtonMenu */ = {
 			isa = PBXGroup;
 			children = (
 				CD405A2F2BEA4C650045779A /* BottomMenuView.swift */,
 				CD328C442BEB71CA0008967F /* ButtonBottomView.swift */,
 			);
-			path = ButtonMenuView;
+			path = ButtonMenu;
 			sourceTree = "<group>";
 		};
 		CD405A332BEA4CC00045779A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD405A322BEA4CB40045779A /* ButtonMenuView */,
+				CD405A322BEA4CB40045779A /* ButtonMenu */,
 				CD405A312BEA4CA40045779A /* TransactionViewCell */,
-				CD52EBE02BEE6BD500A2F0FA /* SideMenuViewController */,
+				CD52EBE02BEE6BD500A2F0FA /* SideMenu */,
 				CD52EBE32BEE6FE100A2F0FA /* WalletTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CD44E0362BE8EB56007C6FF9 /* AppSettingsViewController */ = {
+		CD44E0362BE8EB56007C6FF9 /* AppSettings */ = {
 			isa = PBXGroup;
 			children = (
 				CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */,
 				CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */,
 			);
-			path = AppSettingsViewController;
+			path = AppSettings;
 			sourceTree = "<group>";
 		};
-		CD4DEF692BE8C1DC001150DD /* RestoreOrNewViewController */ = {
+		CD4DEF692BE8C1DC001150DD /* RestoreOrNew */ = {
 			isa = PBXGroup;
 			children = (
 				CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */,
 			);
-			path = RestoreOrNewViewController;
+			path = RestoreOrNew;
 			sourceTree = "<group>";
 		};
-		CD4E08D72BE9CD8B00837AFC /* LoginViewController */ = {
+		CD4E08D72BE9CD8B00837AFC /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				CD7B68902BE9D72500A36129 /* LoginViewController.swift */,
 				CD4E08D82BE9CDA200837AFC /* Login.storyboard */,
 			);
-			path = LoginViewController;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		CD5048192BE4F9A5001C818F /* AllowDataCollectionViewController */ = {
+		CD5048192BE4F9A5001C818F /* AllowDataCollection */ = {
 			isa = PBXGroup;
 			children = (
 				CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */,
 				CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */,
 				CD2C7AE02BE7B6A100A9403A /* Views */,
 			);
-			path = AllowDataCollectionViewController;
+			path = AllowDataCollection;
 			sourceTree = "<group>";
 		};
 		CD52EBCA2BECBE0800A2F0FA /* Services */ = {
@@ -307,12 +312,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		CD52EBE02BEE6BD500A2F0FA /* SideMenuViewController */ = {
+		CD52EBE02BEE6BD500A2F0FA /* SideMenu */ = {
 			isa = PBXGroup;
 			children = (
 				CD52EBDC2BEE179400A2F0FA /* SideMenuViewController.swift */,
 			);
-			path = SideMenuViewController;
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		CD52EBE32BEE6FE100A2F0FA /* WalletTableViewCell */ = {
@@ -322,6 +327,15 @@
 				CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */,
 			);
 			path = WalletTableViewCell;
+			sourceTree = "<group>";
+		};
+		CD52EBE82BEF9AC900A2F0FA /* About */ = {
+			isa = PBXGroup;
+			children = (
+				CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */,
+				CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */,
+			);
+			path = About;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +404,7 @@
 				CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */,
 				CD405A2B2BEA44100045779A /* TransactionViewCell.xib in Resources */,
 				CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */,
+				CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */,
 				CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */,
 				CD0DCE662BE3A093008A5F27 /* Assets.xcassets in Resources */,
 				CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */,
@@ -408,6 +423,7 @@
 				CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */,
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */,
+				CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */,
 				A005E14B2BED6B0000DAD45B /* BeforeBackupViewController.swift in Sources */,
 				CD405A292BEA43FA0045779A /* TransactionViewCell.swift in Sources */,
 				CD52EBE22BEE6FD200A2F0FA /* WalletViewCell.swift in Sources */,
