@@ -22,13 +22,20 @@ struct User {
     }
 }
 
-struct Wallet {
+struct Wallet: Equatable {
     let name: String
     let balance: String
     let transactions: [Transaction]
     
     var fiat: String {
         String(format: "%.2f", (Double(balance) ?? 0) * 61467.65) + " USD"
+    }
+    var isSelected = false
+    
+    // This is necessary to determine whether to display a dot above the selected wallet
+    static func ==(lhs: Wallet, rhs: Wallet) -> Bool {
+        return lhs.name == rhs.name
+        && lhs.isSelected == rhs.isSelected
     }
 }
 

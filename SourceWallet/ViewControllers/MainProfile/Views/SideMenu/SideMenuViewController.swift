@@ -15,6 +15,7 @@ final class SideMenuViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var delegate: SideMenuViewControllerDelegate?
+    var selectedWallet: Wallet?
     
     private let user = User.getUser()
     
@@ -53,8 +54,8 @@ extension SideMenuViewController: UITableViewDataSource {
         }
         
         let wallet = user.wallets[indexPath.row]
-        
-        cell.configureCell(withData: wallet)
+        let isSelected = (wallet == selectedWallet)
+        cell.configureCell(withData: wallet, isSelected: isSelected)
         cell.backgroundColor = .clear
         
         return cell
@@ -70,7 +71,7 @@ extension SideMenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selectedWallet = user.wallets[indexPath.row]
+        selectedWallet = user.wallets[indexPath.row]
         
         guard let mainProfileVC = storyboard?.instantiateViewController(withIdentifier: "MainProfileViewController") as? MainProfileViewController else {
             return

@@ -186,6 +186,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="fBF-Qy-Lre">
                             <imageReference key="image" image="gearshape" catalog="system" symbolScale="large"/>
+                            <connections>
+                                <segue destination="Lxc-bC-epF" kind="presentation" id="cQL-PX-phT"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -206,6 +209,14 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1218" y="-30"/>
+        </scene>
+        <!--WalletPreferences-->
+        <scene sceneID="rJT-Pa-GpB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WalletPreferences" id="Lxc-bC-epF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tMR-ut-OCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="-337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iLM-fF-bI3">
@@ -284,12 +295,12 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-aA-J8x">
-                                                <rect key="frame" x="0.0" y="741.33333333333337" width="283.66666666666669" height="31.666666666666629"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="119" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-aA-J8x">
+                                                <rect key="frame" x="0.0" y="741.33333333333337" width="288" height="31.666666666666629"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXc-j0-v7g">
-                                                        <rect key="frame" x="0.0" y="3" width="69.666666666666671" height="25.666666666666668"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <rect key="frame" x="0.0" y="3" width="71" height="25.666666666666668"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                         <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-16" maxY="0.0"/>
                                                         <state key="normal" title="About">
                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -301,8 +312,11 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUh-aj-ack">
-                                                        <rect key="frame" x="189.66666666666666" y="0.0" width="93.999999999999972" height="31.666666666666668"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <rect key="frame" x="190" y="0.0" width="98" height="31.666666666666668"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="97.999999999999972" id="3o1-It-Dyu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="App Settings">
                                                             <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -336,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gpE-b5-kFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2323.6641221374043" y="-29.577464788732396"/>
+            <point key="canvasLocation" x="2322" y="-13"/>
         </scene>
         <!--AppSettings-->
         <scene sceneID="dHd-5n-dqt">
@@ -356,7 +370,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Da9-Iu-0AZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2324" y="440"/>
+            <point key="canvasLocation" x="2321" y="438"/>
         </scene>
     </scenes>
     <resources>

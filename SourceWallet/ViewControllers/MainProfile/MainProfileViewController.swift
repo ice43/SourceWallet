@@ -97,6 +97,12 @@ private extension MainProfileViewController {
         
         balanceLabel.text = wallet.balance + " BTC"
         fiatLabel.text = wallet.fiat
+        
+        // Transfer data about the selected wallet to the side menu to display a point above the selected wallet
+        guard let sideMenuViewController = sideMenuViewController else { return }
+        
+        sideMenuViewController.selectedWallet = wallet
+        sideMenuViewController.tableView.reloadData()
     }
     
     func setupBottomMenu() {

@@ -9,6 +9,7 @@ import UIKit
 
 final class WalletViewCell: UITableViewCell {
     @IBOutlet private weak var nameWallet: UILabel!
+    @IBOutlet private weak var dotImage: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -32,7 +33,8 @@ final class WalletViewCell: UITableViewCell {
         selectedBackgroundView?.layer.masksToBounds = true
     }
     
-    func configureCell(withData data: Wallet) {
+    func configureCell(withData data: Wallet, isSelected: Bool) {
         nameWallet.text = data.name
+        dotImage.isHidden = !isSelected
     }
 }

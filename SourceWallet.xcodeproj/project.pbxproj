@@ -40,6 +40,8 @@
 		CD52EBE52BEE702600A2F0FA /* WalletViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */; };
 		CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */; };
 		CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */; };
+		CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */; };
+		CD52EBF52BEFE54800A2F0FA /* WalletPreferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,8 @@
 		CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewCell.xib; sourceTree = "<group>"; };
 		CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPreferencesViewController.swift; sourceTree = "<group>"; };
+		CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletPreferences.storyboard; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,9 +167,10 @@
 				A005E1472BED6AA600DAD45B /* BeforeBackup */,
 				CD4E08D72BE9CD8B00837AFC /* Login */,
 				CD405A252BEA249A0045779A /* MainProfile */,
-				CD0DCE732BE3A23E008A5F27 /* Welcome */,
-				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
+				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
+				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
+				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -338,6 +343,15 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */,
+				CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */,
+			);
+			path = WalletPreferences;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +415,7 @@
 				CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
+				CD52EBF52BEFE54800A2F0FA /* WalletPreferences.storyboard in Resources */,
 				CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */,
 				CD405A2B2BEA44100045779A /* TransactionViewCell.xib in Resources */,
 				CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */,
@@ -434,6 +449,7 @@
 				CD52EBD62BED194800A2F0FA /* User.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
+				CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD52EBD82BED296F00A2F0FA /* Extension + UIImage.swift in Sources */,
