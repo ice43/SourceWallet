@@ -10,9 +10,15 @@ import UIKit
 final class WalletPreferencesViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
+    private lazy var mainSettingsViewController: UINavigationController = {
+        guard let viewController = storyboard?.instantiateViewController(withIdentifier: "MainSettingsTableViewController") as? UINavigationController else { return UINavigationController() }
+        viewController.modalPresentationStyle = .fullScreen
+        return viewController
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupTableView()
         setSheet()
     }
@@ -63,6 +69,10 @@ extension WalletPreferencesViewController: UITableViewDataSource {
 extension WalletPreferencesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.row == 1 {
+            present(mainSettingsViewController, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

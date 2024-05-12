@@ -65,6 +65,14 @@
             </objects>
             <point key="canvasLocation" x="14.503816793893129" y="-28.169014084507044"/>
         </scene>
+        <!--MainSettings-->
+        <scene sceneID="suu-tN-gTr">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MainSettingsTableViewController" storyboardName="MainSettings" id="cK2-Bf-12R" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0V-BA-LF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="6"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="backModalColor">
