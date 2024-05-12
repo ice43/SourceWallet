@@ -38,7 +38,7 @@ final class MainProfileViewController: UIViewController {
     }
     
     // MARK: IB Actions
-    @IBAction func hideButtonTapped(_ sender: UIButton) {
+    @IBAction private func hideButtonTapped(_ sender: UIButton) {
         isHidden.toggle()
         
         for cell in tableView.visibleCells {
@@ -65,7 +65,7 @@ final class MainProfileViewController: UIViewController {
         }
     }
     
-    @IBAction func showSideMenu(_ sender: UIBarButtonItem) {
+    @IBAction private func showSideMenu(_ sender: UIBarButtonItem) {
         sideMenuView.isHidden = false
         leadingConstraintSideMenu.constant = .zero
         
@@ -78,7 +78,7 @@ final class MainProfileViewController: UIViewController {
         backViewForSideMenu.isHidden = false
     }
     
-    @IBAction func tapOutOfSideMenu(_ sender: UITapGestureRecognizer) {
+    @IBAction private func tapOutOfSideMenu(_ sender: UITapGestureRecognizer) {
         hideSideMenu()
     }
 }
@@ -106,6 +106,7 @@ private extension MainProfileViewController {
     }
     
     func setupBottomMenu() {
+        bottomMenuView.delegate = self
         bottomMenuView.translatesAutoresizingMaskIntoConstraints = false
         bottomMenuView.layer.cornerRadius = 10
         view.addSubview(bottomMenuView)
@@ -226,5 +227,16 @@ extension MainProfileViewController: SideMenuViewControllerDelegate {
             self.bottomMenuView.isHidden = false
             self.sideMenuView.isHidden = true
         }
+    }
+}
+
+// MARK: - BottomMenuViewDelegate
+extension MainProfileViewController: BottomMenuViewDelegate {
+    func openSendViewController() {
+        guard let sendVC = storyboard?.instantiateViewController(withIdentifier: "SendViewController") as? SendViewController else {
+            return
+        }
+        
+        navigationController?.pushViewController(sendVC, animated: true)
     }
 }

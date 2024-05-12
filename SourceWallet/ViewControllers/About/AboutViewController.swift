@@ -17,7 +17,7 @@ final class AboutViewController: UIViewController {
         setSheet()
     }
     
-    @IBAction func actualLinkButtonsTapped() {
+    @IBAction private func actualLinkButtonsTapped() {
         guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
         UIApplication.shared.open(url)
     }

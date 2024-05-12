@@ -56,7 +56,7 @@ private extension StorageFunds {
         let configuration = UIImage.SymbolConfiguration(scale: .large)
         let imageButton = UIImage(systemName: "arrow.right")?.withConfiguration(configuration)
         button.setImage(imageButton, for: .normal)
-        button.imageView?.tintColor = .white
+        button.imageView?.tintColor = .backModal
         button.backgroundColor = .tintColor
         button.layer.cornerRadius = 10
         addSubview(button)

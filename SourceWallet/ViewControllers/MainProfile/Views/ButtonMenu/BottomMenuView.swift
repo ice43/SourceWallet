@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol BottomMenuViewDelegate: AnyObject {
+    func openSendViewController()
+}
+
 final class BottomMenuView: UIView {
+    weak var delegate: BottomMenuViewDelegate?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -34,6 +40,11 @@ final class BottomMenuView: UIView {
                 bottom: 0,
                 trailing: 15
             )
+        )
+        sendButton.addTarget(
+            self,
+            action: #selector(openSendViewController),
+            for: .touchUpInside
         )
         
         // Creating a QR button
@@ -92,6 +103,13 @@ final class BottomMenuView: UIView {
                 receiveButton.trailingAnchor.constraint(equalTo: trailingAnchor)
             ]
         )
+    }
+}
+
+// MARK: - Navigation
+private extension BottomMenuView {
+    @objc func openSendViewController() {
+        delegate?.openSendViewController()
     }
 }
 

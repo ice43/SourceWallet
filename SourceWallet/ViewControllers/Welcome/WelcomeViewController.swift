@@ -41,7 +41,7 @@ private extension WelcomeViewController {
     // MARK: Initial setup of GetStartedButton
     func initialSetupGetStartedButton() {
         getStartedButton.setTitleColor(
-            .white.withAlphaComponent(0.5),
+            .backModal.withAlphaComponent(0.5),
             for: .disabled
         )
         getStartedButton.backgroundColor = getStartedButton.tintColor.withAlphaComponent(0.5)

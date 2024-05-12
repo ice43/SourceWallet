@@ -25,11 +25,11 @@ final class SideMenuViewController: UIViewController {
         setupTableView()
     }
     
-    @IBAction func aboutButtonTapped() {
+    @IBAction private func aboutButtonTapped() {
         delegate?.hideSideMenu()
     }
     
-    @IBAction func appSettingsButtonTapped() {
+    @IBAction private func appSettingsButtonTapped() {
         delegate?.hideSideMenu()
     }
 }

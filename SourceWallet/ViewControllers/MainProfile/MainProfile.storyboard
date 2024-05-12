@@ -210,6 +210,14 @@
             </objects>
             <point key="canvasLocation" x="1218" y="-30"/>
         </scene>
+        <!--Send-->
+        <scene sceneID="xrD-MV-9TA">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SendViewController" storyboardName="Send" id="NN6-wh-epu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-dw-hiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="328"/>
+        </scene>
         <!--WalletPreferences-->
         <scene sceneID="rJT-Pa-GpB">
             <objects>
@@ -282,7 +290,7 @@
                                                     <constraint firstAttribute="height" constant="70" id="Rgs-0N-p7r"/>
                                                     <constraint firstAttribute="width" constant="288" id="TiL-v3-v7j"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="255" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="Setup a new wallet">

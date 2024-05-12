@@ -48,6 +48,8 @@
 		CD52EC002BF0027100A2F0FA /* TwoLineSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBFF2BF0027100A2F0FA /* TwoLineSettingCell.xib */; };
 		CD52EC052BF002FF00A2F0FA /* OneLineSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EC042BF002FF00A2F0FA /* OneLineSettingCell.swift */; };
 		CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EC072BF0031C00A2F0FA /* TwoLineSettingCell.swift */; };
+		CD52EC0E2BF0CA6F00A2F0FA /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */; };
+		CD52EC112BF0CA8B00A2F0FA /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,8 @@
 		CD52EBFF2BF0027100A2F0FA /* TwoLineSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoLineSettingCell.xib; sourceTree = "<group>"; };
 		CD52EC042BF002FF00A2F0FA /* OneLineSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneLineSettingCell.swift; sourceTree = "<group>"; };
 		CD52EC072BF0031C00A2F0FA /* TwoLineSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineSettingCell.swift; sourceTree = "<group>"; };
+		CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
+		CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Send.storyboard; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +186,7 @@
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
 				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
+				CD52EC0F2BF0CA7200A2F0FA /* Send */,
 				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 			);
@@ -402,6 +407,15 @@
 			path = TwoLineSetting;
 			sourceTree = "<group>";
 		};
+		CD52EC0F2BF0CA7200A2F0FA /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */,
+				CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -474,6 +488,7 @@
 				CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */,
 				CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */,
 				CD0DCE662BE3A093008A5F27 /* Assets.xcassets in Resources */,
+				CD52EC112BF0CA8B00A2F0FA /* Send.storyboard in Resources */,
 				CD52EBFE2BF0025000A2F0FA /* OneLineSettingCell.xib in Resources */,
 				CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */,
 				CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */,
@@ -512,6 +527,7 @@
 				CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
 				CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */,
+				CD52EC0E2BF0CA6F00A2F0FA /* SendViewController.swift in Sources */,
 				CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

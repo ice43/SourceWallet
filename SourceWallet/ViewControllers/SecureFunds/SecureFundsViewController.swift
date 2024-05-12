@@ -18,11 +18,11 @@ final class SecureFundsViewController: UIViewController {
     }
     
     // MARK: IB Actions
-    @IBAction func dismiss() {
+    @IBAction private func dismiss() {
         dismiss(animated: true)
     }
     
-    @IBAction func watchOnlyButtonTapped() {
+    @IBAction private func watchOnlyButtonTapped() {
         let alertController = UIAlertController(
             title: "Not found",
             message: "This way is temporarily not supported",
