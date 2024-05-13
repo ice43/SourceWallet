@@ -237,6 +237,19 @@ extension MainProfileViewController: BottomMenuViewDelegate {
             return
         }
         
+        sendVC.title = "Send To"
+        
         navigationController?.pushViewController(sendVC, animated: true)
     }
+    
+    func openReceiveViewController() {
+        guard let receiveVC = storyboard?.instantiateViewController(withIdentifier: "ReceiveViewController") as? ReceiveViewController else {
+            return
+        }
+        
+        receiveVC.title = "Receive"
+        
+        navigationController?.pushViewController(receiveVC, animated: true)
+    }
+    
 }

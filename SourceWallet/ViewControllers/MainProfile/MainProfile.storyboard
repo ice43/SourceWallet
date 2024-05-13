@@ -218,6 +218,14 @@
             </objects>
             <point key="canvasLocation" x="1082" y="328"/>
         </scene>
+        <!--Receive-->
+        <scene sceneID="QD1-4r-1Rc">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ReceiveViewController" storyboardName="Receive" id="sMs-pX-jQn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzD-pX-OGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="327"/>
+        </scene>
         <!--WalletPreferences-->
         <scene sceneID="rJT-Pa-GpB">
             <objects>
@@ -399,7 +407,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

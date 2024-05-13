@@ -9,6 +9,7 @@ import UIKit
 
 protocol BottomMenuViewDelegate: AnyObject {
     func openSendViewController()
+    func openReceiveViewController()
 }
 
 final class BottomMenuView: UIView {
@@ -69,6 +70,11 @@ final class BottomMenuView: UIView {
                 trailing: 35
             )
         )
+        receiveButton.addTarget(
+            self,
+            action: #selector(openReceiveViewController),
+            for: .touchUpInside
+        )
         
         // Creating a horizontal stackview
         let stackView = UIStackView(
@@ -110,6 +116,10 @@ final class BottomMenuView: UIView {
 private extension BottomMenuView {
     @objc func openSendViewController() {
         delegate?.openSendViewController()
+    }
+    
+    @objc func openReceiveViewController() {
+        delegate?.openReceiveViewController()
     }
 }
 
