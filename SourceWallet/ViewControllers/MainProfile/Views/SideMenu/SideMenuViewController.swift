@@ -32,12 +32,28 @@ final class SideMenuViewController: UIViewController {
     @IBAction private func appSettingsButtonTapped() {
         delegate?.hideSideMenu()
     }
+    
+    @IBAction func setupNewWalletButtonTapped() {
+        delegate?.hideSideMenu()
+        
+        guard let secureFundsVC = storyboard?.instantiateViewController(
+            withIdentifier: "SecureFundsViewController"
+        ) else { return }
+        
+        secureFundsVC.modalPresentationStyle = .fullScreen
+        secureFundsVC.modalTransitionStyle = .crossDissolve
+        
+        present(secureFundsVC, animated: true)
+    }
 }
 
 // MARK: - UI
 private extension SideMenuViewController {
     func setupTableView() {
-        tableView.register(UINib(nibName: "WalletViewCell", bundle: nil), forCellReuseIdentifier: "WalletViewCell")
+        tableView.register(
+            UINib(nibName: "WalletViewCell", bundle: nil),
+            forCellReuseIdentifier: "WalletViewCell"
+        )
         tableView.backgroundColor = .none
     }
 }
@@ -49,9 +65,9 @@ extension SideMenuViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "WalletViewCell") as? WalletViewCell else {
-            return UITableViewCell()
-        }
+        guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: "WalletViewCell"
+        ) as? WalletViewCell else { return UITableViewCell() }
         
         let wallet = user.wallets[indexPath.row]
         let isSelected = (wallet == selectedWallet)
@@ -73,9 +89,9 @@ extension SideMenuViewController: UITableViewDelegate {
         
         selectedWallet = user.wallets[indexPath.row]
         
-        guard let mainProfileVC = storyboard?.instantiateViewController(withIdentifier: "MainProfileViewController") as? MainProfileViewController else {
-            return
-        }
+        guard let mainProfileVC = storyboard?.instantiateViewController(
+            withIdentifier: "MainProfileViewController"
+        ) as? MainProfileViewController else { return }
         
         mainProfileVC.selectedWallet = selectedWallet
         

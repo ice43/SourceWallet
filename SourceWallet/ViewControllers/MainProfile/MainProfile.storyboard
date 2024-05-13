@@ -216,7 +216,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="SendViewController" storyboardName="Send" id="NN6-wh-epu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qd3-dw-hiI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1082" y="328"/>
+            <point key="canvasLocation" x="1005" y="327"/>
+        </scene>
+        <!--QR-->
+        <scene sceneID="fa4-bK-N2r">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="QrViewController" storyboardName="QR" id="LZg-Rh-wvB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGZ-0B-Ghg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1217" y="327"/>
         </scene>
         <!--Receive-->
         <scene sceneID="QD1-4r-1Rc">
@@ -224,7 +232,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="ReceiveViewController" storyboardName="Receive" id="sMs-pX-jQn" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzD-pX-OGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1347" y="327"/>
+            <point key="canvasLocation" x="1431" y="327"/>
         </scene>
         <!--WalletPreferences-->
         <scene sceneID="rJT-Pa-GpB">
@@ -310,6 +318,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="setupNewWalletButtonTapped" destination="WP2-qK-sMd" eventType="touchUpInside" id="idH-8z-Jfe"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="119" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-aA-J8x">
                                                 <rect key="frame" x="0.0" y="741.33333333333337" width="288" height="31.666666666666629"/>
@@ -368,6 +379,16 @@
             </objects>
             <point key="canvasLocation" x="2322" y="-13"/>
         </scene>
+        <!--SecureFunds-->
+        <scene sceneID="0BQ-Pa-YyW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SecureFundsViewController" storyboardName="SecureFunds" id="75E-CQ-uz7" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Lcj-6U-KGh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYd-xs-Enz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2811" y="194"/>
+        </scene>
         <!--AppSettings-->
         <scene sceneID="dHd-5n-dqt">
             <objects>
@@ -376,7 +397,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dm4-EB-aka" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2831" y="238"/>
+            <point key="canvasLocation" x="2515" y="409"/>
         </scene>
         <!--About-->
         <scene sceneID="4Gu-4W-JzB">
@@ -386,7 +407,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Da9-Iu-0AZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2321" y="438"/>
+            <point key="canvasLocation" x="2129" y="409"/>
         </scene>
     </scenes>
     <resources>

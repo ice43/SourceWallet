@@ -10,6 +10,7 @@ import UIKit
 protocol BottomMenuViewDelegate: AnyObject {
     func openSendViewController()
     func openReceiveViewController()
+    func openQrViewController()
 }
 
 final class BottomMenuView: UIView {
@@ -56,6 +57,11 @@ final class BottomMenuView: UIView {
         qrButton.imageView?.tintColor = .white
         qrButton.layer.cornerRadius = 10
         qrButton.layer.masksToBounds = true
+        qrButton.addTarget(
+            self,
+            action: #selector(openQrViewController),
+            for: .touchUpInside
+        )
         
         // Creating a Receive button
         let receiveButton = ButtonBottomView(
@@ -120,6 +126,10 @@ private extension BottomMenuView {
     
     @objc func openReceiveViewController() {
         delegate?.openReceiveViewController()
+    }
+    
+    @objc func openQrViewController() {
+        delegate?.openQrViewController()
     }
 }
 

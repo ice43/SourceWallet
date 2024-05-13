@@ -233,19 +233,27 @@ extension MainProfileViewController: SideMenuViewControllerDelegate {
 // MARK: - BottomMenuViewDelegate
 extension MainProfileViewController: BottomMenuViewDelegate {
     func openSendViewController() {
-        guard let sendVC = storyboard?.instantiateViewController(withIdentifier: "SendViewController") as? SendViewController else {
-            return
-        }
+        guard let sendVC = storyboard?.instantiateViewController(
+            withIdentifier: "SendViewController"
+        ) as? SendViewController else { return }
         
         sendVC.title = "Send To"
         
         navigationController?.pushViewController(sendVC, animated: true)
     }
     
-    func openReceiveViewController() {
-        guard let receiveVC = storyboard?.instantiateViewController(withIdentifier: "ReceiveViewController") as? ReceiveViewController else {
+    func openQrViewController() {
+        guard let qrVC = storyboard?.instantiateViewController(withIdentifier: "QrViewController") else {
             return
         }
+        
+        present(qrVC, animated: true)
+    }
+    
+    func openReceiveViewController() {
+        guard let receiveVC = storyboard?.instantiateViewController(
+            withIdentifier: "ReceiveViewController"
+        ) as? ReceiveViewController else { return }
         
         receiveVC.title = "Receive"
         
