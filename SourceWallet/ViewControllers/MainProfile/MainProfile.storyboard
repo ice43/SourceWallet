@@ -78,6 +78,9 @@
                                                                         </constraints>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" image="stack"/>
+                                                                        <connections>
+                                                                            <action selector="denominationButtonTapped" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SPR-O8-4xg"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -240,7 +243,7 @@
                 <viewControllerPlaceholder storyboardName="WalletPreferences" id="Lxc-bC-epF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMR-ut-OCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821" y="-337"/>
+            <point key="canvasLocation" x="1804" y="-337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iLM-fF-bI3">
@@ -428,7 +431,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

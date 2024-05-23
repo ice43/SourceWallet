@@ -22,6 +22,8 @@ final class MainProfileViewController: UIViewController {
     private let user = User.getUser()
     private var isHidden = false
     private var sideMenuViewController: SideMenuViewController?
+    private var blurView: UIVisualEffectView?
+    private var denominationView: DenominationView?
     
     var selectedWallet: Wallet?
     
@@ -80,6 +82,39 @@ final class MainProfileViewController: UIViewController {
     
     @IBAction private func tapOutOfSideMenu(_ sender: UITapGestureRecognizer) {
         hideSideMenu()
+    }
+    
+    @IBAction func denominationButtonTapped() {
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        
+        blurView.frame = view.bounds
+        self.blurView = blurView
+        blurView.alpha = 0
+        
+        let denominationView = DenominationView(
+            frame: CGRect(
+                x: 0,
+                y: 0,
+                width: UIScreen.main.bounds.width / 1.1,
+                height: 300
+            )
+        )
+        
+        self.denominationView = denominationView
+        
+        denominationView.delegate = self
+        denominationView.center = view.center
+        denominationView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+        
+        view.addSubview(blurView)
+        view.addSubview(denominationView)
+        navigationController?.navigationBar.isHidden = true
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            blurView.alpha = 1
+            denominationView.transform = CGAffineTransform.identity
+        })
     }
 }
 
@@ -260,4 +295,19 @@ extension MainProfileViewController: BottomMenuViewDelegate {
         navigationController?.pushViewController(receiveVC, animated: true)
     }
     
+}
+
+// MARK: - DenominationViewDelegate
+extension MainProfileViewController: DenominationViewDelegate {
+    func cancelButtonTapped() {
+        blurView?.removeFromSuperview()
+        denominationView?.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    func okButtonTapped() {
+        blurView?.removeFromSuperview()
+        denominationView?.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
+    }
 }

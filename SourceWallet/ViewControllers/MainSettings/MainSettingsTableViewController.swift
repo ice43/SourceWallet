@@ -12,6 +12,8 @@ final class MainSettingsTableViewController: UIViewController {
     
     private let oneLineSettingCellIdentifier = "OneLineSettingCell"
     private let twoLineSettingCellIdentifier = "TwoLineSettingCell"
+    private var blurView: UIVisualEffectView?
+    private var denominationView: DenominationView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -200,6 +202,46 @@ extension MainSettingsTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        switch indexPath.section {
+        case 0:
+            print("Wallet log out")
+            
+        case 1:
+            switch indexPath.row {
+            case 0:
+                showDenominationView()
+            case 1:
+                print("Archived Accounts")
+            default:
+                print("Watch only")
+            }
+            
+        case 2:
+            switch indexPath.row {
+            case 0:
+                print("Change PIN")
+            case 1:
+                print("Face ID")
+            case 2:
+                print("Two-Factor Authentication")
+            case 3:
+                print("PGP Key")
+            default:
+                print("Auto logout timeout")
+            }
+            
+        case 3:
+            print("Back Up Recovery Phrase")
+            
+        default:
+            switch indexPath.row {
+            case 0:
+                print("Version")
+            default:
+                print("Support")
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -247,5 +289,53 @@ private extension MainSettingsTableViewController {
         cell.copyButton.isHidden = !showCopyButton
         
         return cell
+    }
+    
+    func showDenominationView() {
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurView = UIVisualEffectView(effect: blurEffect)
+        
+        blurView.frame = view.bounds
+        self.blurView = blurView
+        blurView.alpha = 0
+        
+        let denominationView = DenominationView(
+            frame: CGRect(
+                x: 0,
+                y: 0,
+                width: UIScreen.main.bounds.width / 1.1,
+                height: 300
+            )
+        )
+        
+        self.denominationView = denominationView
+        
+        denominationView.delegate = self
+        denominationView.center = view.center
+        denominationView.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+        
+        view.addSubview(blurView)
+        view.addSubview(denominationView)
+        navigationController?.navigationBar.isHidden = true
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            blurView.alpha = 1
+            denominationView.transform = CGAffineTransform.identity
+        })
+    }
+}
+
+// MARK: - DenominationViewDelegate
+extension MainSettingsTableViewController: DenominationViewDelegate {
+    func cancelButtonTapped() {
+        blurView?.removeFromSuperview()
+        denominationView?.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    func okButtonTapped() {
+        blurView?.removeFromSuperview()
+        denominationView?.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
     }
 }

@@ -20,6 +20,8 @@
 		CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */; };
 		CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */; };
 		CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */; };
+		CD3133BD2BF33EF700962106 /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3133BC2BF33EF700962106 /* DenominationView.swift */; };
+		CD3133C22BF3483F00962106 /* Denomination.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3133C12BF3483F00962106 /* Denomination.xib */; };
 		CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD328C442BEB71CA0008967F /* ButtonBottomView.swift */; };
 		CD38BD012BF11D6500FEE3C4 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38BD002BF11D6500FEE3C4 /* ReceiveViewController.swift */; };
 		CD38BD032BF11D7000FEE3C4 /* Receive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD38BD022BF11D7000FEE3C4 /* Receive.storyboard */; };
@@ -74,6 +76,8 @@
 		CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFundsViewController.swift; sourceTree = "<group>"; };
 		CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecureFunds.storyboard; sourceTree = "<group>"; };
 		CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFunds.swift; sourceTree = "<group>"; };
+		CD3133BC2BF33EF700962106 /* DenominationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
+		CD3133C12BF3483F00962106 /* Denomination.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Denomination.xib; sourceTree = "<group>"; };
 		CD328C442BEB71CA0008967F /* ButtonBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBottomView.swift; sourceTree = "<group>"; };
 		CD38BD002BF11D6500FEE3C4 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		CD38BD022BF11D7000FEE3C4 /* Receive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receive.storyboard; sourceTree = "<group>"; };
@@ -189,6 +193,7 @@
 				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
 				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
 				A005E1472BED6AA600DAD45B /* BeforeBackup */,
+				CD3133C02BF33F0900962106 /* Denomination */,
 				CD4E08D72BE9CD8B00837AFC /* Login */,
 				CD405A252BEA249A0045779A /* MainProfile */,
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
@@ -244,6 +249,15 @@
 				CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CD3133C02BF33F0900962106 /* Denomination */ = {
+			isa = PBXGroup;
+			children = (
+				CD3133BC2BF33EF700962106 /* DenominationView.swift */,
+				CD3133C12BF3483F00962106 /* Denomination.xib */,
+			);
+			path = Denomination;
 			sourceTree = "<group>";
 		};
 		CD38BD042BF11D7500FEE3C4 /* Receive */ = {
@@ -505,6 +519,7 @@
 				CD38BD032BF11D7000FEE3C4 /* Receive.storyboard in Resources */,
 				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
 				CD52EC002BF0027100A2F0FA /* TwoLineSettingCell.xib in Resources */,
+				CD3133C22BF3483F00962106 /* Denomination.xib in Resources */,
 				A005E1492BED6AC900DAD45B /* BeforeBackup.storyboard in Resources */,
 				CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
@@ -534,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */,
+				CD3133BD2BF33EF700962106 /* DenominationView.swift in Sources */,
 				CD38BD012BF11D6500FEE3C4 /* ReceiveViewController.swift in Sources */,
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */,
