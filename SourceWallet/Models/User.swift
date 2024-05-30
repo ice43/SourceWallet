@@ -24,6 +24,7 @@ struct User {
 
 struct Wallet: Equatable {
     let name: String
+    let address: String
     let balance: String
     let transactions: [Transaction]
     
@@ -43,4 +44,12 @@ struct Transaction {
     let type: String
     let amount: String
     let date: String
+    let id: String
+    var destination: String? = nil
+    var fee: String? = nil
+    var feeRate: String? = nil
+    
+    var fiat: String {
+        String(format: "%.2f", (Double(amount) ?? 0) * 61467.65) + " USD"
+    }
 }

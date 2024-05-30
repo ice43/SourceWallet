@@ -233,6 +233,16 @@ extension MainProfileViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let transaction = selectedWallet?.transactions[indexPath.row],
+              let transactionDetailsVC = storyboard?.instantiateViewController(
+                withIdentifier: "TransactionDetailsViewController"
+              ) as? TransactionDetailsViewController else { return }
+        
+        transactionDetailsVC.transaction = transaction
+        transactionDetailsVC.selectedWallet = selectedWallet
+        
+        navigationController?.pushViewController(transactionDetailsVC, animated: true)
     }
 }
 

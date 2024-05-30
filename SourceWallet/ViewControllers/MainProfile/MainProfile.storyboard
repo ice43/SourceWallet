@@ -213,6 +213,14 @@
             </objects>
             <point key="canvasLocation" x="1218" y="-30"/>
         </scene>
+        <!--TransactionDetails-->
+        <scene sceneID="TaQ-S8-tXn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TransactionDetailsViewController" storyboardName="TransactionDetails" id="jIS-f2-dWR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2M-zK-QV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="119"/>
+        </scene>
         <!--Send-->
         <scene sceneID="xrD-MV-9TA">
             <objects>

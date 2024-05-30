@@ -39,7 +39,7 @@ final class TransactionViewCell: UITableViewCell {
     
     func configureCell(withData data: Transaction) {
         typeLabel.text = data.type
-        amountLabel.text = data.amount
+        amountLabel.text = data.amount + " BTC"
         amountLabel.textColor = data.type == "Received" ? .accent : .white
         dateLabel.text = data.date
         typeImage.image = UIImage(named: data.type.lowercased())
