@@ -131,8 +131,8 @@ final class DataStore {
                     date: "Apr 19, 2024",
                     id: "873b52c95df03d559d4071ea57b054e4b1d69d69c7c0ced81851af7a519266b3",
                     destination: "34SKKYTKn26a1c5hQQ6N82aQWQDLJxRXSK",
-                    fee: "",
-                    feeRate: ""
+                    fee: "0.00009259 BTC ≈ 5.72 USD",
+                    feeRate: "25.97 satoshi / vbyte"
                 ),
                 Transaction(
                     type: "Received",

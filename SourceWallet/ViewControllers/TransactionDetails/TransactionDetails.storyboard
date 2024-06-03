@@ -10,6 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--AddNote-->
+        <scene sceneID="3MU-VO-8jI">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="AddNoteViewController" storyboardName="AddNote" id="KEh-zg-FcN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3TY-MW-M9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="171"/>
+        </scene>
         <!--Transaction Details View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -182,6 +190,9 @@
                                                         <state key="normal" title="Add Note" image="pencil.line" catalog="system">
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="addNoteButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rax-9O-RY9"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJe-zS-a0N">
                                                         <rect key="frame" x="0.0" y="46" width="200" height="30"/>
@@ -195,6 +206,9 @@
                                                             <imageReference key="image" image="binoculars" catalog="system" symbolScale="medium"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="viewInExplorerButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="M1p-M3-xX1"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-YN-0lL">
                                                         <rect key="frame" x="0.0" y="92" width="193" height="30"/>
@@ -209,6 +223,9 @@
                                                             <imageReference key="image" image="square.and.arrow.up" catalog="system" symbolScale="medium"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="shareTransactionButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="keX-6r-pY9"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -305,6 +322,7 @@
                             <constraint firstItem="yXS-lF-RsS" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="vzE-8K-kjM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="0mS-PQ-yQU"/>
                     <connections>
                         <outlet property="amountLabel" destination="hFy-5p-wll" id="Hek-u7-eLM"/>
                         <outlet property="dateLabel" destination="aap-rA-CtL" id="cXt-yt-KRH"/>
@@ -324,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+            <point key="canvasLocation" x="1057.2519083969464" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>

@@ -282,8 +282,6 @@ extension MainProfileViewController: BottomMenuViewDelegate {
             withIdentifier: "SendViewController"
         ) as? SendViewController else { return }
         
-        sendVC.title = "Send To"
-        
         navigationController?.pushViewController(sendVC, animated: true)
     }
     
@@ -299,8 +297,6 @@ extension MainProfileViewController: BottomMenuViewDelegate {
         guard let receiveVC = storyboard?.instantiateViewController(
             withIdentifier: "ReceiveViewController"
         ) as? ReceiveViewController else { return }
-        
-        receiveVC.title = "Receive"
         
         navigationController?.pushViewController(receiveVC, animated: true)
     }

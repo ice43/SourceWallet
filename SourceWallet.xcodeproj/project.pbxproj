@@ -36,6 +36,8 @@
 		CD4508712C005FC600450234 /* TransactionDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4508702C005FC600450234 /* TransactionDetails.storyboard */; };
 		CD45DF802BF245E800E5960C /* QrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45DF7F2BF245E800E5960C /* QrViewController.swift */; };
 		CD45DF832BF245FD00E5960C /* QR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD45DF822BF245FD00E5960C /* QR.storyboard */; };
+		CD4684FA2C0DD387007CEF4E /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4684F92C0DD387007CEF4E /* AddNoteViewController.swift */; };
+		CD4684FD2C0DD39A007CEF4E /* AddNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
@@ -94,6 +96,8 @@
 		CD4508702C005FC600450234 /* TransactionDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionDetails.storyboard; sourceTree = "<group>"; };
 		CD45DF7F2BF245E800E5960C /* QrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrViewController.swift; sourceTree = "<group>"; };
 		CD45DF822BF245FD00E5960C /* QR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QR.storyboard; sourceTree = "<group>"; };
+		CD4684F92C0DD387007CEF4E /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNote.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
@@ -203,10 +207,10 @@
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
 				CD45DF812BF245EC00E5960C /* QR */,
 				CD38BD042BF11D7500FEE3C4 /* Receive */,
-				CD4508722C005FCB00450234 /* Received */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
 				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD52EC0F2BF0CA7200A2F0FA /* Send */,
+				CD4508722C005FCB00450234 /* TransactionDetails */,
 				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 			);
@@ -330,13 +334,14 @@
 			path = AppSettings;
 			sourceTree = "<group>";
 		};
-		CD4508722C005FCB00450234 /* Received */ = {
+		CD4508722C005FCB00450234 /* TransactionDetails */ = {
 			isa = PBXGroup;
 			children = (
 				CD45086E2C005FAF00450234 /* TransactionDetailsViewController.swift */,
 				CD4508702C005FC600450234 /* TransactionDetails.storyboard */,
+				CD4684FB2C0DD38A007CEF4E /* Views */,
 			);
-			path = Received;
+			path = TransactionDetails;
 			sourceTree = "<group>";
 		};
 		CD45DF812BF245EC00E5960C /* QR */ = {
@@ -346,6 +351,15 @@
 				CD45DF822BF245FD00E5960C /* QR.storyboard */,
 			);
 			path = QR;
+			sourceTree = "<group>";
+		};
+		CD4684FB2C0DD38A007CEF4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD4684F92C0DD387007CEF4E /* AddNoteViewController.swift */,
+				CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CD4DEF692BE8C1DC001150DD /* RestoreOrNew */ = {
@@ -530,6 +544,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD4684FD2C0DD39A007CEF4E /* AddNote.storyboard in Resources */,
 				CD38BD032BF11D7000FEE3C4 /* Receive.storyboard in Resources */,
 				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
 				CD52EC002BF0027100A2F0FA /* TwoLineSettingCell.xib in Resources */,
@@ -582,6 +597,7 @@
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
 				CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */,
+				CD4684FA2C0DD387007CEF4E /* AddNoteViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD52EBD82BED296F00A2F0FA /* Extension + UIImage.swift in Sources */,

@@ -36,6 +36,33 @@ final class TransactionDetailsViewController: UIViewController {
         
         // Filling the stack with information
         setupInfo()
+        
+        title = "Transaction details"
+    }
+    
+    // MARK: IB Actions
+    @IBAction func addNoteButtonPressed() {
+        guard let addNoteVC = storyboard?.instantiateViewController(withIdentifier: "AddNoteViewController") else {
+            return
+        }
+        
+        present(addNoteVC, animated: true)
+    }
+    
+    @IBAction func viewInExplorerButtonPressed() {
+        guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
+        UIApplication.shared.open(url)
+    }
+    
+    @IBAction func shareTransactionButtonPressed() {
+        let shareSheetVC = UIActivityViewController(
+            activityItems: [
+                idLabel.text
+            ],
+            applicationActivities: nil
+        )
+        
+        present(shareSheetVC, animated: true)
     }
 }
 
@@ -74,3 +101,5 @@ private extension TransactionDetailsViewController {
         sourceLabel.text = selectedWallet.address
     }
 }
+
+

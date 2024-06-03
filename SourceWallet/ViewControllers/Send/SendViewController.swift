@@ -23,6 +23,8 @@ final class SendViewController: UIViewController {
         
         setupColorSliderLabel()
         setupSendAllFundsButton()
+        
+        title = "Send To"
     }
     
     @IBAction private func sliderValueChanged(_ sender: UISlider) {

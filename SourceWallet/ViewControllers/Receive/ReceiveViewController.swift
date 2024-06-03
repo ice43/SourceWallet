@@ -14,6 +14,8 @@ final class ReceiveViewController: UIViewController {
         super.viewDidLoad()
 
         setupMoreOptionsButton()
+        
+        title = "Receive"
     }
 }
 
