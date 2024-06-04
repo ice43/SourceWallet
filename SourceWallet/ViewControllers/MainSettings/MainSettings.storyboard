@@ -51,6 +51,22 @@
             </objects>
             <point key="canvasLocation" x="1150.3816793893129" y="-80.281690140845072"/>
         </scene>
+        <!--Welcome-->
+        <scene sceneID="42X-Mf-Nm7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WelcomeViewController" storyboardName="Welcome" id="Osg-BY-6i0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWo-vQ-x33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-304"/>
+        </scene>
+        <!--WatchOnly-->
+        <scene sceneID="1gx-51-net">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WatchOnlyViewController" storyboardName="WatchOnly" id="IHU-xf-EBM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lh-gg-mBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-220"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7TH-NU-moq">
             <objects>

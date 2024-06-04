@@ -38,6 +38,8 @@
 		CD45DF832BF245FD00E5960C /* QR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD45DF822BF245FD00E5960C /* QR.storyboard */; };
 		CD4684FA2C0DD387007CEF4E /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4684F92C0DD387007CEF4E /* AddNoteViewController.swift */; };
 		CD4684FD2C0DD39A007CEF4E /* AddNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */; };
+		CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */; };
+		CD483DB22C0EF00700037A9A /* WatchOnly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
@@ -98,6 +100,8 @@
 		CD45DF822BF245FD00E5960C /* QR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QR.storyboard; sourceTree = "<group>"; };
 		CD4684F92C0DD387007CEF4E /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNote.storyboard; sourceTree = "<group>"; };
+		CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOnlyViewController.swift; sourceTree = "<group>"; };
+		CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchOnly.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
@@ -138,8 +142,8 @@
 		A005E1472BED6AA600DAD45B /* BeforeBackup */ = {
 			isa = PBXGroup;
 			children = (
-				A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */,
 				A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */,
+				A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */,
 			);
 			path = BeforeBackup;
 			sourceTree = "<group>";
@@ -211,6 +215,7 @@
 				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD52EC0F2BF0CA7200A2F0FA /* Send */,
 				CD4508722C005FCB00450234 /* TransactionDetails */,
+				CD483DB02C0EEF0600037A9A /* WatchOnly */,
 				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 			);
@@ -360,6 +365,15 @@
 				CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CD483DB02C0EEF0600037A9A /* WatchOnly */ = {
+			isa = PBXGroup;
+			children = (
+				CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */,
+				CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */,
+			);
+			path = WatchOnly;
 			sourceTree = "<group>";
 		};
 		CD4DEF692BE8C1DC001150DD /* RestoreOrNew */ = {
@@ -561,6 +575,7 @@
 				CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */,
 				CD45DF832BF245FD00E5960C /* QR.storyboard in Resources */,
 				CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */,
+				CD483DB22C0EF00700037A9A /* WatchOnly.storyboard in Resources */,
 				CD0DCE662BE3A093008A5F27 /* Assets.xcassets in Resources */,
 				CD52EC112BF0CA8B00A2F0FA /* Send.storyboard in Resources */,
 				CD52EBFE2BF0025000A2F0FA /* OneLineSettingCell.xib in Resources */,
@@ -594,6 +609,7 @@
 				CD45086F2C005FAF00450234 /* TransactionDetailsViewController.swift in Sources */,
 				CD52EC052BF002FF00A2F0FA /* OneLineSettingCell.swift in Sources */,
 				CD52EBD62BED194800A2F0FA /* User.swift in Sources */,
+				CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
 				CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */,

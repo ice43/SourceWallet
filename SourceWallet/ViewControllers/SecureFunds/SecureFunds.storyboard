@@ -75,6 +75,14 @@
             </objects>
             <point key="canvasLocation" x="4761.0687022900765" y="-28.169014084507044"/>
         </scene>
+        <!--WatchOnly-->
+        <scene sceneID="GvB-tz-Bul">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WatchOnlyViewController" storyboardName="WatchOnly" id="pBs-eO-FGd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGe-WD-Hzs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4761" y="346"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dTF-yd-R5x">
             <objects>
@@ -109,7 +117,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="8iz-W7-saf">
-                                <rect key="frame" x="25.666666666666657" y="454" width="344" height="105"/>
+                                <rect key="frame" x="24.666666666666657" y="454" width="344" height="105"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take control: Your keys, Your bitcoin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-mJ-7wO">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="74"/>
@@ -132,10 +140,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="325-YJ-d0w">
-                                <rect key="frame" x="27" y="648" width="341" height="143"/>
+                                <rect key="frame" x="27" y="648" width="339" height="143"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N9-3P-sRr">
-                                        <rect key="frame" x="0.0" y="0.0" width="341" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="339" height="64"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="5dQ-5C-7mf"/>
@@ -156,7 +164,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baf-LX-6Lq">
-                                        <rect key="frame" x="0.0" y="79" width="341" height="64"/>
+                                        <rect key="frame" x="0.0" y="79" width="339" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="YSs-aY-C6c"/>
                                             <constraint firstAttribute="width" constant="341" id="qxZ-J6-Pxs"/>

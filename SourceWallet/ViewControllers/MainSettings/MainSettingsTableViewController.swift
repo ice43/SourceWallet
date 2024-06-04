@@ -19,6 +19,7 @@ final class MainSettingsTableViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableView()
+        hideBackBarButton()
     }
     
     @IBAction private func closeButtonPressed(_ sender: UIBarButtonItem) {
@@ -45,6 +46,15 @@ private extension MainSettingsTableViewController {
             forCellReuseIdentifier: twoLineSettingCellIdentifier
         )
     }
+    
+    func hideBackBarButton() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "",
+            style: .plain,
+            target: nil,
+            action: nil
+        )
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -56,7 +66,7 @@ extension MainSettingsTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0: 1
-        case 1: 3
+        case 1: 2
         case 2: 5
         case 3: 1
         default: 2
@@ -84,13 +94,6 @@ extension MainSettingsTableViewController: UITableViewDataSource {
                     title: "Denominations & Exchange Rate",
                     subtitle: "Change references",
                     hideChevronImage: true
-                )
-                
-            case 1:
-                cell = createOneLineSettingCell(
-                    tableView: tableView,
-                    indexPath: indexPath,
-                    title: "Archived Accounts"
                 )
                 
             default:
@@ -182,6 +185,8 @@ extension MainSettingsTableViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
+        case 0:
+            "Account"
         case 1:
             "General"
         case 2:
@@ -205,16 +210,14 @@ extension MainSettingsTableViewController: UITableViewDelegate {
         
         switch indexPath.section {
         case 0:
-            print("Wallet log out")
+            logout()
             
         case 1:
             switch indexPath.row {
             case 0:
                 showDenominationView()
-            case 1:
-                print("Archived Accounts")
             default:
-                print("Watch only")
+                showWatchOnlyViewController()
             }
             
         case 2:
@@ -322,6 +325,25 @@ private extension MainSettingsTableViewController {
             blurView.alpha = 1
             denominationView.transform = CGAffineTransform.identity
         })
+    }
+    
+    func showWatchOnlyViewController() {
+        guard let watchOnlyVC = storyboard?.instantiateViewController(
+            withIdentifier: "WatchOnlyViewController"
+        ) else { return }
+        
+        navigationController?.pushViewController(watchOnlyVC, animated: true)
+    }
+    
+    func logout() {
+        guard let welcomeVC = storyboard?.instantiateViewController(
+            withIdentifier: "WelcomeViewController"
+        ) else { return }
+        
+        welcomeVC.modalTransitionStyle = .crossDissolve
+        welcomeVC.modalPresentationStyle = .fullScreen
+        
+        present(welcomeVC, animated: true)
     }
 }
 

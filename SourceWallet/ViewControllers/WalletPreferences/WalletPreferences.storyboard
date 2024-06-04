@@ -73,6 +73,14 @@
             </objects>
             <point key="canvasLocation" x="603" y="6"/>
         </scene>
+        <!--Welcome-->
+        <scene sceneID="UTv-S3-qyS">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WelcomeViewController" storyboardName="Welcome" id="BWX-MK-Psb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfk-uH-IJR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602" y="106"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="backModalColor">

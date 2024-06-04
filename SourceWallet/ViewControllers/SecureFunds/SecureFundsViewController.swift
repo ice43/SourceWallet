@@ -23,15 +23,11 @@ final class SecureFundsViewController: UIViewController {
     }
     
     @IBAction private func watchOnlyButtonTapped() {
-        let alertController = UIAlertController(
-            title: "Not found",
-            message: "This way is temporarily not supported",
-            preferredStyle: .alert
-        )
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        guard let watchOnlyVC = storyboard?.instantiateViewController(
+            withIdentifier: "WatchOnlyViewController"
+        ) else { return }
         
-        alertController.addAction(okAction)
-        present(alertController, animated: true)
+        navigationController?.pushViewController(watchOnlyVC, animated: true)
     }
 }
 
