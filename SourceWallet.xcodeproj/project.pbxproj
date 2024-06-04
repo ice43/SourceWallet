@@ -40,6 +40,8 @@
 		CD4684FD2C0DD39A007CEF4E /* AddNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */; };
 		CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */; };
 		CD483DB22C0EF00700037A9A /* WatchOnly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */; };
+		CD483DB42C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */; };
+		CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
@@ -102,6 +104,8 @@
 		CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNote.storyboard; sourceTree = "<group>"; };
 		CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOnlyViewController.swift; sourceTree = "<group>"; };
 		CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchOnly.storyboard; sourceTree = "<group>"; };
+		CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorAuthenticationViewController.swift; sourceTree = "<group>"; };
+		CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoFactorAuthentication.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 				CD483DB02C0EEF0600037A9A /* WatchOnly */,
 				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
+				CD483DB72C0F2AF900037A9A /* TwoFactorAuthentication */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -374,6 +379,15 @@
 				CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */,
 			);
 			path = WatchOnly;
+			sourceTree = "<group>";
+		};
+		CD483DB72C0F2AF900037A9A /* TwoFactorAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */,
+				CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */,
+			);
+			path = TwoFactorAuthentication;
 			sourceTree = "<group>";
 		};
 		CD4DEF692BE8C1DC001150DD /* RestoreOrNew */ = {
@@ -582,6 +596,7 @@
 				CD4508712C005FC600450234 /* TransactionDetails.storyboard in Resources */,
 				CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */,
 				CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */,
+				CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */,
 				CD52EBE52BEE702600A2F0FA /* WalletViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +619,7 @@
 				CD52EBE22BEE6FD200A2F0FA /* WalletViewCell.swift in Sources */,
 				CD405A302BEA4C650045779A /* BottomMenuView.swift in Sources */,
 				CD52EBDD2BEE179400A2F0FA /* SideMenuViewController.swift in Sources */,
+				CD483DB42C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift in Sources */,
 				CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */,
 				CD405A242BEA24950045779A /* MainProfileViewController.swift in Sources */,
 				CD45086F2C005FAF00450234 /* TransactionDetailsViewController.swift in Sources */,
@@ -783,7 +799,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainSettings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -818,7 +834,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Welcome;
+				INFOPLIST_KEY_UIMainStoryboardFile = MainSettings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;

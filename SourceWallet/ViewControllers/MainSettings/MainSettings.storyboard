@@ -57,7 +57,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="WelcomeViewController" storyboardName="Welcome" id="Osg-BY-6i0" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sWo-vQ-x33" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="-304"/>
+            <point key="canvasLocation" x="1681" y="-306"/>
         </scene>
         <!--WatchOnly-->
         <scene sceneID="1gx-51-net">
@@ -65,7 +65,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="WatchOnlyViewController" storyboardName="WatchOnly" id="IHU-xf-EBM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lh-gg-mBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="-220"/>
+            <point key="canvasLocation" x="1689" y="-261"/>
+        </scene>
+        <!--TwoFactorAuthentication-->
+        <scene sceneID="vRa-ym-fjW">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TwoFactorAuthenticationViewController" storyboardName="TwoFactorAuthentication" id="mKI-x4-v6E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chu-HZ-JiC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1755" y="-216"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7TH-NU-moq">

@@ -227,7 +227,7 @@ extension MainSettingsTableViewController: UITableViewDelegate {
             case 1:
                 print("Face ID")
             case 2:
-                print("Two-Factor Authentication")
+                showTwoFactorAuthenticationViewController()
             case 3:
                 print("PGP Key")
             default:
@@ -293,6 +293,43 @@ private extension MainSettingsTableViewController {
         
         return cell
     }
+}
+
+// MARK: - DenominationViewDelegate
+extension MainSettingsTableViewController: DenominationViewDelegate {
+    func cancelButtonTapped() {
+        blurView?.removeFromSuperview()
+        denominationView?.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    func okButtonTapped() {
+        blurView?.removeFromSuperview()
+        denominationView?.removeFromSuperview()
+        navigationController?.navigationBar.isHidden = false
+    }
+}
+
+// MARK: - Navigation
+private extension MainSettingsTableViewController {
+    func logout() {
+        guard let welcomeVC = storyboard?.instantiateViewController(
+            withIdentifier: "WelcomeViewController"
+        ) else { return }
+        
+        welcomeVC.modalTransitionStyle = .crossDissolve
+        welcomeVC.modalPresentationStyle = .fullScreen
+        
+        present(welcomeVC, animated: true)
+    }
+    
+    func showWatchOnlyViewController() {
+        guard let watchOnlyVC = storyboard?.instantiateViewController(
+            withIdentifier: "WatchOnlyViewController"
+        ) else { return }
+        
+        navigationController?.pushViewController(watchOnlyVC, animated: true)
+    }
     
     func showDenominationView() {
         let blurEffect = UIBlurEffect(style: .dark)
@@ -327,37 +364,11 @@ private extension MainSettingsTableViewController {
         })
     }
     
-    func showWatchOnlyViewController() {
-        guard let watchOnlyVC = storyboard?.instantiateViewController(
-            withIdentifier: "WatchOnlyViewController"
+    func showTwoFactorAuthenticationViewController() {
+        guard let twoFactorAuthenticationVC = storyboard?.instantiateViewController(
+            withIdentifier: "TwoFactorAuthenticationViewController"
         ) else { return }
         
-        navigationController?.pushViewController(watchOnlyVC, animated: true)
-    }
-    
-    func logout() {
-        guard let welcomeVC = storyboard?.instantiateViewController(
-            withIdentifier: "WelcomeViewController"
-        ) else { return }
-        
-        welcomeVC.modalTransitionStyle = .crossDissolve
-        welcomeVC.modalPresentationStyle = .fullScreen
-        
-        present(welcomeVC, animated: true)
-    }
-}
-
-// MARK: - DenominationViewDelegate
-extension MainSettingsTableViewController: DenominationViewDelegate {
-    func cancelButtonTapped() {
-        blurView?.removeFromSuperview()
-        denominationView?.removeFromSuperview()
-        navigationController?.navigationBar.isHidden = false
-    }
-    
-    func okButtonTapped() {
-        blurView?.removeFromSuperview()
-        denominationView?.removeFromSuperview()
-        navigationController?.navigationBar.isHidden = false
+        navigationController?.pushViewController(twoFactorAuthenticationVC, animated: true)
     }
 }

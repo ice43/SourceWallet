@@ -88,16 +88,6 @@ private extension WatchOnlyViewController {
         saveButton.backgroundColor = saveButton.tintColor.withAlphaComponent(0.5)
     }
     
-    @objc func showFirstNotice() {
-        firstNotice.isHidden = isUsernameValid
-    }
-    
-    @objc func showSecondNotice() {
-        secondNotice.isHidden = isPasswordValid
-        
-        passwordTextFieldDidChanged()
-    }
-    
     // Changing the button depending on the presence of text in the text field
     func passwordTextFieldDidChanged() {
         if isUsernameValid && isPasswordValid {
@@ -109,6 +99,16 @@ private extension WatchOnlyViewController {
             saveButton.setTitleColor(.backModal.withAlphaComponent(0.5), for: .disabled)
             saveButton.backgroundColor = saveButton.tintColor.withAlphaComponent(0.5)
         }
+    }
+    
+    @objc func showFirstNotice() {
+        firstNotice.isHidden = isUsernameValid
+    }
+    
+    @objc func showSecondNotice() {
+        secondNotice.isHidden = isPasswordValid
+        
+        passwordTextFieldDidChanged()
     }
 }
 
