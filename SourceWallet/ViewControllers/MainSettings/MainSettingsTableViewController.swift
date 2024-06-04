@@ -229,7 +229,7 @@ extension MainSettingsTableViewController: UITableViewDelegate {
             case 2:
                 showTwoFactorAuthenticationViewController()
             case 3:
-                print("PGP Key")
+                showPgpViewController()
             default:
                 print("Auto logout timeout")
             }
@@ -370,5 +370,13 @@ private extension MainSettingsTableViewController {
         ) else { return }
         
         navigationController?.pushViewController(twoFactorAuthenticationVC, animated: true)
+    }
+    
+    func showPgpViewController() {
+        guard let pgpVC = storyboard?.instantiateViewController(
+            withIdentifier: "PgpViewController"
+        ) else { return }
+        
+        navigationController?.pushViewController(pgpVC, animated: true)
     }
 }

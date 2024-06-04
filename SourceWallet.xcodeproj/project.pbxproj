@@ -42,6 +42,8 @@
 		CD483DB22C0EF00700037A9A /* WatchOnly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */; };
 		CD483DB42C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */; };
 		CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */; };
+		CD483DB92C0F355E00037A9A /* PgpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DB82C0F355D00037A9A /* PgpViewController.swift */; };
+		CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DBA2C0F356500037A9A /* PGP.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
@@ -106,6 +108,8 @@
 		CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchOnly.storyboard; sourceTree = "<group>"; };
 		CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorAuthenticationViewController.swift; sourceTree = "<group>"; };
 		CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoFactorAuthentication.storyboard; sourceTree = "<group>"; };
+		CD483DB82C0F355D00037A9A /* PgpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgpViewController.swift; sourceTree = "<group>"; };
+		CD483DBA2C0F356500037A9A /* PGP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PGP.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
@@ -213,16 +217,17 @@
 				CD4E08D72BE9CD8B00837AFC /* Login */,
 				CD405A252BEA249A0045779A /* MainProfile */,
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
+				CD483DBC2C0F356900037A9A /* PGP */,
 				CD45DF812BF245EC00E5960C /* QR */,
 				CD38BD042BF11D7500FEE3C4 /* Receive */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
 				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD52EC0F2BF0CA7200A2F0FA /* Send */,
 				CD4508722C005FCB00450234 /* TransactionDetails */,
-				CD483DB02C0EEF0600037A9A /* WatchOnly */,
-				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
-				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 				CD483DB72C0F2AF900037A9A /* TwoFactorAuthentication */,
+				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
+				CD483DB02C0EEF0600037A9A /* WatchOnly */,
+				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -388,6 +393,15 @@
 				CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */,
 			);
 			path = TwoFactorAuthentication;
+			sourceTree = "<group>";
+		};
+		CD483DBC2C0F356900037A9A /* PGP */ = {
+			isa = PBXGroup;
+			children = (
+				CD483DB82C0F355D00037A9A /* PgpViewController.swift */,
+				CD483DBA2C0F356500037A9A /* PGP.storyboard */,
+			);
+			path = PGP;
 			sourceTree = "<group>";
 		};
 		CD4DEF692BE8C1DC001150DD /* RestoreOrNew */ = {
@@ -580,6 +594,7 @@
 				A005E1492BED6AC900DAD45B /* BeforeBackup.storyboard in Resources */,
 				CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
+				CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */,
 				CD52EBFC2BEFFCFE00A2F0FA /* MainSettings.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
 				CD52EBF52BEFE54800A2F0FA /* WalletPreferences.storyboard in Resources */,
@@ -632,6 +647,7 @@
 				CD4684FA2C0DD387007CEF4E /* AddNoteViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
+				CD483DB92C0F355E00037A9A /* PgpViewController.swift in Sources */,
 				CD52EBD82BED296F00A2F0FA /* Extension + UIImage.swift in Sources */,
 				CD52EBFA2BEFED4100A2F0FA /* MainSettingsTableViewController.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
