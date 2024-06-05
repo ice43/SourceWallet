@@ -495,19 +495,19 @@
 		CD52EC032BF0029200A2F0FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD52EC062BF0030600A2F0FA /* SettingTableViewCell */,
+				CD52EC062BF0030600A2F0FA /* OneLineSetting */,
 				CD52EC092BF0032100A2F0FA /* TwoLineSetting */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CD52EC062BF0030600A2F0FA /* SettingTableViewCell */ = {
+		CD52EC062BF0030600A2F0FA /* OneLineSetting */ = {
 			isa = PBXGroup;
 			children = (
 				CD52EC042BF002FF00A2F0FA /* OneLineSettingCell.swift */,
 				CD52EBFD2BF0025000A2F0FA /* OneLineSettingCell.xib */,
 			);
-			path = SettingTableViewCell;
+			path = OneLineSetting;
 			sourceTree = "<group>";
 		};
 		CD52EC092BF0032100A2F0FA /* TwoLineSetting */ = {

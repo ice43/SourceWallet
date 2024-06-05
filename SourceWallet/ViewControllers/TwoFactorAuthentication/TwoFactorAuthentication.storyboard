@@ -74,7 +74,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backListColor"/>
+                                                <color key="backgroundColor" name="backModalColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="VCx-5T-R7Q" secondAttribute="trailing" constant="20" id="1gm-6V-9xd"/>
                                                     <constraint firstItem="VCx-5T-R7Q" firstAttribute="top" secondItem="rWR-vl-zdG" secondAttribute="top" constant="16" id="30G-7p-QAE"/>
@@ -110,7 +110,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backListColor"/>
+                                                <color key="backgroundColor" name="backModalColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="Hij-gu-CRd"/>
                                                     <constraint firstItem="wUc-SC-Pcj" firstAttribute="top" secondItem="g4i-Rn-Y7S" secondAttribute="top" constant="16" id="OBG-Vz-66H"/>
@@ -146,7 +146,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backListColor"/>
+                                                <color key="backgroundColor" name="backModalColor"/>
                                                 <constraints>
                                                     <constraint firstItem="TWX-7i-p3p" firstAttribute="top" secondItem="f5C-sm-p8T" secondAttribute="top" constant="16" id="NhJ-Vl-1lH"/>
                                                     <constraint firstAttribute="height" constant="64" id="ah5-3Q-cfo"/>
@@ -182,7 +182,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" name="backListColor"/>
+                                                <color key="backgroundColor" name="backModalColor"/>
                                                 <constraints>
                                                     <constraint firstItem="gfh-dS-zUb" firstAttribute="leading" secondItem="Tx6-r7-USr" secondAttribute="leading" constant="20" id="6bs-Ux-lJE"/>
                                                     <constraint firstItem="gfh-dS-zUb" firstAttribute="top" secondItem="Tx6-r7-USr" secondAttribute="top" constant="16" id="MJw-fr-Jbu"/>
@@ -220,9 +220,6 @@
         </namedColor>
         <namedColor name="backColor">
             <color red="0.070588235294117646" green="0.082352941176470587" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="backListColor">
-            <color red="0.21568627450980393" green="0.21568627450980393" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backModalColor">
             <color red="0.13333333333333333" green="0.13333333333333333" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -15,5 +15,15 @@ final class PgpViewController: UIViewController {
         title = "PGP key"
     }
     
-
+    @IBAction func saveButtonPressed() {
+        let alertController = UIAlertController(
+            title: "Not found",
+            message: "This way is temporarily not supported",
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
+    }
 }

@@ -25,6 +25,12 @@ final class OneLineSettingCell: UITableViewCell {
                 right: 20
             )
         )
+        
+        switchButton.addTarget(
+            self,
+            action: #selector(switchValueChanged),
+            for: .valueChanged
+        )
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,5 +38,9 @@ final class OneLineSettingCell: UITableViewCell {
         
         selectedBackgroundView?.layer.cornerRadius = 10
         selectedBackgroundView?.layer.masksToBounds = true
+    }
+    
+    @objc func switchValueChanged(_ sender: UISwitch) {
+        
     }
 }

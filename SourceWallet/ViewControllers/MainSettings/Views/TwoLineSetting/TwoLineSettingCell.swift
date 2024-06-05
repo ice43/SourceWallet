@@ -11,7 +11,7 @@ final class TwoLineSettingCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var chevronImage: UIImageView!
-    @IBOutlet weak var copyButton: UIButton!
+    @IBOutlet weak var copyImage: UIImageView!
     
     override func layoutSubviews() {
         super.layoutSubviews()

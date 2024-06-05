@@ -57,6 +57,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="enabled" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wsu-is-qzz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

@@ -14,6 +14,7 @@ final class MainSettingsTableViewController: UIViewController {
     private let twoLineSettingCellIdentifier = "TwoLineSettingCell"
     private var blurView: UIVisualEffectView?
     private var denominationView: DenominationView?
+    private var selectedTimeout = "5 minutes"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,7 +70,7 @@ extension MainSettingsTableViewController: UITableViewDataSource {
         case 1: 2
         case 2: 5
         case 3: 1
-        default: 2
+        default: 1
         }
     }
     
@@ -141,7 +142,7 @@ extension MainSettingsTableViewController: UITableViewDataSource {
                     tableView: tableView,
                     indexPath: indexPath,
                     title: "Auto logout timeout",
-                    subtitle: "5 minutes",
+                    subtitle: selectedTimeout,
                     hideChevronImage: true
                 )
             }
@@ -156,24 +157,22 @@ extension MainSettingsTableViewController: UITableViewDataSource {
             
         default:
             switch indexPath.row {
-            case 0:
-                cell = createTwoLineSettingCell(
-                    tableView: tableView,
-                    indexPath: indexPath,
-                    title: "Version",
-                    subtitle: "Version: 1.0.00",
-                    hideChevronImage: true
-                )
-                
             default:
                 cell = createTwoLineSettingCell(
                     tableView: tableView,
                     indexPath: indexPath,
                     title: "Support",
-                    subtitle: "Copy support ID",
+                    subtitle: "Version: 1.0.00",
                     hideChevronImage: true,
-                    showCopyButton: true
+                    showCopyImage: true
                 )
+                
+                let tapGesture = UITapGestureRecognizer(
+                    target: self,
+                    action: #selector(copyVersion)
+                )
+                
+                cell.addGestureRecognizer(tapGesture)
             }
         }
         
@@ -223,27 +222,22 @@ extension MainSettingsTableViewController: UITableViewDelegate {
         case 2:
             switch indexPath.row {
             case 0:
-                print("Change PIN")
+                showPinViewController()
             case 1:
-                print("Face ID")
+                enableFaceID(indexPath: indexPath)
             case 2:
                 showTwoFactorAuthenticationViewController()
             case 3:
                 showPgpViewController()
             default:
-                print("Auto logout timeout")
+                showActionSheet()
             }
             
         case 3:
-            print("Back Up Recovery Phrase")
+            showBeforeBackupViewController()
             
         default:
-            switch indexPath.row {
-            case 0:
-                print("Version")
-            default:
-                print("Support")
-            }
+            print("Version of app has been copied to clipboard")
         }
     }
     
@@ -279,7 +273,7 @@ private extension MainSettingsTableViewController {
         title: String,
         subtitle: String,
         hideChevronImage: Bool = false,
-        showCopyButton: Bool = false
+        showCopyImage: Bool = false
     ) -> TwoLineSettingCell {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: twoLineSettingCellIdentifier,
@@ -289,9 +283,36 @@ private extension MainSettingsTableViewController {
         cell.titleLabel.text = title
         cell.subtitleLabel.text = subtitle
         cell.chevronImage.isHidden = hideChevronImage
-        cell.copyButton.isHidden = !showCopyButton
+        cell.copyImage.isHidden = !showCopyImage
         
         return cell
+    }
+    
+    func enableFaceID(indexPath: IndexPath) {
+        if let cell = tableView.cellForRow(at: indexPath) as? OneLineSettingCell {
+            cell.switchButton.setOn(!cell.switchButton.isOn, animated: true)
+            cell.switchValueChanged(cell.switchButton)
+        }
+    }
+    
+    @objc func copyVersion(_ sender: UITapGestureRecognizer) {
+        guard let cell = sender.view as? TwoLineSettingCell else { return }
+        UIPasteboard.general.string = cell.subtitleLabel.text
+        
+        let alertController = UIAlertController(
+            title: nil,
+            message: "Сopied",
+            preferredStyle: .alert
+        )
+        alertController.view.backgroundColor = .black.withAlphaComponent(0.7)
+        alertController.view.alpha = 0.7
+        alertController.view.layer.cornerRadius = 10
+        
+        present(alertController, animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            alertController.dismiss(animated: true, completion: nil)
+        }
     }
 }
 
@@ -329,6 +350,18 @@ private extension MainSettingsTableViewController {
         ) else { return }
         
         navigationController?.pushViewController(watchOnlyVC, animated: true)
+    }
+    
+    func showPinViewController() {
+        let alertController = UIAlertController(
+            title: "In progress",
+            message: nil,
+            preferredStyle: .alert
+        )
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        
+        alertController.addAction(okAction)
+        present(alertController, animated: true)
     }
     
     func showDenominationView() {
@@ -378,5 +411,85 @@ private extension MainSettingsTableViewController {
         ) else { return }
         
         navigationController?.pushViewController(pgpVC, animated: true)
+    }
+    
+    func showActionSheet() {
+        let alertController = UIAlertController(
+            title: nil,
+            message: nil,
+            preferredStyle: .actionSheet
+        )
+        
+        let oneMinuteAction = UIAlertAction(
+            title: "1 minute",
+            style: .default
+        ) { [weak self] _ in
+            guard let self else { return }
+            
+            selectedTimeout = "1 minute"
+            tableView.reloadData()
+        }
+        alertController.addAction(oneMinuteAction)
+        
+        let twoMinutesAction = UIAlertAction(
+            title: "2 minutes",
+            style: .default
+        ) { [weak self] _ in
+            guard let self else { return }
+            
+            selectedTimeout = "2 minutes"
+            tableView.reloadData()
+        }
+        alertController.addAction(twoMinutesAction)
+        
+        let fiveMinutesAction = UIAlertAction(
+            title: "5 minutes",
+            style: .default
+        ) { [weak self] _ in
+            guard let self else { return }
+            
+            selectedTimeout = "5 minutes"
+            tableView.reloadData()
+        }
+        alertController.addAction(fiveMinutesAction)
+        
+        let tenMinutesAction = UIAlertAction(
+            title: "10 minutes",
+            style: .default
+        ) { [weak self] _ in
+            guard let self else { return }
+            
+            selectedTimeout = "10 minutes"
+            tableView.reloadData()
+        }
+        alertController.addAction(tenMinutesAction)
+        
+        let sixtyMinutesAction = UIAlertAction(
+            title: "60 minutes",
+            style: .default
+        ) { [weak self] _ in
+            guard let self else { return }
+            
+            selectedTimeout = "60 minutes"
+            tableView.reloadData()
+        }
+        alertController.addAction(sixtyMinutesAction)
+        
+        let cancelAction = UIAlertAction(
+            title: "Cancel",
+            style: .cancel,
+            handler: nil
+        )
+        alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func showBeforeBackupViewController() {
+        guard let beforeBackupVC = storyboard?.instantiateViewController(
+            withIdentifier: "BeforeBackupViewController"
+        ) else { return }
+        
+        navigationController?.pushViewController(beforeBackupVC, animated: true)
     }
 }
