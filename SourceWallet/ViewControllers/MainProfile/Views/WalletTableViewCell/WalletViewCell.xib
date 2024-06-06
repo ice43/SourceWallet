@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WalletViewCell" rowHeight="76" id="Pwy-VY-LG1" customClass="WalletViewCell" customModule="SourceWallet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="76"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pwy-VY-LG1" id="bxJ-Pw-PlL">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creditcard" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1rH-Dd-U5Q">
+                        <rect key="frame" x="21" y="23" width="23.666666666666671" height="30"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7XS-F7-get">
+                        <rect key="frame" x="254.33333333333334" y="26" width="12.666666666666657" height="24.333333333333329"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnu-bg-G1W">
+                        <rect key="frame" x="65.666666666666671" y="20" width="40" height="36"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="42T-Ot-fp5">
+                        <rect key="frame" x="222.66666666666666" y="26" width="19.666666666666657" height="24.666666666666671"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" name="backListColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bnu-bg-G1W" secondAttribute="bottom" constant="20" id="3DH-V4-dLK"/>
+                    <constraint firstItem="bnu-bg-G1W" firstAttribute="leading" secondItem="1rH-Dd-U5Q" secondAttribute="trailing" constant="21" id="6aR-fX-MHt"/>
+                    <constraint firstAttribute="bottom" secondItem="1rH-Dd-U5Q" secondAttribute="bottom" constant="21" id="E6u-bu-UH1"/>
+                    <constraint firstItem="1rH-Dd-U5Q" firstAttribute="top" secondItem="bxJ-Pw-PlL" secondAttribute="top" constant="21" id="SFR-LJ-usj"/>
+                    <constraint firstAttribute="trailing" secondItem="7XS-F7-get" secondAttribute="trailing" constant="16" id="X45-rm-7Xp"/>
+                    <constraint firstItem="7XS-F7-get" firstAttribute="leading" secondItem="42T-Ot-fp5" secondAttribute="trailing" constant="12" id="d1d-SE-khc"/>
+                    <constraint firstItem="7XS-F7-get" firstAttribute="top" secondItem="bxJ-Pw-PlL" secondAttribute="top" constant="24" id="euz-O0-4hJ"/>
+                    <constraint firstItem="1rH-Dd-U5Q" firstAttribute="leading" secondItem="bxJ-Pw-PlL" secondAttribute="leading" constant="21" id="fd0-zQ-s6q"/>
+                    <constraint firstItem="bnu-bg-G1W" firstAttribute="top" secondItem="bxJ-Pw-PlL" secondAttribute="top" constant="20" id="hAh-ml-siw"/>
+                    <constraint firstAttribute="bottom" secondItem="7XS-F7-get" secondAttribute="bottom" constant="24" id="srW-8I-W6H"/>
+                    <constraint firstItem="42T-Ot-fp5" firstAttribute="top" secondItem="bxJ-Pw-PlL" secondAttribute="top" constant="25" id="vYv-Wy-1k7"/>
+                    <constraint firstAttribute="bottom" secondItem="42T-Ot-fp5" secondAttribute="bottom" constant="25" id="z9w-mq-U7u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dotImage" destination="42T-Ot-fp5" id="pgq-9f-MfA"/>
+                <outlet property="nameWallet" destination="bnu-bg-G1W" id="ecv-6g-SWJ"/>
+            </connections>
+            <point key="canvasLocation" x="55.725190839694655" y="-4.2253521126760569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="circle.fill" catalog="system" width="128" height="123"/>
+        <image name="creditcard" catalog="system" width="128" height="88"/>
+        <namedColor name="backListColor">
+            <color red="0.21568627450980393" green="0.21568627450980393" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
