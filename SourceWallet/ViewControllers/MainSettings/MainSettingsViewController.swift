@@ -1,5 +1,5 @@
 //
-//  MainSettingsTableViewController.swift
+//  MainSettingsViewController.swift
 //  SourceWallet
 //
 //  Created by Serge Broski on 5/11/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainSettingsTableViewController: UIViewController {
+final class MainSettingsViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     private let oneLineSettingCellIdentifier = "OneLineSettingCell"
@@ -29,7 +29,7 @@ final class MainSettingsTableViewController: UIViewController {
 }
 
 // MARK: - UI
-private extension MainSettingsTableViewController {
+private extension MainSettingsViewController {
     func setupTableView() {
         tableView.backgroundColor = .back
         tableView.register(
@@ -59,7 +59,7 @@ private extension MainSettingsTableViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension MainSettingsTableViewController: UITableViewDataSource {
+extension MainSettingsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         5
     }
@@ -199,7 +199,7 @@ extension MainSettingsTableViewController: UITableViewDataSource {
 }
 
 // MARK: - UITableViewDelegate
-extension MainSettingsTableViewController: UITableViewDelegate {
+extension MainSettingsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
@@ -247,7 +247,7 @@ extension MainSettingsTableViewController: UITableViewDelegate {
 }
 
 // MARK: - Private methods
-private extension MainSettingsTableViewController {
+private extension MainSettingsViewController {
     func createOneLineSettingCell(
         tableView: UITableView,
         indexPath: IndexPath,
@@ -317,14 +317,14 @@ private extension MainSettingsTableViewController {
 }
 
 // MARK: - DenominationViewDelegate
-extension MainSettingsTableViewController: DenominationViewDelegate {
-    func cancelButtonTapped() {
+extension MainSettingsViewController: DenominationViewDelegate {
+    func okButtonTapped(with value: String) {
         blurView?.removeFromSuperview()
         denominationView?.removeFromSuperview()
         navigationController?.navigationBar.isHidden = false
     }
     
-    func okButtonTapped() {
+    func cancelButtonTapped() {
         blurView?.removeFromSuperview()
         denominationView?.removeFromSuperview()
         navigationController?.navigationBar.isHidden = false
@@ -332,7 +332,7 @@ extension MainSettingsTableViewController: DenominationViewDelegate {
 }
 
 // MARK: - Navigation
-private extension MainSettingsTableViewController {
+private extension MainSettingsViewController {
     func logout() {
         guard let welcomeVC = storyboard?.instantiateViewController(
             withIdentifier: "WelcomeViewController"

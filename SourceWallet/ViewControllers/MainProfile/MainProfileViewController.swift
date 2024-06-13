@@ -39,6 +39,12 @@ final class MainProfileViewController: UIViewController {
         setupLabelTapRecognition()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UserDefaults.standard.removeObject(forKey: "Denomination")
+    }
+    
     // MARK: IB Actions
     @IBAction private func hideButtonTapped(_ sender: UIButton) {
         isHidden.toggle()
@@ -300,7 +306,6 @@ extension MainProfileViewController: BottomMenuViewDelegate {
         
         navigationController?.pushViewController(receiveVC, animated: true)
     }
-    
 }
 
 // MARK: - DenominationViewDelegate
@@ -311,7 +316,24 @@ extension MainProfileViewController: DenominationViewDelegate {
         navigationController?.navigationBar.isHidden = false
     }
     
-    func okButtonTapped() {
+    func okButtonTapped(with value: String) {
+        guard let wallet = selectedWallet else { return }
+        
+        guard let selectedDenomination = Denomination(rawValue: value) else {
+            return
+        }
+        
+        let balance = Double(wallet.balance) ?? 0.0
+        let convertedBalance = balance * selectedDenomination.multiplier
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.minimumFractionDigits = 0
+        numberFormatter.maximumFractionDigits = 8
+        
+        if let formattedBalance = numberFormatter.string(from: NSNumber(value: convertedBalance)) {
+            balanceLabel.text = "\(formattedBalance) " + value
+        }
+        
         blurView?.removeFromSuperview()
         denominationView?.removeFromSuperview()
         navigationController?.navigationBar.isHidden = false

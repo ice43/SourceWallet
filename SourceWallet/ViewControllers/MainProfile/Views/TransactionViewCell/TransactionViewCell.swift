@@ -54,7 +54,7 @@ final class TransactionViewCell: UITableViewCell {
     }
     
     func showAmountLabel() {
-        amountLabel.text = currentBalance
+        amountLabel.text = (currentBalance ?? "") + " BTC"
         amountLabel.textColor = typeLabel.text == "Received" ? .accent : .white
     }
 }

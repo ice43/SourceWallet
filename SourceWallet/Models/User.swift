@@ -53,3 +53,26 @@ struct Transaction {
         String(format: "%.2f", (Double(amount) ?? 0) * 61467.65) + " USD"
     }
 }
+
+enum Denomination: String {
+    case btc = "BTC"
+    case mbtc = "mBTC"
+    case ubtc = "µBTC"
+    case bits = "bits"
+    case sats = "sats"
+    
+    var multiplier: Double {
+        switch self {
+        case .btc:
+            1
+        case .mbtc:
+            1000
+        case .ubtc:
+            1_000_000
+        case .bits:
+            1_000_000
+        case .sats:
+            100_000_000
+        }
+    }
+}
