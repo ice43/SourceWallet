@@ -46,7 +46,6 @@
 		CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DBA2C0F356500037A9A /* PGP.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
-		CD4F26492C13425E00BBF4AE /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4F26482C13425E00BBF4AE /* DenominationView.swift */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
 		CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */; };
 		CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBCB2BECC28600A2F0FA /* DataStore.swift */; };
@@ -67,6 +66,7 @@
 		CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EC072BF0031C00A2F0FA /* TwoLineSettingCell.swift */; };
 		CD52EC0E2BF0CA6F00A2F0FA /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */; };
 		CD52EC112BF0CA8B00A2F0FA /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */; };
+		CD55BD2F2C1AF11E00F4F02B /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
@@ -113,7 +113,6 @@
 		CD483DBA2C0F356500037A9A /* PGP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PGP.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		CD4F26482C13425E00BBF4AE /* DenominationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
 		CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllowDataCollection.storyboard; sourceTree = "<group>"; };
 		CD52EBCB2BECC28600A2F0FA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		CD52EC072BF0031C00A2F0FA /* TwoLineSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineSettingCell.swift; sourceTree = "<group>"; };
 		CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Send.storyboard; sourceTree = "<group>"; };
+		CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,12 +221,6 @@
 			isa = PBXGroup;
 			children = (
 				CD52EBE82BEF9AC900A2F0FA /* About */,
-				CD3133C02BF33F0900962106 /* Denomination */,
-				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
-				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
-				A005E1472BED6AA600DAD45B /* BeforeBackup */,
-				CD4E08D72BE9CD8B00837AFC /* Login */,
-				CD405A252BEA249A0045779A /* MainProfile */,
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
 				CD483DBC2C0F356900037A9A /* PGP */,
 				CD45DF812BF245EC00E5960C /* QR */,
@@ -292,14 +286,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		CD3133C02BF33F0900962106 /* Denomination */ = {
-			isa = PBXGroup;
-			children = (
-				CD4F26482C13425E00BBF4AE /* DenominationView.swift */,
-			);
-			path = Denomination;
-			sourceTree = "<group>";
-		};
 		CD38BD042BF11D7500FEE3C4 /* Receive */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,7 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				CD405A322BEA4CB40045779A /* ButtonMenu */,
-				CD3133C02BF33F0900962106 /* Denomination */,
+				CD55BD2D2C1AF11E00F4F02B /* Denomination */,
 				CD405A312BEA4CA40045779A /* TransactionViewCell */,
 				CD52EBE02BEE6BD500A2F0FA /* SideMenu */,
 				CD52EBE32BEE6FE100A2F0FA /* WalletTableViewCell */,
@@ -545,6 +531,14 @@
 			path = Send;
 			sourceTree = "<group>";
 		};
+		CD55BD2D2C1AF11E00F4F02B /* Denomination */ = {
+			isa = PBXGroup;
+			children = (
+				CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */,
+			);
+			path = Denomination;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -642,7 +636,6 @@
 			files = (
 				CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */,
 				CD38BD012BF11D6500FEE3C4 /* ReceiveViewController.swift in Sources */,
-				CD4F26492C13425E00BBF4AE /* DenominationView.swift in Sources */,
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */,
 				CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */,
@@ -657,6 +650,7 @@
 				CD405A242BEA24950045779A /* MainProfileViewController.swift in Sources */,
 				CD45086F2C005FAF00450234 /* TransactionDetailsViewController.swift in Sources */,
 				CD52EC052BF002FF00A2F0FA /* OneLineSettingCell.swift in Sources */,
+				CD55BD2F2C1AF11E00F4F02B /* DenominationView.swift in Sources */,
 				CD52EBD62BED194800A2F0FA /* User.swift in Sources */,
 				CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
