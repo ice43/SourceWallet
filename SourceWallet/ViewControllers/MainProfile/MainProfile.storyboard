@@ -219,7 +219,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="TransactionDetailsViewController" storyboardName="TransactionDetails" id="jIS-f2-dWR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2M-zK-QV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="119"/>
+            <point key="canvasLocation" x="1672" y="194"/>
         </scene>
         <!--Send-->
         <scene sceneID="xrD-MV-9TA">
@@ -439,7 +439,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

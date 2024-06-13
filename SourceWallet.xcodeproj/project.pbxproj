@@ -20,8 +20,6 @@
 		CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */; };
 		CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */; };
 		CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */; };
-		CD3133BD2BF33EF700962106 /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3133BC2BF33EF700962106 /* DenominationView.swift */; };
-		CD3133C22BF3483F00962106 /* Denomination.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD3133C12BF3483F00962106 /* Denomination.xib */; };
 		CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD328C442BEB71CA0008967F /* ButtonBottomView.swift */; };
 		CD38BD012BF11D6500FEE3C4 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38BD002BF11D6500FEE3C4 /* ReceiveViewController.swift */; };
 		CD38BD032BF11D7000FEE3C4 /* Receive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD38BD022BF11D7000FEE3C4 /* Receive.storyboard */; };
@@ -46,6 +44,7 @@
 		CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DBA2C0F356500037A9A /* PGP.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
+		CD4F26492C13425E00BBF4AE /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4F26482C13425E00BBF4AE /* DenominationView.swift */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
 		CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */; };
 		CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBCB2BECC28600A2F0FA /* DataStore.swift */; };
@@ -58,7 +57,7 @@
 		CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */; };
 		CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */; };
 		CD52EBF52BEFE54800A2F0FA /* WalletPreferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */; };
-		CD52EBFA2BEFED4100A2F0FA /* MainSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBF92BEFED4100A2F0FA /* MainSettingsTableViewController.swift */; };
+		CD52EBFA2BEFED4100A2F0FA /* MainSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBF92BEFED4100A2F0FA /* MainSettingsViewController.swift */; };
 		CD52EBFC2BEFFCFE00A2F0FA /* MainSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBFB2BEFFCFE00A2F0FA /* MainSettings.storyboard */; };
 		CD52EBFE2BF0025000A2F0FA /* OneLineSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBFD2BF0025000A2F0FA /* OneLineSettingCell.xib */; };
 		CD52EC002BF0027100A2F0FA /* TwoLineSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBFF2BF0027100A2F0FA /* TwoLineSettingCell.xib */; };
@@ -86,8 +85,6 @@
 		CD2C7AE12BE7BB2100A9403A /* SecureFundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFundsViewController.swift; sourceTree = "<group>"; };
 		CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecureFunds.storyboard; sourceTree = "<group>"; };
 		CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFunds.swift; sourceTree = "<group>"; };
-		CD3133BC2BF33EF700962106 /* DenominationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
-		CD3133C12BF3483F00962106 /* Denomination.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Denomination.xib; sourceTree = "<group>"; };
 		CD328C442BEB71CA0008967F /* ButtonBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBottomView.swift; sourceTree = "<group>"; };
 		CD38BD002BF11D6500FEE3C4 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		CD38BD022BF11D7000FEE3C4 /* Receive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receive.storyboard; sourceTree = "<group>"; };
@@ -112,6 +109,7 @@
 		CD483DBA2C0F356500037A9A /* PGP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PGP.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CD4F26482C13425E00BBF4AE /* DenominationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
 		CD50481A2BE4F9DA001C818F /* AllowDataCollection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllowDataCollection.storyboard; sourceTree = "<group>"; };
 		CD52EBCB2BECC28600A2F0FA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -124,7 +122,7 @@
 		CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPreferencesViewController.swift; sourceTree = "<group>"; };
 		CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletPreferences.storyboard; sourceTree = "<group>"; };
-		CD52EBF92BEFED4100A2F0FA /* MainSettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsTableViewController.swift; sourceTree = "<group>"; };
+		CD52EBF92BEFED4100A2F0FA /* MainSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsViewController.swift; sourceTree = "<group>"; };
 		CD52EBFB2BEFFCFE00A2F0FA /* MainSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainSettings.storyboard; sourceTree = "<group>"; };
 		CD52EBFD2BF0025000A2F0FA /* OneLineSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneLineSettingCell.xib; sourceTree = "<group>"; };
 		CD52EBFF2BF0027100A2F0FA /* TwoLineSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoLineSettingCell.xib; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
 				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
 				A005E1472BED6AA600DAD45B /* BeforeBackup */,
-				CD3133C02BF33F0900962106 /* Denomination */,
 				CD4E08D72BE9CD8B00837AFC /* Login */,
 				CD405A252BEA249A0045779A /* MainProfile */,
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
@@ -278,8 +275,7 @@
 		CD3133C02BF33F0900962106 /* Denomination */ = {
 			isa = PBXGroup;
 			children = (
-				CD3133BC2BF33EF700962106 /* DenominationView.swift */,
-				CD3133C12BF3483F00962106 /* Denomination.xib */,
+				CD4F26482C13425E00BBF4AE /* DenominationView.swift */,
 			);
 			path = Denomination;
 			sourceTree = "<group>";
@@ -333,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				CD405A322BEA4CB40045779A /* ButtonMenu */,
+				CD3133C02BF33F0900962106 /* Denomination */,
 				CD405A312BEA4CA40045779A /* TransactionViewCell */,
 				CD52EBE02BEE6BD500A2F0FA /* SideMenu */,
 				CD52EBE32BEE6FE100A2F0FA /* WalletTableViewCell */,
@@ -485,7 +482,7 @@
 		CD52EBF82BEFED1F00A2F0FA /* MainSettings */ = {
 			isa = PBXGroup;
 			children = (
-				CD52EBF92BEFED4100A2F0FA /* MainSettingsTableViewController.swift */,
+				CD52EBF92BEFED4100A2F0FA /* MainSettingsViewController.swift */,
 				CD52EBFB2BEFFCFE00A2F0FA /* MainSettings.storyboard */,
 				CD52EC032BF0029200A2F0FA /* Views */,
 			);
@@ -590,7 +587,6 @@
 				CD38BD032BF11D7000FEE3C4 /* Receive.storyboard in Resources */,
 				CD50481B2BE4F9DA001C818F /* AllowDataCollection.storyboard in Resources */,
 				CD52EC002BF0027100A2F0FA /* TwoLineSettingCell.xib in Resources */,
-				CD3133C22BF3483F00962106 /* Denomination.xib in Resources */,
 				A005E1492BED6AC900DAD45B /* BeforeBackup.storyboard in Resources */,
 				CD405A272BEA24AE0045779A /* MainProfile.storyboard in Resources */,
 				CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */,
@@ -624,8 +620,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */,
-				CD3133BD2BF33EF700962106 /* DenominationView.swift in Sources */,
 				CD38BD012BF11D6500FEE3C4 /* ReceiveViewController.swift in Sources */,
+				CD4F26492C13425E00BBF4AE /* DenominationView.swift in Sources */,
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */,
 				CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */,
@@ -649,7 +645,7 @@
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD483DB92C0F355E00037A9A /* PgpViewController.swift in Sources */,
 				CD52EBD82BED296F00A2F0FA /* Extension + UIImage.swift in Sources */,
-				CD52EBFA2BEFED4100A2F0FA /* MainSettingsTableViewController.swift in Sources */,
+				CD52EBFA2BEFED4100A2F0FA /* MainSettingsViewController.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
 				CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
