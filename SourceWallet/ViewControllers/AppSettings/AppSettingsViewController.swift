@@ -12,4 +12,10 @@ final class AppSettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func moreInfoButtonPressed() {
+        guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
+        UIApplication.shared.open(url)
+    }
+    
 }

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		A005E1492BED6AC900DAD45B /* BeforeBackup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */; };
 		A005E14B2BED6B0000DAD45B /* BeforeBackupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */; };
-		A0C3FFC32BEECABA00D1DA04 /* TypeRecoveryPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C3FFC22BEECABA00D1DA04 /* TypeRecoveryPhraseViewController.swift */; };
-		A0C3FFC52BEECB3800D1DA04 /* TypeRecoveryPhrase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C3FFC42BEECB3800D1DA04 /* TypeRecoveryPhrase.storyboard */; };
 		CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCE5C2BE3A092008A5F27 /* AppDelegate.swift */; };
 		CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCE5E2BE3A092008A5F27 /* SceneDelegate.swift */; };
 		CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DCE602BE3A092008A5F27 /* WelcomeViewController.swift */; };
@@ -67,6 +65,7 @@
 		CD52EC0E2BF0CA6F00A2F0FA /* SendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */; };
 		CD52EC112BF0CA8B00A2F0FA /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */; };
 		CD55BD2F2C1AF11E00F4F02B /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */; };
+		CD55BD312C1AF47500F4F02B /* SetPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BD302C1AF47500F4F02B /* SetPhraseViewController.swift */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
@@ -74,8 +73,6 @@
 /* Begin PBXFileReference section */
 		A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeforeBackup.storyboard; sourceTree = "<group>"; };
 		A005E14A2BED6B0000DAD45B /* BeforeBackupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeforeBackupViewController.swift; sourceTree = "<group>"; };
-		A0C3FFC22BEECABA00D1DA04 /* TypeRecoveryPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeRecoveryPhraseViewController.swift; sourceTree = "<group>"; };
-		A0C3FFC42BEECB3800D1DA04 /* TypeRecoveryPhrase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TypeRecoveryPhrase.storyboard; sourceTree = "<group>"; };
 		CD0DCE592BE3A092008A5F27 /* SourceWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0DCE5C2BE3A092008A5F27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD0DCE5E2BE3A092008A5F27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +131,7 @@
 		CD52EC0D2BF0CA6F00A2F0FA /* SendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendViewController.swift; sourceTree = "<group>"; };
 		CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Send.storyboard; sourceTree = "<group>"; };
 		CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
+		CD55BD302C1AF47500F4F02B /* SetPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPhraseViewController.swift; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,15 +154,6 @@
 				A005E1482BED6AC900DAD45B /* BeforeBackup.storyboard */,
 			);
 			path = BeforeBackup;
-			sourceTree = "<group>";
-		};
-		A0C3FFC12BEECA1E00D1DA04 /* TypeRecoveryPhraseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				A0C3FFC22BEECABA00D1DA04 /* TypeRecoveryPhraseViewController.swift */,
-				A0C3FFC42BEECB3800D1DA04 /* TypeRecoveryPhrase.storyboard */,
-			);
-			path = TypeRecoveryPhraseViewController;
 			sourceTree = "<group>";
 		};
 		CD0DCE502BE3A092008A5F27 = {
@@ -236,9 +225,9 @@
 				CD4E08D72BE9CD8B00837AFC /* Login */,
 				CD405A252BEA249A0045779A /* MainProfile */,
 				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
-				A0C3FFC12BEECA1E00D1DA04 /* TypeRecoveryPhraseViewController */,
 				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
+				CD55BD342C1AF48400F4F02B /* SetPhrase */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -539,6 +528,14 @@
 			path = Denomination;
 			sourceTree = "<group>";
 		};
+		CD55BD342C1AF48400F4F02B /* SetPhrase */ = {
+			isa = PBXGroup;
+			children = (
+				CD55BD302C1AF47500F4F02B /* SetPhraseViewController.swift */,
+			);
+			path = SetPhrase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,7 +610,6 @@
 				CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */,
 				CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */,
 				CD45DF832BF245FD00E5960C /* QR.storyboard in Resources */,
-				A0C3FFC52BEECB3800D1DA04 /* TypeRecoveryPhrase.storyboard in Resources */,
 				CD0DCE692BE3A093008A5F27 /* LaunchScreen.storyboard in Resources */,
 				CD483DB22C0EF00700037A9A /* WatchOnly.storyboard in Resources */,
 				CD0DCE662BE3A093008A5F27 /* Assets.xcassets in Resources */,
@@ -639,7 +635,6 @@
 				CD2C7AE22BE7BB2100A9403A /* SecureFundsViewController.swift in Sources */,
 				CD52EBCC2BECC28600A2F0FA /* DataStore.swift in Sources */,
 				CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */,
-				A0C3FFC32BEECABA00D1DA04 /* TypeRecoveryPhraseViewController.swift in Sources */,
 				A005E14B2BED6B0000DAD45B /* BeforeBackupViewController.swift in Sources */,
 				CD405A292BEA43FA0045779A /* TransactionViewCell.swift in Sources */,
 				CD52EBE22BEE6FD200A2F0FA /* WalletViewCell.swift in Sources */,
@@ -652,6 +647,7 @@
 				CD52EC052BF002FF00A2F0FA /* OneLineSettingCell.swift in Sources */,
 				CD55BD2F2C1AF11E00F4F02B /* DenominationView.swift in Sources */,
 				CD52EBD62BED194800A2F0FA /* User.swift in Sources */,
+				CD55BD312C1AF47500F4F02B /* SetPhraseViewController.swift in Sources */,
 				CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
