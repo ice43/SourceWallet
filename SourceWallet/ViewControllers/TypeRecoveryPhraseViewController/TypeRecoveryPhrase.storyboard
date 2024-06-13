@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VzD-Y1-aZI">
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Type Recovery Phrase View Controller-->
+        <scene sceneID="wUf-EX-yGP">
+            <objects>
+                <viewController id="VzD-Y1-aZI" customClass="TypeRecoveryPhraseViewController" customModule="SourceWallet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6lN-QE-Bas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New recovery phrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-VC-SBU">
+                                <rect key="frame" x="88" y="40" width="199" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2re-gD-U0U">
+                                <rect key="frame" x="0.0" y="84" width="375" height="200"/>
+                                <color key="backgroundColor" name="backModalColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FRR-X1-qm9"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NumberOfWordsCell" id="buO-lA-W2k">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="buO-lA-W2k" id="oVb-NH-vz1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" name="backModalColor"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VzD-Y1-aZI" id="BeK-j8-Dcf"/>
+                                    <outlet property="delegate" destination="VzD-Y1-aZI" id="9Az-Vt-4s6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqL-8D-5hY"/>
+                        <color key="backgroundColor" name="backModalColor"/>
+                        <constraints>
+                            <constraint firstItem="2re-gD-U0U" firstAttribute="leading" secondItem="eqL-8D-5hY" secondAttribute="leading" id="Eaq-D5-Xbi"/>
+                            <constraint firstItem="2re-gD-U0U" firstAttribute="top" secondItem="TqU-VC-SBU" secondAttribute="bottom" constant="20" id="GN0-QV-sIw"/>
+                            <constraint firstItem="TqU-VC-SBU" firstAttribute="centerX" secondItem="6lN-QE-Bas" secondAttribute="centerX" id="QUs-D1-iid"/>
+                            <constraint firstItem="eqL-8D-5hY" firstAttribute="trailing" secondItem="2re-gD-U0U" secondAttribute="trailing" id="dA3-2x-bF3"/>
+                            <constraint firstItem="TqU-VC-SBU" firstAttribute="top" secondItem="eqL-8D-5hY" secondAttribute="top" constant="20" id="qQw-97-sl2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="2re-gD-U0U" id="pWZ-KZ-8bG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZY-UT-tiJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="-16"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backModalColor">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
