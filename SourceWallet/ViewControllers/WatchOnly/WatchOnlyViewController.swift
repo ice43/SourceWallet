@@ -32,7 +32,7 @@ final class WatchOnlyViewController: UIViewController {
         title = "Watch-only credentials"
         
         initialSetupNotice()
-        initialSetupSaveButton()
+        setupDisabledSaveButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,7 +61,7 @@ final class WatchOnlyViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
             self.usernameTextField.text = ""
             self.passwordTextField.text = ""
-            self.initialSetupSaveButton()
+            self.setupDisabledSaveButton()
             self.initialSetupNotice()
         }
         
@@ -78,26 +78,23 @@ private extension WatchOnlyViewController {
         secondNotice.isHidden = true
     }
     
-    // Initial setting up of SaveButton
-    func initialSetupSaveButton() {
+    // Setting up of SaveButton
+    func setupEnabledSaveButton() {
+        saveButton.isEnabled = true
+        saveButton.alpha = 1
+    }
+    
+    func setupDisabledSaveButton() {
         saveButton.isEnabled = false
-        saveButton.setTitleColor(
-            .backModal.withAlphaComponent(0.5),
-            for: .disabled
-        )
-        saveButton.backgroundColor = saveButton.tintColor.withAlphaComponent(0.5)
+        saveButton.alpha = 0.5
     }
     
     // Changing the button depending on the presence of text in the text field
     func passwordTextFieldDidChanged() {
         if isUsernameValid && isPasswordValid {
-            saveButton.isEnabled = true
-            saveButton.setTitleColor(.backModal, for: .normal)
-            saveButton.backgroundColor = saveButton.tintColor
+            setupEnabledSaveButton()
         } else {
-            saveButton.isEnabled = false
-            saveButton.setTitleColor(.backModal.withAlphaComponent(0.5), for: .disabled)
-            saveButton.backgroundColor = saveButton.tintColor.withAlphaComponent(0.5)
+            setupDisabledSaveButton()
         }
     }
     

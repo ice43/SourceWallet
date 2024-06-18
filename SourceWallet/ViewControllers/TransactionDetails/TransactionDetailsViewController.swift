@@ -8,6 +8,7 @@
 import UIKit
 
 final class TransactionDetailsViewController: UIViewController {
+    // MARK: IB Outlets
     @IBOutlet private weak var infoLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var statusLabel: UILabel!
@@ -25,9 +26,11 @@ final class TransactionDetailsViewController: UIViewController {
     @IBOutlet private weak var receivedConstraint: NSLayoutConstraint!
     @IBOutlet private weak var sentConstraint: NSLayoutConstraint!
     
+    // MARK: Public properties
     var transaction: Transaction?
     var selectedWallet: Wallet?
     
+    // MARK: View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -57,7 +60,7 @@ final class TransactionDetailsViewController: UIViewController {
     @IBAction func shareTransactionButtonPressed() {
         let shareSheetVC = UIActivityViewController(
             activityItems: [
-                idLabel.text
+                idLabel.text ?? ""
             ],
             applicationActivities: nil
         )

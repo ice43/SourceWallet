@@ -9,24 +9,50 @@ import UIKit
 
 final class LoginViewController: UIViewController {
     @IBOutlet private weak var continueButton: UIButton!
-    @IBOutlet private var labelsAndTextFields: [UIView]!
+    @IBOutlet private var textFields: [UITextField]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initialSetupContinueButton()
+        populateTextFields()
+        setupAvailabilityContinueButton()
     }
     
-   
+    @objc func textFieldDidChanged(_ textField: UITextField) {
+        var isContinueButtonEnabled = true
+        
+        for textField in textFields {
+            if textField.text?.isEmpty ?? true {
+                isContinueButtonEnabled = false
+            }
+        }
+        
+        continueButton.isEnabled = isContinueButtonEnabled
+        continueButton.alpha = isContinueButtonEnabled ? 1 : 0.5
+    }
 }
 
 // MARK: - UI
 private extension LoginViewController {
-    func initialSetupContinueButton() {
-        continueButton.setTitleColor(
-            .white.withAlphaComponent(0.5),
-            for: .disabled
-        )
-        continueButton.backgroundColor = continueButton.tintColor.withAlphaComponent(0.5)
+    // Setting the availability of the continue button
+    func setupAvailabilityContinueButton() {
+        for textField in textFields {
+            textField.addTarget(
+                self,
+                action: #selector(textFieldDidChanged),
+                for: .editingChanged
+            )
+        }
+    }
+    
+    func populateTextFields() {
+        let flattenedSeedPhrase = DataStore.shared.seedPhrase.flatMap { $0 }
+        
+        for (index, phrase) in flattenedSeedPhrase.enumerated() {
+            if index < textFields.count {
+                let textField = textFields[index]
+                textField.text = phrase
+            }
+        }
     }
 }

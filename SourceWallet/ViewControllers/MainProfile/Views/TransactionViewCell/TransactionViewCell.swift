@@ -22,9 +22,9 @@ final class TransactionViewCell: UITableViewCell {
         // This is necessary to create margins between cells
         contentView.frame = contentView.frame.inset(
             by: UIEdgeInsets(
-                top: 5,
+                top: 4,
                 left: 0,
-                bottom: 5,
+                bottom: 4,
                 right: 0
             )
         )

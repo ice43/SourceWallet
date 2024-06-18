@@ -8,15 +8,16 @@
 import Foundation
 
 struct User {
-    let seed: [String]
+    let seed: [[String]]
     let wallets: [Wallet]
     
     static func getUser() -> User {
         let dataStore = DataStore.shared
         let wallets = dataStore.walletsData
+        let seedPhrase = dataStore.seedPhrase
         
         return User(
-            seed: dataStore.seed,
+            seed: seedPhrase,
             wallets: wallets
         )
     }

@@ -61,7 +61,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aGG-wV-hvS">
                                                                 <rect key="frame" x="0.0" y="27" width="315.33333333333331" height="37"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00000000 BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-G5-d2d">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00000000 BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-G5-d2d">
                                                                         <rect key="frame" x="0.0" y="0.0" width="260.33333333333331" height="37"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="276" id="7ba-q9-fj1"/>
@@ -125,8 +125,8 @@
                                     <constraint firstAttribute="trailing" secondItem="hGh-es-rPX" secondAttribute="trailing" id="16K-rX-zyB"/>
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="width" secondItem="jtv-t1-BuX" secondAttribute="width" id="Fja-jB-hg7"/>
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="leading" secondItem="jtv-t1-BuX" secondAttribute="leading" id="Mmh-u5-YrV"/>
-                                    <constraint firstAttribute="height" secondItem="ioa-lu-X1j" secondAttribute="height" id="Sxw-MO-KLU"/>
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="top" secondItem="jtv-t1-BuX" secondAttribute="top" id="g5w-mA-CpM"/>
+                                    <constraint firstAttribute="height" secondItem="hGh-es-rPX" secondAttribute="height" multiplier="0.810657" id="qWL-fP-1Ei"/>
                                     <constraint firstAttribute="bottom" secondItem="hGh-es-rPX" secondAttribute="bottom" id="rFC-6W-bcY"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="FSk-iJ-3lN"/>

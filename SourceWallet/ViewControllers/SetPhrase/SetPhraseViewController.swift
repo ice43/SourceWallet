@@ -8,20 +8,12 @@
 import UIKit
 
 final class SetPhraseViewController: UIViewController {
-    let pageControl = UIPageControl()
-    let topStackView = UIStackView()
-    let scrollView = UIScrollView()
-    let bottomStackView = UIStackView()
+    private let pageControl = UIPageControl()
+    private let topStackView = UIStackView()
+    private let scrollView = UIScrollView()
+    private let bottomStackView = UIStackView()
+    private let seedPhrase = DataStore.shared.seedPhrase
     
-    var wordCount = 0
-    
-    let words = [
-        ["total", "desk", "garbage", "physical", "sample", "coach"],
-        ["man", "father", "life", "cabin", "civil", "play"],
-        ["mean", "wet", "admit", "fruit", "spawn", "share"],
-        ["ill", "motor", "tilt", "piano", "work", "away"]
-    ]
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,7 +31,7 @@ private extension SetPhraseViewController {
     func setupPageControl() {
         view.addSubview(pageControl)
         
-        pageControl.numberOfPages = words.count
+        pageControl.numberOfPages = seedPhrase.count
         pageControl.currentPage = 0
         pageControl.translatesAutoresizingMaskIntoConstraints = false
         
@@ -122,8 +114,8 @@ private extension SetPhraseViewController {
         scrollView.addSubview(contentView)
         
         var leadingAnchor = contentView.leadingAnchor
-        for index in 0..<words.count {
-            let pageView = createPageView(with: words[index])
+        for index in 0..<seedPhrase.count {
+            let pageView = createPageView(with: seedPhrase[index])
             contentView.addSubview(pageView)
             
             NSLayoutConstraint.activate(
@@ -231,6 +223,10 @@ private extension SetPhraseViewController {
         let nextPage = pageControl.currentPage + 1
         let offsetX = CGFloat(nextPage) * scrollView.frame.width
         scrollView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
+        
+        if nextPage == seedPhrase.count {
+            showSetPinScreen()
+        }
     }
 }
 
@@ -240,7 +236,9 @@ extension SetPhraseViewController {
         let pageView = UIView()
         pageView.translatesAutoresizingMaskIntoConstraints = false
         
+        var wordCount = 0
         for (index, word) in words.enumerated() {
+            
             let attributedText = NSMutableAttributedString(string: "\(wordCount + 1) \(word)")
             
             let numberAttributes: [NSAttributedString.Key: Any] = [
@@ -276,8 +274,14 @@ extension SetPhraseViewController {
     }
 }
 
-
-
+// MARK: - Navigation
+private extension SetPhraseViewController {
+    func showSetPinScreen() {
+        let storyboard = UIStoryboard(name: "SetPin", bundle: nil)
+        let setPinViewController = storyboard.instantiateInitialViewController()
+        navigationController?.pushViewController(setPinViewController!, animated: true)
+    }
+}
 
 // MARK: - Preview
 @available(iOS 17.0, *)

@@ -16,7 +16,7 @@ final class AddNoteViewController: UIViewController {
         
         setSheet()
         
-        initialSetupSubmitButton()
+        setupDisabledSubmitButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,24 +64,22 @@ extension AddNoteViewController: UISheetPresentationControllerDelegate {
 // MARK: - UI
 private extension AddNoteViewController {
     // MARK: Initial setup of SubmitButton
-    func initialSetupSubmitButton() {
-        submitButton.setTitleColor(
-            .backModal.withAlphaComponent(0.5),
-            for: .disabled
-        )
-        submitButton.backgroundColor = submitButton.tintColor.withAlphaComponent(0.5)
+    func setupDisabledSubmitButton() {
+        submitButton.isEnabled = false
+        submitButton.alpha = 0.5
+    }
+    
+    func setupEnabledSubmitButton() {
+        submitButton.isEnabled = true
+        submitButton.alpha = 1
     }
     
     // MARK: Changing the button depending on the presence of text in the text field
     @objc private func noteTextFieldDidChanged(_ textField: UITextField) {
         if textField.text == "" {
-            submitButton.isEnabled = false
-            submitButton.setTitleColor(.backModal.withAlphaComponent(0.5), for: .disabled)
-            submitButton.backgroundColor = submitButton.tintColor.withAlphaComponent(0.5)
+            setupDisabledSubmitButton()
         } else {
-            submitButton.isEnabled = true
-            submitButton.setTitleColor(.backModal, for: .normal)
-            submitButton.backgroundColor = submitButton.tintColor
+            setupEnabledSubmitButton()
         }
     }
 }

@@ -30,9 +30,7 @@ final class WelcomeViewController: UIViewController {
         getStartedButton.isEnabled = isChecked
         
         // Changing the alpha of the button depending on the checkmark
-        getStartedButton.backgroundColor = getStartedButton.isEnabled
-                                                ? .tintColor
-                                                : .tintColor.withAlphaComponent(0.5)
+        getStartedButton.alpha = getStartedButton.isEnabled ? 1 : 0.5
     }
 }
 
@@ -40,11 +38,7 @@ final class WelcomeViewController: UIViewController {
 private extension WelcomeViewController {
     // MARK: Initial setup of GetStartedButton
     func initialSetupGetStartedButton() {
-        getStartedButton.setTitleColor(
-            .backModal.withAlphaComponent(0.5),
-            for: .disabled
-        )
-        getStartedButton.backgroundColor = getStartedButton.tintColor.withAlphaComponent(0.5)
+        getStartedButton.alpha = 0.5
     }
     
     // MARK: Allows the direction of URLs

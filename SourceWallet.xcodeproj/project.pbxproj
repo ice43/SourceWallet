@@ -21,6 +21,10 @@
 		CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */; };
 		CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */; };
 		CD328C452BEB71CA0008967F /* ButtonBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD328C442BEB71CA0008967F /* ButtonBottomView.swift */; };
+		CD367AC22C21BC9B0066DC02 /* OTPLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD367ABE2C21BC9A0066DC02 /* OTPLabel.swift */; };
+		CD367AC32C21BC9B0066DC02 /* CHIOTPFieldThreeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD367ABF2C21BC9A0066DC02 /* CHIOTPFieldThreeLabel.swift */; };
+		CD367AC42C21BC9B0066DC02 /* CHIOTPFieldThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD367AC02C21BC9A0066DC02 /* CHIOTPFieldThree.swift */; };
+		CD367AC52C21BC9B0066DC02 /* CHIOTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD367AC12C21BC9B0066DC02 /* CHIOTPField.swift */; };
 		CD38BD012BF11D6500FEE3C4 /* ReceiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38BD002BF11D6500FEE3C4 /* ReceiveViewController.swift */; };
 		CD38BD032BF11D7000FEE3C4 /* Receive.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD38BD022BF11D7000FEE3C4 /* Receive.storyboard */; };
 		CD405A242BEA24950045779A /* MainProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD405A232BEA24950045779A /* MainProfileViewController.swift */; };
@@ -66,6 +70,8 @@
 		CD52EC112BF0CA8B00A2F0FA /* Send.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */; };
 		CD55BD2F2C1AF11E00F4F02B /* DenominationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */; };
 		CD55BD312C1AF47500F4F02B /* SetPhraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55BD302C1AF47500F4F02B /* SetPhraseViewController.swift */; };
+		CD5DE4532C20310100E3D5F8 /* SetPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DE4522C20310100E3D5F8 /* SetPinViewController.swift */; };
+		CD5DE4552C20311400E3D5F8 /* SetPin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5DE4542C20311400E3D5F8 /* SetPin.storyboard */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
@@ -87,6 +93,10 @@
 		CD2C7AE42BE7BB5800A9403A /* SecureFunds.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecureFunds.storyboard; sourceTree = "<group>"; };
 		CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFunds.swift; sourceTree = "<group>"; };
 		CD328C442BEB71CA0008967F /* ButtonBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBottomView.swift; sourceTree = "<group>"; };
+		CD367ABE2C21BC9A0066DC02 /* OTPLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPLabel.swift; sourceTree = "<group>"; };
+		CD367ABF2C21BC9A0066DC02 /* CHIOTPFieldThreeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIOTPFieldThreeLabel.swift; sourceTree = "<group>"; };
+		CD367AC02C21BC9A0066DC02 /* CHIOTPFieldThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIOTPFieldThree.swift; sourceTree = "<group>"; };
+		CD367AC12C21BC9B0066DC02 /* CHIOTPField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHIOTPField.swift; sourceTree = "<group>"; };
 		CD38BD002BF11D6500FEE3C4 /* ReceiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveViewController.swift; sourceTree = "<group>"; };
 		CD38BD022BF11D7000FEE3C4 /* Receive.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Receive.storyboard; sourceTree = "<group>"; };
 		CD405A232BEA24950045779A /* MainProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProfileViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +142,8 @@
 		CD52EC102BF0CA8B00A2F0FA /* Send.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Send.storyboard; sourceTree = "<group>"; };
 		CD55BD2E2C1AF11E00F4F02B /* DenominationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenominationView.swift; sourceTree = "<group>"; };
 		CD55BD302C1AF47500F4F02B /* SetPhraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPhraseViewController.swift; sourceTree = "<group>"; };
+		CD5DE4522C20310100E3D5F8 /* SetPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPinViewController.swift; sourceTree = "<group>"; };
+		CD5DE4542C20311400E3D5F8 /* SetPin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPin.storyboard; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +240,7 @@
 				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 				CD55BD342C1AF48400F4F02B /* SetPhrase */,
+				CD5DE4562C20311800E3D5F8 /* SetPin */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +284,25 @@
 			isa = PBXGroup;
 			children = (
 				CD2C7AE62BE7BE4E00A9403A /* StorageFunds.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD367ABC2C21BC820066DC02 /* CHIOTPField */ = {
+			isa = PBXGroup;
+			children = (
+				CD367AC12C21BC9B0066DC02 /* CHIOTPField.swift */,
+				CD367AC02C21BC9A0066DC02 /* CHIOTPFieldThree.swift */,
+				CD367ABF2C21BC9A0066DC02 /* CHIOTPFieldThreeLabel.swift */,
+				CD367ABE2C21BC9A0066DC02 /* OTPLabel.swift */,
+			);
+			path = CHIOTPField;
+			sourceTree = "<group>";
+		};
+		CD367ABD2C21BC8B0066DC02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD367ABC2C21BC820066DC02 /* CHIOTPField */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -536,6 +568,16 @@
 			path = SetPhrase;
 			sourceTree = "<group>";
 		};
+		CD5DE4562C20311800E3D5F8 /* SetPin */ = {
+			isa = PBXGroup;
+			children = (
+				CD5DE4522C20310100E3D5F8 /* SetPinViewController.swift */,
+				CD5DE4542C20311400E3D5F8 /* SetPin.storyboard */,
+				CD367ABD2C21BC8B0066DC02 /* Views */,
+			);
+			path = SetPin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -620,6 +662,7 @@
 				CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */,
 				CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */,
 				CD52EBE52BEE702600A2F0FA /* WalletViewCell.xib in Resources */,
+				CD5DE4552C20311400E3D5F8 /* SetPin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,22 +692,27 @@
 				CD52EBD62BED194800A2F0FA /* User.swift in Sources */,
 				CD55BD312C1AF47500F4F02B /* SetPhraseViewController.swift in Sources */,
 				CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */,
+				CD5DE4532C20310100E3D5F8 /* SetPinViewController.swift in Sources */,
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
+				CD367AC32C21BC9B0066DC02 /* CHIOTPFieldThreeLabel.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
 				CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */,
 				CD4684FA2C0DD387007CEF4E /* AddNoteViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
 				CD483DB92C0F355E00037A9A /* PgpViewController.swift in Sources */,
+				CD367AC22C21BC9B0066DC02 /* OTPLabel.swift in Sources */,
 				CD52EBD82BED296F00A2F0FA /* Extension + UIImage.swift in Sources */,
 				CD52EBFA2BEFED4100A2F0FA /* MainSettingsViewController.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
+				CD367AC42C21BC9B0066DC02 /* CHIOTPFieldThree.swift in Sources */,
 				CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
 				CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */,
 				CD52EC0E2BF0CA6F00A2F0FA /* SendViewController.swift in Sources */,
 				CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */,
 				CD45DF802BF245E800E5960C /* QrViewController.swift in Sources */,
+				CD367AC52C21BC9B0066DC02 /* CHIOTPField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

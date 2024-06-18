@@ -10,31 +10,11 @@ import Foundation
 final class DataStore {
     static let shared = DataStore()
     
-    let seed = [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "10",
-        "11",
-        "12",
-        "13",
-        "14",
-        "15",
-        "16",
-        "17",
-        "18",
-        "19",
-        "20",
-        "21",
-        "22",
-        "23",
-        "24"
+    let seedPhrase = [
+        ["total", "desk", "garbage", "physical", "sample", "coach"],
+        ["man", "father", "life", "cabin", "civil", "play"],
+        ["mean", "another", "admit", "fruit", "spawn", "share"],
+        ["ill", "motor", "tilt", "piano", "work", "away"]
     ]
     
     let walletsData: [Wallet] = [
@@ -157,6 +137,36 @@ final class DataStore {
                     amount: "0.02165684",
                     date: "Jul 30, 2023",
                     id: "c9641e7eccf71a567a3063ea382e57ed1bd3f2536d38abd58b48dd319239abca"
+                ),
+                Transaction(
+                    type: "Received",
+                    amount: "0.01124502",
+                    date: "May 12, 2023",
+                    id: "04ca7665732f1458a22c23efb99b7e860836b145ed26884f6726999dcbab4eb6"
+                ),
+                Transaction(
+                    type: "Received",
+                    amount: "0.01093593",
+                    date: "May 5, 2023",
+                    id: "10078d740098f4a0afb5b93e3f6f62c2f9124a747eebb31f2ee96633040d3560"
+                ),
+                Transaction(
+                    type: "Received",
+                    amount: "0.01965374",
+                    date: "Mar 28, 2023",
+                    id: "5175e1b46a7d6b16c6d6440dd1b3ee6567166b7cff20dfd4f642f72b3f47d2c8"
+                ),
+                Transaction(
+                    type: "Received",
+                    amount: "0.01044623",
+                    date: "Feb 16, 2023",
+                    id: "ee813993142b5e39e9cf0245af391aec074ed80f138854fbe6b233645f8762ac"
+                ),
+                Transaction(
+                    type: "Received",
+                    amount: "0.01164697",
+                    date: "Jan 3, 2023",
+                    id: "ddd1259f64757bc661a597b2f7f1b00f6c53beccd8e7504e49dcaf77f551a333"
                 )
             ]
         )
