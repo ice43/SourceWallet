@@ -14,13 +14,13 @@
         <!--Set Pin View Controller-->
         <scene sceneID="8gl-rd-6T6">
             <objects>
-                <viewController id="g8r-ZT-b0x" customClass="SetPinViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="g8r-ZT-b0x" customClass="SetPinViewController" customModule="SourceWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gWj-8c-Q2i">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cdR-1U-mWE">
-                                <rect key="frame" x="26" y="94" width="341" height="88"/>
+                                <rect key="frame" x="26" y="74" width="341" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set a PIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMa-iT-rDZ">
                                         <rect key="frame" x="0.0" y="0.0" width="341" height="38.333333333333336"/>
@@ -39,30 +39,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NgV-zv-Pfu" customClass="CHIOTPFieldThree" customModule="CHIOTPField">
-                                <rect key="frame" x="96.666666666666686" y="242" width="200" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="kKA-Py-qtB"/>
-                                    <constraint firstAttribute="height" constant="30" id="lU8-l7-LqU"/>
-                                </constraints>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfDigits">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
-                                        <integer key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="boxBackgroundColor">
-                                        <color key="value" name="Color"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQc-5J-qva">
                                 <rect key="frame" x="26" y="724" width="341" height="64"/>
                                 <color key="backgroundColor" name="AccentColor"/>
@@ -80,6 +56,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="aN0-P6-Mai" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="iSm-6g-sty"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="c0n-UX-LVV">
                                 <rect key="frame" x="71.666666666666686" y="350" width="250" height="324"/>
@@ -244,20 +223,13 @@
                         <viewLayoutGuide key="safeArea" id="A2d-97-QB8"/>
                         <color key="backgroundColor" name="backColor"/>
                         <constraints>
-                            <constraint firstItem="cdR-1U-mWE" firstAttribute="top" secondItem="A2d-97-QB8" secondAttribute="top" constant="35" id="D36-dL-b6F"/>
+                            <constraint firstItem="cdR-1U-mWE" firstAttribute="top" secondItem="A2d-97-QB8" secondAttribute="top" constant="15" id="D36-dL-b6F"/>
                             <constraint firstItem="vQc-5J-qva" firstAttribute="centerX" secondItem="gWj-8c-Q2i" secondAttribute="centerX" id="Gdo-1K-b5H"/>
                             <constraint firstItem="A2d-97-QB8" firstAttribute="bottom" secondItem="vQc-5J-qva" secondAttribute="bottom" constant="30" id="NEm-K2-UfY"/>
                             <constraint firstItem="c0n-UX-LVV" firstAttribute="centerX" secondItem="gWj-8c-Q2i" secondAttribute="centerX" id="NML-0g-7fv"/>
                             <constraint firstItem="cdR-1U-mWE" firstAttribute="centerX" secondItem="gWj-8c-Q2i" secondAttribute="centerX" id="YeU-KF-E7O"/>
                             <constraint firstItem="vQc-5J-qva" firstAttribute="top" secondItem="c0n-UX-LVV" secondAttribute="bottom" constant="50" id="aeb-KC-bAE"/>
-                            <constraint firstItem="NgV-zv-Pfu" firstAttribute="top" secondItem="cdR-1U-mWE" secondAttribute="bottom" constant="60" id="iYB-QA-M9s"/>
-                            <constraint firstItem="NgV-zv-Pfu" firstAttribute="centerX" secondItem="gWj-8c-Q2i" secondAttribute="centerX" id="kio-RK-LF2"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="NgV-zv-Pfu"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="vQc-5J-qva" id="5Gk-DB-aEA"/>
@@ -278,15 +250,22 @@
             </objects>
             <point key="canvasLocation" x="532" y="-14"/>
         </scene>
+        <!--MainProfile-->
+        <scene sceneID="EB8-Fp-CFy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MainProfile" id="aN0-P6-Mai" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Gai-b0-eJy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lBF-YQ-thX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="-14"/>
+        </scene>
     </scenes>
     <resources>
         <image name="delete.left" catalog="system" width="128" height="102"/>
         <image name="trash" catalog="system" width="117" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.91764705882352937" green="0.61960784313725492" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="Color">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backColor">
             <color red="0.070588235294117646" green="0.082352941176470587" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

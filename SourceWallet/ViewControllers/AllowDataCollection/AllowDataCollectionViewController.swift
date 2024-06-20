@@ -42,7 +42,7 @@ final class AllowDataCollectionViewController: UIViewController {
             self.whatsCollectedView.frame = CGRect(
                 x: 27,
                 y: self.showDetailsButton.frame.maxY,
-                width: self.showDetailsButton.frame.maxX,
+                width: self.showDetailsButton.frame.width,
                 height: self.isTableViewExpanded ? 238 : 0
             )
             
@@ -63,9 +63,9 @@ private extension AllowDataCollectionViewController {
         whatsCollectedView = WhatsCollectedView()
         
         whatsCollectedView.frame = CGRect(
-            x: 27,
+            x: 0,
             y: showDetailsButton.frame.maxY,
-            width: showDetailsButton.frame.maxX,
+            width: showDetailsButton.frame.width,
             height: 0
         )
         

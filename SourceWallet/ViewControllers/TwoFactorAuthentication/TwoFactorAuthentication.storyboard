@@ -49,25 +49,22 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="JfK-QY-tsB">
-                                        <rect key="frame" x="0.33333333333334281" y="215" width="344.33333333333326" height="310"/>
+                                        <rect key="frame" x="0.0" y="215" width="345" height="310"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-vl-zdG">
-                                                <rect key="frame" x="0.0" y="0.0" width="344.33333333333331" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="64"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="VCx-5T-R7Q">
-                                                        <rect key="frame" x="20" y="16" width="304.33333333333331" height="31"/>
+                                                        <rect key="frame" x="20" y="16" width="305" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnL-Oe-VEd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="140.33333333333334" id="aGd-KV-SJD"/>
-                                                                </constraints>
+                                                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qKM-Hp-JiS">
-                                                                <rect key="frame" x="255.33333333333337" y="0.0" width="51" height="31"/>
+                                                                <rect key="frame" x="256" y="0.0" width="51" height="31"/>
                                                                 <color key="onTintColor" name="AccentColor"/>
                                                                 <color key="thumbTintColor" name="backModalColor"/>
                                                             </switch>
@@ -88,22 +85,19 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g4i-Rn-Y7S">
-                                                <rect key="frame" x="0.0" y="82" width="344.33333333333331" height="64"/>
+                                                <rect key="frame" x="0.0" y="82" width="345" height="64"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="wUc-SC-Pcj">
-                                                        <rect key="frame" x="20" y="16" width="304.33333333333331" height="31"/>
+                                                        <rect key="frame" x="20" y="16" width="305" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="be4-62-Dp5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="140.33333333333334" id="Vau-tf-nNN"/>
-                                                                </constraints>
+                                                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IQr-KH-T0q">
-                                                                <rect key="frame" x="255.33333333333337" y="0.0" width="51" height="31"/>
+                                                                <rect key="frame" x="256" y="0.0" width="51" height="31"/>
                                                                 <color key="onTintColor" name="AccentColor"/>
                                                                 <color key="thumbTintColor" name="backModalColor"/>
                                                             </switch>
@@ -124,22 +118,19 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5C-sm-p8T">
-                                                <rect key="frame" x="0.0" y="164" width="344.33333333333331" height="64"/>
+                                                <rect key="frame" x="0.0" y="164" width="345" height="64"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="TWX-7i-p3p">
-                                                        <rect key="frame" x="20" y="16" width="304.33333333333331" height="31"/>
+                                                        <rect key="frame" x="20" y="16" width="305" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Call" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-N8-2p8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="140.33333333333334" id="DPb-Dz-hYM"/>
-                                                                </constraints>
+                                                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x7v-pS-OzP">
-                                                                <rect key="frame" x="255.33333333333337" y="0.0" width="51" height="31"/>
+                                                                <rect key="frame" x="256" y="0.0" width="51" height="31"/>
                                                                 <color key="onTintColor" name="AccentColor"/>
                                                                 <color key="thumbTintColor" name="backModalColor"/>
                                                             </switch>
@@ -160,22 +151,19 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tx6-r7-USr">
-                                                <rect key="frame" x="0.0" y="246" width="344.33333333333331" height="64"/>
+                                                <rect key="frame" x="0.0" y="246" width="345" height="64"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="gfh-dS-zUb">
-                                                        <rect key="frame" x="20" y="16" width="304.33333333333331" height="31"/>
+                                                        <rect key="frame" x="20" y="16" width="305" height="31"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authenticator app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OZ-Ul-vb8">
-                                                                <rect key="frame" x="0.0" y="0.0" width="140.33333333333334" height="31"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="140.33333333333334" id="u8q-Os-hY3"/>
-                                                                </constraints>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authenticator app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3OZ-Ul-vb8">
+                                                                <rect key="frame" x="0.0" y="0.0" width="141" height="31"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-2S-TwB">
-                                                                <rect key="frame" x="255.33333333333337" y="0.0" width="51" height="31"/>
+                                                                <rect key="frame" x="256" y="0.0" width="51" height="31"/>
                                                                 <color key="onTintColor" name="AccentColor"/>
                                                                 <color key="thumbTintColor" name="backModalColor"/>
                                                             </switch>

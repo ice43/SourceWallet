@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3eo-Xd-wlK">
     <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -64,7 +65,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="WatchOnlyViewController" storyboardName="WatchOnly" id="IHU-xf-EBM" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lh-gg-mBw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689" y="-261"/>
+            <point key="canvasLocation" x="1690" y="-222"/>
+        </scene>
+        <!--SetPin-->
+        <scene sceneID="Z3R-dd-620">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SetPinViewController" storyboardName="SetPin" id="Tiu-Ge-JFM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="We5-tr-jKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669" y="-267"/>
         </scene>
         <!--TwoFactorAuthentication-->
         <scene sceneID="vRa-ym-fjW">
@@ -72,7 +81,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="TwoFactorAuthenticationViewController" storyboardName="TwoFactorAuthentication" id="mKI-x4-v6E" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Chu-HZ-JiC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1755" y="-216"/>
+            <point key="canvasLocation" x="1756" y="-177"/>
         </scene>
         <!--PGP-->
         <scene sceneID="UDn-OY-dtz">
@@ -80,7 +89,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="PgpViewController" storyboardName="PGP" id="RQg-hj-2wN" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gV-O9-OTI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="-169"/>
+            <point key="canvasLocation" x="1658" y="-130"/>
         </scene>
         <!--BeforeBackup-->
         <scene sceneID="QrN-Rs-fGQ">
@@ -88,7 +97,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="BeforeBackupViewController" storyboardName="BeforeBackup" id="WKt-CF-29b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8M-Rt-q5A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1703" y="-126"/>
+            <point key="canvasLocation" x="1703" y="-87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7TH-NU-moq">

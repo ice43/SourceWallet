@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your recovery phrase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dym-q5-w0k">
-                                <rect key="frame" x="46" y="95" width="301" height="28.666666666666671"/>
+                                <rect key="frame" x="46.333333333333343" y="95" width="300.33333333333326" height="28.666666666666671"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-Qe-Eh7">
-                                <rect key="frame" x="21" y="163.66666666666663" width="350" height="384"/>
+                                <rect key="frame" x="21.666666666666657" y="163.66666666666663" width="350" height="384"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="khe-za-evF">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
@@ -638,20 +638,19 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Tgi-Q5-JgF" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vyZ-TQ-7fQ"/>
+                                    <segue destination="Tgi-Q5-JgF" kind="show" id="vyZ-TQ-7fQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="backColor"/>
                         <constraints>
-                            <constraint firstItem="Iav-Qe-Eh7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="21" id="1rJ-ch-ji0"/>
                             <constraint firstItem="Dym-q5-w0k" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="36" id="3fE-3S-uoo"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dym-q5-w0k" secondAttribute="trailing" constant="46" id="ELH-nt-aZg"/>
                             <constraint firstItem="Y2U-SV-L2F" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="Hjz-P8-wD1"/>
+                            <constraint firstItem="Iav-Qe-Eh7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VS2-Um-mXq"/>
+                            <constraint firstItem="Dym-q5-w0k" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="WDI-zQ-Pnc"/>
                             <constraint firstItem="Iav-Qe-Eh7" firstAttribute="top" secondItem="Dym-q5-w0k" secondAttribute="bottom" constant="40" id="dGh-bp-Yvy"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Y2U-SV-L2F" secondAttribute="bottom" constant="36" id="eKh-fw-LVc"/>
-                            <constraint firstItem="Dym-q5-w0k" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="46" id="euY-Rv-3lq"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Y2U-SV-L2F" secondAttribute="trailing" constant="26" id="fGG-56-zIk"/>
                         </constraints>
                     </view>
@@ -687,10 +686,12 @@
             </objects>
             <point key="canvasLocation" x="14.503816793893129" y="-28.169014084507044"/>
         </scene>
-        <!--MainProfile-->
+        <!--SetPin-->
         <scene sceneID="Igp-TZ-kAi">
             <objects>
-                <viewControllerPlaceholder storyboardName="MainProfile" id="Tgi-Q5-JgF" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SetPin" id="Tgi-Q5-JgF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7RT-p5-ApW"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oa2-4q-vjf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="824" y="-28"/>

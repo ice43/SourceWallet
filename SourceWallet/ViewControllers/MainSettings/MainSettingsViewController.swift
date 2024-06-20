@@ -59,16 +59,14 @@ private extension MainSettingsViewController {
 // MARK: - UITableViewDataSource
 extension MainSettingsViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        5
+        3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0: 1
         case 1: 1
-        case 2: 5
-        case 3: 1
-        default: 1
+        default: 5
         }
     }
     
@@ -91,7 +89,7 @@ extension MainSettingsViewController: UITableViewDataSource {
                 title: "Watch only"
             )
             
-        case 2:
+        default:
             switch indexPath.row {
             case 0:
                 cell = createOneLineSettingCell(
@@ -132,34 +130,6 @@ extension MainSettingsViewController: UITableViewDataSource {
                     hideChevronImage: true
                 )
             }
-            
-        case 3:
-            cell = createTwoLineSettingCell(
-                tableView: tableView,
-                indexPath: indexPath,
-                title: "Back Up Recovery Phrase",
-                subtitle: "Touch to display"
-            )
-            
-        default:
-            switch indexPath.row {
-            default:
-                cell = createTwoLineSettingCell(
-                    tableView: tableView,
-                    indexPath: indexPath,
-                    title: "Support",
-                    subtitle: "Version: 1.0.00",
-                    hideChevronImage: true,
-                    showCopyImage: true
-                )
-                
-                let tapGesture = UITapGestureRecognizer(
-                    target: self,
-                    action: #selector(copyVersion)
-                )
-                
-                cell.addGestureRecognizer(tapGesture)
-            }
         }
         
         cell.layer.cornerRadius = 10
@@ -174,12 +144,8 @@ extension MainSettingsViewController: UITableViewDataSource {
             "Account"
         case 1:
             "General"
-        case 2:
-            "Security"
-        case 3:
-            "Recovery"
         default:
-            "About"
+            "Security"
         }
     }
 }
@@ -200,10 +166,10 @@ extension MainSettingsViewController: UITableViewDelegate {
         case 1:
             showWatchOnlyViewController()
             
-        case 2:
+        default:
             switch indexPath.row {
             case 0:
-                showPinViewController()
+                showSetPinViewController()
             case 1:
                 enableFaceID(indexPath: indexPath)
             case 2:
@@ -213,12 +179,6 @@ extension MainSettingsViewController: UITableViewDelegate {
             default:
                 showActionSheet()
             }
-            
-        case 3:
-            showBeforeBackupViewController()
-            
-        default:
-            print("Version of app has been copied to clipboard")
         }
     }
     
@@ -253,8 +213,7 @@ private extension MainSettingsViewController {
         indexPath: IndexPath,
         title: String,
         subtitle: String,
-        hideChevronImage: Bool = false,
-        showCopyImage: Bool = false
+        hideChevronImage: Bool = false
     ) -> TwoLineSettingCell {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: twoLineSettingCellIdentifier,
@@ -264,7 +223,6 @@ private extension MainSettingsViewController {
         cell.titleLabel.text = title
         cell.subtitleLabel.text = subtitle
         cell.chevronImage.isHidden = hideChevronImage
-        cell.copyImage.isHidden = !showCopyImage
         
         return cell
     }
@@ -273,26 +231,6 @@ private extension MainSettingsViewController {
         if let cell = tableView.cellForRow(at: indexPath) as? OneLineSettingCell {
             cell.switchButton.setOn(!cell.switchButton.isOn, animated: true)
             cell.switchValueChanged(cell.switchButton)
-        }
-    }
-    
-    @objc func copyVersion(_ sender: UITapGestureRecognizer) {
-        guard let cell = sender.view as? TwoLineSettingCell else { return }
-        UIPasteboard.general.string = cell.subtitleLabel.text
-        
-        let alertController = UIAlertController(
-            title: nil,
-            message: "Сopied",
-            preferredStyle: .alert
-        )
-        alertController.view.backgroundColor = .black.withAlphaComponent(0.7)
-        alertController.view.alpha = 0.7
-        alertController.view.layer.cornerRadius = 10
-        
-        present(alertController, animated: true, completion: nil)
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            alertController.dismiss(animated: true, completion: nil)
         }
     }
 }
@@ -318,16 +256,12 @@ private extension MainSettingsViewController {
         navigationController?.pushViewController(watchOnlyVC, animated: true)
     }
     
-    func showPinViewController() {
-        let alertController = UIAlertController(
-            title: "In progress",
-            message: nil,
-            preferredStyle: .alert
-        )
-        let okAction = UIAlertAction(title: "OK", style: .default)
+    func showSetPinViewController() {
+        guard let setPinVC = storyboard?.instantiateViewController(
+            withIdentifier: "SetPinViewController"
+        ) else { return }
         
-        alertController.addAction(okAction)
-        present(alertController, animated: true)
+        navigationController?.pushViewController(setPinVC, animated: true)
     }
     
     func showTwoFactorAuthenticationViewController() {
@@ -416,13 +350,5 @@ private extension MainSettingsViewController {
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true, completion: nil)
-    }
-    
-    func showBeforeBackupViewController() {
-        guard let beforeBackupVC = storyboard?.instantiateViewController(
-            withIdentifier: "BeforeBackupViewController"
-        ) else { return }
-        
-        navigationController?.pushViewController(beforeBackupVC, animated: true)
     }
 }

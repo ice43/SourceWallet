@@ -26,6 +26,8 @@ final class ButtonBottomView: UIButton {
         
         self.configuration = buttonConfiguration
         self.tintColor = .white
+        self.titleLabel?.minimumScaleFactor = 0.5
+        self.titleLabel?.adjustsFontSizeToFitWidth = true
         // this action is necessary to reduce the size of the custom image
         self.imageView?.layer.transform = CATransform3DMakeScale(0.3, 0.3, 0.3)
     }

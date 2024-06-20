@@ -46,6 +46,9 @@
 		CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */; };
 		CD483DB92C0F355E00037A9A /* PgpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DB82C0F355D00037A9A /* PgpViewController.swift */; };
 		CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DBA2C0F356500037A9A /* PGP.storyboard */; };
+		CD4BA1022C245B390025DA0B /* Policy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA1012C245B390025DA0B /* Policy.swift */; };
+		CD4D19A72C22B00200021E7F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4D19A62C22B00200021E7F /* CreateAccountViewController.swift */; };
+		CD4D19A92C22B03700021E7F /* CreateAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4D19A82C22B03700021E7F /* CreateAccount.storyboard */; };
 		CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */; };
 		CD4E08D92BE9CDA200837AFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4E08D82BE9CDA200837AFC /* Login.storyboard */; };
 		CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */; };
@@ -58,8 +61,6 @@
 		CD52EBE52BEE702600A2F0FA /* WalletViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */; };
 		CD52EBE72BEF9AC400A2F0FA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */; };
 		CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */; };
-		CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */; };
-		CD52EBF52BEFE54800A2F0FA /* WalletPreferences.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */; };
 		CD52EBFA2BEFED4100A2F0FA /* MainSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD52EBF92BEFED4100A2F0FA /* MainSettingsViewController.swift */; };
 		CD52EBFC2BEFFCFE00A2F0FA /* MainSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBFB2BEFFCFE00A2F0FA /* MainSettings.storyboard */; };
 		CD52EBFE2BF0025000A2F0FA /* OneLineSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD52EBFD2BF0025000A2F0FA /* OneLineSettingCell.xib */; };
@@ -73,6 +74,8 @@
 		CD5DE4532C20310100E3D5F8 /* SetPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DE4522C20310100E3D5F8 /* SetPinViewController.swift */; };
 		CD5DE4552C20311400E3D5F8 /* SetPin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD5DE4542C20311400E3D5F8 /* SetPin.storyboard */; };
 		CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B68902BE9D72500A36129 /* LoginViewController.swift */; };
+		CDC4EF552C249BC2006F9DF0 /* AddWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4EF542C249BC2006F9DF0 /* AddWalletViewController.swift */; };
+		CDC4EF582C249BD6006F9DF0 /* AddWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC4EF572C249BD6006F9DF0 /* AddWallet.storyboard */; };
 		CDEB75172BE3CA7C00F88936 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDEB75152BE3CA7C00F88936 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +121,9 @@
 		CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoFactorAuthentication.storyboard; sourceTree = "<group>"; };
 		CD483DB82C0F355D00037A9A /* PgpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgpViewController.swift; sourceTree = "<group>"; };
 		CD483DBA2C0F356500037A9A /* PGP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PGP.storyboard; sourceTree = "<group>"; };
+		CD4BA1012C245B390025DA0B /* Policy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Policy.swift; sourceTree = "<group>"; };
+		CD4D19A62C22B00200021E7F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		CD4D19A82C22B03700021E7F /* CreateAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateAccount.storyboard; sourceTree = "<group>"; };
 		CD4DEF672BE8C181001150DD /* RestoreOrNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreOrNewViewController.swift; sourceTree = "<group>"; };
 		CD4E08D82BE9CDA200837AFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CD5048172BE4F99B001C818F /* AllowDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDataCollectionViewController.swift; sourceTree = "<group>"; };
@@ -130,8 +136,6 @@
 		CD52EBE42BEE702600A2F0FA /* WalletViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletViewCell.xib; sourceTree = "<group>"; };
 		CD52EBE62BEF9AC400A2F0FA /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
-		CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPreferencesViewController.swift; sourceTree = "<group>"; };
-		CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletPreferences.storyboard; sourceTree = "<group>"; };
 		CD52EBF92BEFED4100A2F0FA /* MainSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSettingsViewController.swift; sourceTree = "<group>"; };
 		CD52EBFB2BEFFCFE00A2F0FA /* MainSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainSettings.storyboard; sourceTree = "<group>"; };
 		CD52EBFD2BF0025000A2F0FA /* OneLineSettingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneLineSettingCell.xib; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 		CD5DE4522C20310100E3D5F8 /* SetPinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPinViewController.swift; sourceTree = "<group>"; };
 		CD5DE4542C20311400E3D5F8 /* SetPin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetPin.storyboard; sourceTree = "<group>"; };
 		CD7B68902BE9D72500A36129 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CDC4EF542C249BC2006F9DF0 /* AddWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletViewController.swift; sourceTree = "<group>"; };
+		CDC4EF572C249BD6006F9DF0 /* AddWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddWallet.storyboard; sourceTree = "<group>"; };
 		CDEB75162BE3CA7C00F88936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -229,7 +235,6 @@
 				CD52EC0F2BF0CA7200A2F0FA /* Send */,
 				CD4508722C005FCB00450234 /* TransactionDetails */,
 				CD483DB72C0F2AF900037A9A /* TwoFactorAuthentication */,
-				CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */,
 				CD483DB02C0EEF0600037A9A /* WatchOnly */,
 				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
 				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
@@ -241,6 +246,7 @@
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
 				CD55BD342C1AF48400F4F02B /* SetPhrase */,
 				CD5DE4562C20311800E3D5F8 /* SetPin */,
+				CD4D19AA2C22B03E00021E7F /* CreateAccount */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,23 +349,24 @@
 			path = TransactionViewCell;
 			sourceTree = "<group>";
 		};
-		CD405A322BEA4CB40045779A /* ButtonMenu */ = {
+		CD405A322BEA4CB40045779A /* BottomMenu */ = {
 			isa = PBXGroup;
 			children = (
 				CD405A2F2BEA4C650045779A /* BottomMenuView.swift */,
 				CD328C442BEB71CA0008967F /* ButtonBottomView.swift */,
 			);
-			path = ButtonMenu;
+			path = BottomMenu;
 			sourceTree = "<group>";
 		};
 		CD405A332BEA4CC00045779A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CD405A322BEA4CB40045779A /* ButtonMenu */,
+				CD405A322BEA4CB40045779A /* BottomMenu */,
 				CD55BD2D2C1AF11E00F4F02B /* Denomination */,
 				CD405A312BEA4CA40045779A /* TransactionViewCell */,
 				CD52EBE02BEE6BD500A2F0FA /* SideMenu */,
 				CD52EBE32BEE6FE100A2F0FA /* WalletTableViewCell */,
+				CDC4EF562C249BC7006F9DF0 /* AddWallet */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -426,6 +433,24 @@
 				CD483DBA2C0F356500037A9A /* PGP.storyboard */,
 			);
 			path = PGP;
+			sourceTree = "<group>";
+		};
+		CD4BA1032C245B3E0025DA0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD4BA1012C245B390025DA0B /* Policy.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD4D19AA2C22B03E00021E7F /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CD4D19A62C22B00200021E7F /* CreateAccountViewController.swift */,
+				CD4D19A82C22B03700021E7F /* CreateAccount.storyboard */,
+				CD4BA1032C245B3E0025DA0B /* Views */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 		CD4DEF692BE8C1DC001150DD /* RestoreOrNew */ = {
@@ -495,15 +520,6 @@
 				CD52EBE92BEF9AEA00A2F0FA /* About.storyboard */,
 			);
 			path = About;
-			sourceTree = "<group>";
-		};
-		CD52EBF32BEFE4BA00A2F0FA /* WalletPreferences */ = {
-			isa = PBXGroup;
-			children = (
-				CD52EBF12BEFE4B500A2F0FA /* WalletPreferencesViewController.swift */,
-				CD52EBF42BEFE54800A2F0FA /* WalletPreferences.storyboard */,
-			);
-			path = WalletPreferences;
 			sourceTree = "<group>";
 		};
 		CD52EBF82BEFED1F00A2F0FA /* MainSettings */ = {
@@ -578,6 +594,15 @@
 			path = SetPin;
 			sourceTree = "<group>";
 		};
+		CDC4EF562C249BC7006F9DF0 /* AddWallet */ = {
+			isa = PBXGroup;
+			children = (
+				CDC4EF542C249BC2006F9DF0 /* AddWalletViewController.swift */,
+				CDC4EF572C249BD6006F9DF0 /* AddWallet.storyboard */,
+			);
+			path = AddWallet;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -646,9 +671,9 @@
 				CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */,
 				CD52EBFC2BEFFCFE00A2F0FA /* MainSettings.storyboard in Resources */,
 				CD0DCE782BE3AA79008A5F27 /* .gitattributes in Resources */,
-				CD52EBF52BEFE54800A2F0FA /* WalletPreferences.storyboard in Resources */,
 				CD2C7AE52BE7BB5800A9403A /* SecureFunds.storyboard in Resources */,
 				CD405A2B2BEA44100045779A /* TransactionViewCell.xib in Resources */,
+				CDC4EF582C249BD6006F9DF0 /* AddWallet.storyboard in Resources */,
 				CD0DCE772BE3AA79008A5F27 /* .gitignore in Resources */,
 				CD52EBEA2BEF9AEA00A2F0FA /* About.storyboard in Resources */,
 				CD45DF832BF245FD00E5960C /* QR.storyboard in Resources */,
@@ -663,6 +688,7 @@
 				CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */,
 				CD52EBE52BEE702600A2F0FA /* WalletViewCell.xib in Resources */,
 				CD5DE4552C20311400E3D5F8 /* SetPin.storyboard in Resources */,
+				CD4D19A92C22B03700021E7F /* CreateAccount.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +710,8 @@
 				CD405A302BEA4C650045779A /* BottomMenuView.swift in Sources */,
 				CD52EBDD2BEE179400A2F0FA /* SideMenuViewController.swift in Sources */,
 				CD483DB42C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift in Sources */,
+				CDC4EF552C249BC2006F9DF0 /* AddWalletViewController.swift in Sources */,
+				CD4BA1022C245B390025DA0B /* Policy.swift in Sources */,
 				CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */,
 				CD405A242BEA24950045779A /* MainProfileViewController.swift in Sources */,
 				CD45086F2C005FAF00450234 /* TransactionDetailsViewController.swift in Sources */,
@@ -696,7 +724,6 @@
 				CD0DCE612BE3A092008A5F27 /* WelcomeViewController.swift in Sources */,
 				CD367AC32C21BC9B0066DC02 /* CHIOTPFieldThreeLabel.swift in Sources */,
 				CD4DEF682BE8C181001150DD /* RestoreOrNewViewController.swift in Sources */,
-				CD52EBF22BEFE4B500A2F0FA /* WalletPreferencesViewController.swift in Sources */,
 				CD4684FA2C0DD387007CEF4E /* AddNoteViewController.swift in Sources */,
 				CD2C7AE72BE7BE4E00A9403A /* StorageFunds.swift in Sources */,
 				CD0DCE5D2BE3A092008A5F27 /* AppDelegate.swift in Sources */,
@@ -709,6 +736,7 @@
 				CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
 				CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */,
+				CD4D19A72C22B00200021E7F /* CreateAccountViewController.swift in Sources */,
 				CD52EC0E2BF0CA6F00A2F0FA /* SendViewController.swift in Sources */,
 				CD2C7ADF2BE7AE2600A9403A /* WhatsCollectedView.swift in Sources */,
 				CD45DF802BF245E800E5960C /* QrViewController.swift in Sources */,

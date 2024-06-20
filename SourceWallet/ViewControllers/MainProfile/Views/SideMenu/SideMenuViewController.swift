@@ -17,12 +17,13 @@ final class SideMenuViewController: UIViewController {
     var delegate: SideMenuViewControllerDelegate?
     var selectedWallet: Wallet?
     
-    private let user = User.getUser()
+    private var user = User.getUser()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupTableView()
+        loadWallets()
     }
     
     @IBAction private func aboutButtonTapped() {
@@ -35,15 +36,6 @@ final class SideMenuViewController: UIViewController {
     
     @IBAction func setupNewWalletButtonTapped() {
         delegate?.hideSideMenu()
-        
-        guard let secureFundsVC = storyboard?.instantiateViewController(
-            withIdentifier: "SecureFundsViewController"
-        ) else { return }
-        
-        secureFundsVC.modalPresentationStyle = .fullScreen
-        secureFundsVC.modalTransitionStyle = .crossDissolve
-        
-        present(secureFundsVC, animated: true)
     }
 }
 
@@ -99,5 +91,46 @@ extension SideMenuViewController: UITableViewDelegate {
         navigationController.modalPresentationStyle = .fullScreen
         navigationController.modalTransitionStyle = .crossDissolve
         present(navigationController, animated: true)
+    }
+}
+
+// MARK: - Navigation
+extension SideMenuViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addWalletVC = segue.destination as? AddWalletViewController {
+            addWalletVC.onWalletAdded = { [weak self] walletName in
+                self?.addNewWallet(withName: walletName)
+            }
+        }
+    }
+}
+
+// MARK: - Private methods
+private extension SideMenuViewController {
+    func addNewWallet(withName name: String) {
+        let newWallet = Wallet(
+            name: name,
+            address: "",
+            balance: "0",
+            transactions: []
+        )
+        user.wallets.append(newWallet)
+        
+        saveWallets()
+        tableView.reloadData()
+    }
+
+    func loadWallets() {
+        if let savedWalletsData = UserDefaults.standard.data(forKey: "SavedWallets"),
+           let decodedWallets = try? JSONDecoder().decode([Wallet].self, from: savedWalletsData) {
+            user.wallets = decodedWallets
+        }
+        tableView.reloadData()
+    }
+    
+    func saveWallets() {
+        if let encodedWallets = try? JSONEncoder().encode(user.wallets) {
+            UserDefaults.standard.set(encodedWallets, forKey: "SavedWallets")
+        }
     }
 }

@@ -19,8 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you want to secure your funds?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-6d-mbV">
-                                <rect key="frame" x="48" y="111" width="297" height="76.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you want to secure your funds?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OjA-6d-mbV">
+                                <rect key="frame" x="48" y="111" width="297" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="U7Q-Kj-5Iv"/>
+                                    <constraint firstAttribute="height" constant="77" id="bPq-7J-3D2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,8 +56,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="u9S-sS-ygk" secondAttribute="trailing" constant="26" id="2nX-0d-9Hh"/>
                             <constraint firstItem="OjA-6d-mbV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="6Hl-fg-TVe"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="u9S-sS-ygk" secondAttribute="bottom" constant="17" id="DMn-HI-KbS"/>
-                            <constraint firstItem="OjA-6d-mbV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="48" id="FXg-Ye-OSL"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="OjA-6d-mbV" secondAttribute="trailing" constant="48" id="jki-C4-0VC"/>
+                            <constraint firstItem="OjA-6d-mbV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DOT-kB-kdM"/>
                             <constraint firstItem="u9S-sS-ygk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="q7a-jF-QZa"/>
                         </constraints>
                     </view>
@@ -68,6 +71,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="titleLabel" destination="OjA-6d-mbV" id="udM-Gz-c0s"/>
                         <outlet property="watchOnlyButton" destination="u9S-sS-ygk" id="hkL-Jz-H9A"/>
                     </connections>
                 </viewController>

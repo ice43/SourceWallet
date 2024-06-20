@@ -37,17 +37,12 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LaP-2x-Eaw">
                         <rect key="frame" x="315.33333333333331" y="7" width="12.666666666666686" height="74.333333333333329"/>
                     </imageView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle.on.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="XN0-Wn-Qkq">
-                        <rect key="frame" x="303.33333333333331" y="34.666666666666664" width="24.666666666666686" height="19"/>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" name="backModalColor"/>
                 <constraints>
                     <constraint firstItem="N3c-oK-hAh" firstAttribute="leading" secondItem="RCx-Gx-FYF" secondAttribute="leading" constant="20" id="1gh-FA-Ir8"/>
-                    <constraint firstItem="XN0-Wn-Qkq" firstAttribute="centerY" secondItem="RCx-Gx-FYF" secondAttribute="centerY" id="GpS-no-Kea"/>
                     <constraint firstAttribute="bottom" secondItem="LaP-2x-Eaw" secondAttribute="bottom" constant="5" id="Nwj-IM-WF5"/>
                     <constraint firstItem="N3c-oK-hAh" firstAttribute="top" secondItem="RCx-Gx-FYF" secondAttribute="top" constant="20" id="T7d-bE-4zf"/>
-                    <constraint firstAttribute="trailing" secondItem="XN0-Wn-Qkq" secondAttribute="trailing" constant="20" id="UhP-MR-xeT"/>
                     <constraint firstAttribute="trailing" secondItem="LaP-2x-Eaw" secondAttribute="trailing" constant="20" id="VeB-M3-Epk"/>
                     <constraint firstAttribute="bottom" secondItem="N3c-oK-hAh" secondAttribute="bottom" constant="20" id="fkg-B4-GcQ"/>
                     <constraint firstItem="LaP-2x-Eaw" firstAttribute="top" secondItem="RCx-Gx-FYF" secondAttribute="top" constant="5" id="srr-0g-r2A"/>
@@ -55,7 +50,6 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="chevronImage" destination="LaP-2x-Eaw" id="nni-yj-B59"/>
-                <outlet property="copyImage" destination="XN0-Wn-Qkq" id="asp-HD-Dwi"/>
                 <outlet property="subtitleLabel" destination="jYn-5M-2vi" id="6by-U9-dd6"/>
                 <outlet property="titleLabel" destination="1XD-fn-H6G" id="fJ3-pO-dCw"/>
             </connections>
@@ -64,7 +58,6 @@
     </objects>
     <resources>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
-        <image name="rectangle.on.rectangle" catalog="system" width="128" height="98"/>
         <namedColor name="backModalColor">
             <color red="0.13333333333333333" green="0.13333333333333333" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

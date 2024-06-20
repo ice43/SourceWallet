@@ -33,6 +33,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationWillTerminate(_ application: UIApplication) {
         UserDefaults.standard.removeObject(forKey: "Denomination")
+        UserDefaults.standard.removeObject(forKey: "SavedWallets")
     }
 
 }

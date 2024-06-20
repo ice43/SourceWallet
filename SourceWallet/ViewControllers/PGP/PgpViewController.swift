@@ -17,13 +17,18 @@ final class PgpViewController: UIViewController {
     
     @IBAction func saveButtonPressed() {
         let alertController = UIAlertController(
-            title: "Not found",
+            title: nil,
             message: "This way is temporarily not supported",
             preferredStyle: .alert
         )
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        alertController.view.backgroundColor = .black.withAlphaComponent(0.7)
+        alertController.view.alpha = 0.7
+        alertController.view.layer.cornerRadius = 10
         
-        alertController.addAction(okAction)
-        present(alertController, animated: true)
+        present(alertController, animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            alertController.dismiss(animated: true, completion: nil)
+        }
     }
 }

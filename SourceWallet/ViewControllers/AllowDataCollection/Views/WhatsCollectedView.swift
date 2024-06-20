@@ -33,7 +33,7 @@ final class WhatsCollectedView: UIView {
         firstTitle.frame = CGRect(
             x: 20,
             y: 10,
-            width: 200,
+            width: 180,
             height: 30
         )
         addSubview(firstTitle)
@@ -44,7 +44,7 @@ final class WhatsCollectedView: UIView {
         secondTitle.frame = CGRect(
             x: 20,
             y: 130,
-            width: 200,
+            width: 180,
             height: 30
         )
         addSubview(secondTitle)
@@ -59,7 +59,7 @@ final class WhatsCollectedView: UIView {
         firstDescription.frame = CGRect(
             x: 20,
             y: 40,
-            width: 300,
+            width: 250,
             height: 90
         )
         addSubview(firstDescription)
@@ -72,7 +72,7 @@ final class WhatsCollectedView: UIView {
         secondDescription.frame = CGRect(
             x: 20,
             y: 150,
-            width: 300,
+            width: 250,
             height: 90
         )
         addSubview(secondDescription)

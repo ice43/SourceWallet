@@ -9,6 +9,7 @@ import UIKit
 
 final class SecureFundsViewController: UIViewController {
     @IBOutlet private weak var watchOnlyButton: UIButton!
+    @IBOutlet private weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ private extension SecureFundsViewController {
         let onThisDeviceView = StorageFunds(
             frame: CGRect(
                 x: 20,
-                y: 210,
+                y: titleLabel.frame.maxY + 20,
                 width: view.frame.width - 40,
                 height: 220
             )
@@ -57,7 +58,7 @@ private extension SecureFundsViewController {
         let onHardwareWalletView = StorageFunds(
             frame: CGRect(
                 x: 20,
-                y: onThisDeviceView.frame.maxY + 30,
+                y: onThisDeviceView.frame.maxY + 20,
                 width: view.frame.width - 40,
                 height: 220
             )
@@ -84,20 +85,25 @@ private extension SecureFundsViewController {
 // MARK: - Navigation
 private extension SecureFundsViewController {
     @objc func onThisDeviceViewButtonTapped() {
-        guard let restoreOrNewVC = storyboard?.instantiateViewController(withIdentifier: "RestoreOrNew") as? RestoreOrNewViewController else { return }
+        guard let restoreOrNewVC = storyboard?.instantiateViewController(withIdentifier: "RestoreOrNew") else { return }
         
         navigationController?.pushViewController(restoreOrNewVC, animated: true)
     }
     
     @objc func onHardwareWalletViewButtonTapped() {
         let alertController = UIAlertController(
-            title: "Not found",
+            title: nil,
             message: "This way is temporarily not supported",
             preferredStyle: .alert
         )
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        alertController.view.backgroundColor = .black.withAlphaComponent(0.7)
+        alertController.view.alpha = 0.7
+        alertController.view.layer.cornerRadius = 10
         
-        alertController.addAction(okAction)
-        present(alertController, animated: true)
+        present(alertController, animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            alertController.dismiss(animated: true, completion: nil)
+        }
     }
 }

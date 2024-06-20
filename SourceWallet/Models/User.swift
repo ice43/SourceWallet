@@ -9,7 +9,7 @@ import Foundation
 
 struct User {
     let seed: [[String]]
-    let wallets: [Wallet]
+    var wallets: [Wallet]
     
     static func getUser() -> User {
         let dataStore = DataStore.shared
@@ -23,7 +23,7 @@ struct User {
     }
 }
 
-struct Wallet: Equatable {
+struct Wallet: Equatable, Codable {
     let name: String
     let address: String
     let balance: String
@@ -41,7 +41,7 @@ struct Wallet: Equatable {
     }
 }
 
-struct Transaction {
+struct Transaction: Codable {
     let type: String
     let amount: String
     let date: String

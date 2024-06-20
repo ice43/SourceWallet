@@ -29,7 +29,7 @@
                                                 <rect key="frame" x="28" y="20" width="337" height="1011"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="N8G-Ns-H53">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="96"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="331" height="138.33333333333334"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="snu-3c-Xhd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="165.66666666666666" height="19"/>
@@ -59,7 +59,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aGG-wV-hvS">
-                                                                <rect key="frame" x="0.0" y="27" width="315.33333333333331" height="37"/>
+                                                                <rect key="frame" x="0.0" y="26.999999999999993" width="315.33333333333331" height="79.333333333333314"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00000000 BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-G5-d2d">
                                                                         <rect key="frame" x="0.0" y="0.0" width="260.33333333333331" height="37"/>
@@ -85,7 +85,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6I-Sp-jUe">
-                                                                <rect key="frame" x="0.0" y="72" width="85" height="24"/>
+                                                                <rect key="frame" x="0.0" y="114.33333333333334" width="85" height="24"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -93,13 +93,13 @@
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfu-4Z-UZA">
-                                                        <rect key="frame" x="0.0" y="116" width="175" height="23"/>
+                                                        <rect key="frame" x="0.0" y="158.33333333333334" width="175" height="23"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ioa-lu-X1j">
-                                                        <rect key="frame" x="0.0" y="159" width="337" height="852"/>
+                                                        <rect key="frame" x="0.0" y="201.33333333333331" width="337" height="809.66666666666674"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="Y6W-OH-hqX" id="wp3-yU-9oc"/>
@@ -127,7 +127,7 @@
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="leading" secondItem="jtv-t1-BuX" secondAttribute="leading" id="Mmh-u5-YrV"/>
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="top" secondItem="jtv-t1-BuX" secondAttribute="top" id="g5w-mA-CpM"/>
                                     <constraint firstAttribute="height" secondItem="hGh-es-rPX" secondAttribute="height" multiplier="0.810657" id="qWL-fP-1Ei"/>
-                                    <constraint firstAttribute="bottom" secondItem="hGh-es-rPX" secondAttribute="bottom" id="rFC-6W-bcY"/>
+                                    <constraint firstAttribute="bottom" secondItem="hGh-es-rPX" secondAttribute="bottom" constant="40" id="rFC-6W-bcY"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="FSk-iJ-3lN"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="LfU-DD-g4M"/>
@@ -190,7 +190,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" id="fBF-Qy-Lre">
                             <imageReference key="image" image="gearshape" catalog="system" symbolScale="large"/>
                             <connections>
-                                <segue destination="Lxc-bC-epF" kind="presentation" id="cQL-PX-phT"/>
+                                <segue destination="Lxc-bC-epF" kind="presentation" modalPresentationStyle="fullScreen" id="cQL-PX-phT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -245,13 +245,15 @@
             </objects>
             <point key="canvasLocation" x="1431" y="327"/>
         </scene>
-        <!--WalletPreferences-->
+        <!--MainSettings-->
         <scene sceneID="rJT-Pa-GpB">
             <objects>
-                <viewControllerPlaceholder storyboardName="WalletPreferences" id="Lxc-bC-epF" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="MainSettings" id="Lxc-bC-epF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zQk-WS-1bn"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMR-ut-OCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1804" y="-337"/>
+            <point key="canvasLocation" x="1783" y="-337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iLM-fF-bI3">
@@ -331,6 +333,7 @@
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="setupNewWalletButtonTapped" destination="WP2-qK-sMd" eventType="touchUpInside" id="idH-8z-Jfe"/>
+                                                    <segue destination="pmh-BQ-hGp" kind="presentation" id="0Ke-rM-ato"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="119" translatesAutoresizingMaskIntoConstraints="NO" id="qLa-aA-J8x">
@@ -390,15 +393,15 @@
             </objects>
             <point key="canvasLocation" x="2322" y="-13"/>
         </scene>
-        <!--SecureFunds-->
-        <scene sceneID="0BQ-Pa-YyW">
+        <!--AddWallet-->
+        <scene sceneID="VOQ-sB-oGg">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SecureFundsViewController" storyboardName="SecureFunds" id="75E-CQ-uz7" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Lcj-6U-KGh"/>
+                <viewControllerPlaceholder storyboardIdentifier="AddWalletViewController" storyboardName="AddWallet" id="pmh-BQ-hGp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xun-xU-hAt"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VYd-xs-Enz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dbV-CT-tsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2811" y="194"/>
+            <point key="canvasLocation" x="2815" y="194"/>
         </scene>
         <!--AppSettings-->
         <scene sceneID="dHd-5n-dqt">

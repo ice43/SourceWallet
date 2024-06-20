@@ -111,8 +111,7 @@ final class BottomMenuView: UIView {
         
         NSLayoutConstraint.activate(
             [
-                receiveButton.centerYAnchor.constraint(equalTo: centerYAnchor),
-                receiveButton.trailingAnchor.constraint(equalTo: trailingAnchor)
+                receiveButton.centerYAnchor.constraint(equalTo: centerYAnchor)
             ]
         )
     }

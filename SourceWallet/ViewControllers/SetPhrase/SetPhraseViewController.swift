@@ -62,6 +62,7 @@ private extension SetPhraseViewController {
         titleLabel.numberOfLines = 0
         titleLabel.font = .boldSystemFont(ofSize: 25)
         titleLabel.textAlignment = .center
+        titleLabel.minimumScaleFactor = 0.5
         topStackView.addArrangedSubview(titleLabel)
         
         let subtitleLabel = UILabel()
@@ -102,7 +103,7 @@ private extension SetPhraseViewController {
                 scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
                 scrollView.topAnchor.constraint(
                     equalTo: topStackView.bottomAnchor,
-                    constant: 60
+                    constant: 40
                 ),
                 scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
             ]
@@ -264,7 +265,7 @@ extension SetPhraseViewController {
                     label.trailingAnchor.constraint(equalTo: pageView.trailingAnchor),
                     label.topAnchor.constraint(
                         equalTo: pageView.topAnchor,
-                        constant: CGFloat(index) * 60
+                        constant: CGFloat(index) * 50
                     )
                 ]
             )
@@ -277,9 +278,11 @@ extension SetPhraseViewController {
 // MARK: - Navigation
 private extension SetPhraseViewController {
     func showSetPinScreen() {
-        let storyboard = UIStoryboard(name: "SetPin", bundle: nil)
-        let setPinViewController = storyboard.instantiateInitialViewController()
-        navigationController?.pushViewController(setPinViewController!, animated: true)
+        let storyboard = UIStoryboard(name: "CreateAccount", bundle: nil)
+        guard let createWalletVC = storyboard.instantiateInitialViewController() else {
+            return
+        }
+        navigationController?.pushViewController(createWalletVC, animated: true)
     }
 }
 
