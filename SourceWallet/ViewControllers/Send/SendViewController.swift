@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SendViewController: UIViewController {
+final class SendViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet private weak var sendAllFundsButton: UIButton!
     @IBOutlet private weak var customSliderLabel: UILabel!
     @IBOutlet private weak var lowSliderLabel: UILabel!
@@ -25,6 +25,13 @@ final class SendViewController: UIViewController {
         setupSendAllFundsButton()
         
         title = "Send To"
+        
+        view.addGestureRecognizer(
+            UITapGestureRecognizer(
+                target: self,
+                action: #selector(hideKeyboard)
+            )
+        )
     }
     
     @IBAction private func sliderValueChanged(_ sender: UISlider) {
@@ -65,6 +72,18 @@ final class SendViewController: UIViewController {
             timeLabel.text = "~ 30 minutes"
             feeLabel.text = "( 12.25 satoshi / vbyte )"
         }
+    }
+    
+    @IBAction private func editWalletButtonPressed() {
+        Utilities.showAlertControllerUnsupportedAction(for: self)
+    }
+    
+    @IBAction private func editFeeButtonPressed(_ sender: UIButton) {
+        Utilities.showAlertControllerUnsupportedAction(for: self)
+    }
+    
+    @objc private func hideKeyboard() {
+        view.endEditing(true)
     }
 }
 

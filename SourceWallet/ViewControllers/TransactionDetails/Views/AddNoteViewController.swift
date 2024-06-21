@@ -52,7 +52,7 @@ extension AddNoteViewController: UISheetPresentationControllerDelegate {
         presentationController as? UISheetPresentationController
     }
     
-    func setSheet() {
+    private func setSheet() {
         sheetPresentationController?.prefersGrabberVisible = true
         
         let detent = UISheetPresentationController.Detent.custom { _ in
@@ -76,7 +76,7 @@ private extension AddNoteViewController {
     }
     
     // MARK: Changing the button depending on the presence of text in the text field
-    @objc private func noteTextFieldDidChanged(_ textField: UITextField) {
+    @objc func noteTextFieldDidChanged(_ textField: UITextField) {
         if textField.text == "" {
             setupDisabledSubmitButton()
         } else {

@@ -60,6 +60,9 @@
                                                         <state key="normal">
                                                             <imageReference key="image" image="pencil.line" catalog="system" symbolScale="large"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="editButtonPressed" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tH0-At-FVO"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

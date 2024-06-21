@@ -59,7 +59,7 @@ final class WhatsCollectedView: UIView {
         firstDescription.frame = CGRect(
             x: 20,
             y: 40,
-            width: 250,
+            width: 300,
             height: 90
         )
         addSubview(firstDescription)
@@ -72,7 +72,7 @@ final class WhatsCollectedView: UIView {
         secondDescription.frame = CGRect(
             x: 20,
             y: 150,
-            width: 250,
+            width: 300,
             height: 90
         )
         addSubview(secondDescription)

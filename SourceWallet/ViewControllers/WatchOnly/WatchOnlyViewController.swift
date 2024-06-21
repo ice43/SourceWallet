@@ -52,7 +52,7 @@ final class WatchOnlyViewController: UIViewController {
     }
     
     // MARK: IB Actions
-    @IBAction func saveButtonPressed() {
+    @IBAction private func saveButtonPressed() {
         let alertController = UIAlertController(
             title: "Not found",
             message: "This way is temporarily not supported",
@@ -104,7 +104,6 @@ private extension WatchOnlyViewController {
     
     @objc func showSecondNotice() {
         secondNotice.isHidden = isPasswordValid
-        
         passwordTextFieldDidChanged()
     }
 }

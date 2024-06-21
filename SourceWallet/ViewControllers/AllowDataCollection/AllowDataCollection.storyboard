@@ -117,7 +117,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c51-2h-pJ1">
-                                <rect key="frame" x="26" y="359.33333333333331" width="341" height="143"/>
+                                <rect key="frame" x="26" y="325.33333333333331" width="341" height="143"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spC-gu-3i0">
                                         <rect key="frame" x="0.0" y="0.0" width="341" height="64"/>
@@ -166,18 +166,17 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="backModalColor"/>
                         <constraints>
-                            <constraint firstItem="ZMK-dU-3Tp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="27" id="2jD-4j-baH"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZMK-dU-3Tp" secondAttribute="trailing" constant="27" id="DKU-Xk-7VG"/>
                             <constraint firstItem="ZMK-dU-3Tp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Dy0-Xx-MMq"/>
-                            <constraint firstItem="c51-2h-pJ1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="26" id="PxO-VI-08g"/>
-                            <constraint firstItem="c51-2h-pJ1" firstAttribute="top" secondItem="Yk3-OB-p4x" secondAttribute="bottom" constant="54" id="Spc-fR-qdm"/>
+                            <constraint firstItem="c51-2h-pJ1" firstAttribute="top" secondItem="Yk3-OB-p4x" secondAttribute="bottom" constant="20" id="Spc-fR-qdm"/>
                             <constraint firstItem="Yk3-OB-p4x" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="aMO-xH-mix"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="c51-2h-pJ1" secondAttribute="trailing" constant="26" id="kf8-W6-Mg0"/>
+                            <constraint firstItem="c51-2h-pJ1" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dfm-jM-pNL"/>
                             <constraint firstItem="Yk3-OB-p4x" firstAttribute="top" secondItem="ZMK-dU-3Tp" secondAttribute="bottom" constant="20" id="qTv-JN-1cX"/>
+                            <constraint firstItem="ZMK-dU-3Tp" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="zM5-FU-Y1d"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Bii-t2-ua8"/>
                     <connections>
+                        <outlet property="chevronImage" destination="dRj-Lc-1Hf" id="cpy-qZ-n3B"/>
                         <outlet property="collectButtonStack" destination="c51-2h-pJ1" id="GWD-gT-vKv"/>
                         <outlet property="dontCollectDataButton" destination="xf2-3R-7Y3" id="BiG-l7-Aet"/>
                         <outlet property="learnMoreButton" destination="Yk3-OB-p4x" id="gGG-Hs-rmB"/>

@@ -14,7 +14,7 @@ final class BeforeBackupViewController: UIViewController {
         title = "Before You Backup"
     }
     
-    @IBAction func showRecoveryPhraseButtonPressed() {
+    @IBAction private func showRecoveryPhraseButtonPressed() {
         let setPhraseViewController = SetPhraseViewController()
         
         navigationController?.pushViewController(setPhraseViewController, animated: true)

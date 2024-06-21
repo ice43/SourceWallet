@@ -32,6 +32,7 @@
 		CD405A292BEA43FA0045779A /* TransactionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD405A282BEA43FA0045779A /* TransactionViewCell.swift */; };
 		CD405A2B2BEA44100045779A /* TransactionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD405A2A2BEA44100045779A /* TransactionViewCell.xib */; };
 		CD405A302BEA4C650045779A /* BottomMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD405A2F2BEA4C650045779A /* BottomMenuView.swift */; };
+		CD43F10A2C25D6E8005D02A1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43F1092C25D6E8005D02A1 /* Utilities.swift */; };
 		CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */; };
 		CD44E0382BE8EB74007C6FF9 /* AppSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */; };
 		CD45086F2C005FAF00450234 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45086E2C005FAF00450234 /* TransactionDetailsViewController.swift */; };
@@ -42,7 +43,6 @@
 		CD4684FD2C0DD39A007CEF4E /* AddNote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */; };
 		CD483DAF2C0EEF0000037A9A /* WatchOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */; };
 		CD483DB22C0EF00700037A9A /* WatchOnly.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */; };
-		CD483DB42C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */; };
 		CD483DB62C0F2AF500037A9A /* TwoFactorAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */; };
 		CD483DB92C0F355E00037A9A /* PgpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483DB82C0F355D00037A9A /* PgpViewController.swift */; };
 		CD483DBB2C0F356500037A9A /* PGP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD483DBA2C0F356500037A9A /* PGP.storyboard */; };
@@ -107,6 +107,7 @@
 		CD405A282BEA43FA0045779A /* TransactionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewCell.swift; sourceTree = "<group>"; };
 		CD405A2A2BEA44100045779A /* TransactionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionViewCell.xib; sourceTree = "<group>"; };
 		CD405A2F2BEA4C650045779A /* BottomMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomMenuView.swift; sourceTree = "<group>"; };
+		CD43F1092C25D6E8005D02A1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		CD44E0342BE8EB52007C6FF9 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		CD44E0372BE8EB74007C6FF9 /* AppSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppSettings.storyboard; sourceTree = "<group>"; };
 		CD45086E2C005FAF00450234 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		CD4684FC2C0DD39A007CEF4E /* AddNote.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddNote.storyboard; sourceTree = "<group>"; };
 		CD483DAE2C0EEEFF00037A9A /* WatchOnlyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchOnlyViewController.swift; sourceTree = "<group>"; };
 		CD483DB12C0EF00700037A9A /* WatchOnly.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchOnly.storyboard; sourceTree = "<group>"; };
-		CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoFactorAuthenticationViewController.swift; sourceTree = "<group>"; };
 		CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TwoFactorAuthentication.storyboard; sourceTree = "<group>"; };
 		CD483DB82C0F355D00037A9A /* PgpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgpViewController.swift; sourceTree = "<group>"; };
 		CD483DBA2C0F356500037A9A /* PGP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PGP.storyboard; sourceTree = "<group>"; };
@@ -228,25 +228,25 @@
 			isa = PBXGroup;
 			children = (
 				CD52EBE82BEF9AC900A2F0FA /* About */,
+				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
+				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
+				A005E1472BED6AA600DAD45B /* BeforeBackup */,
+				CD4D19AA2C22B03E00021E7F /* CreateAccount */,
+				CD4E08D72BE9CD8B00837AFC /* Login */,
+				CD405A252BEA249A0045779A /* MainProfile */,
 				CD52EBF82BEFED1F00A2F0FA /* MainSettings */,
 				CD483DBC2C0F356900037A9A /* PGP */,
 				CD45DF812BF245EC00E5960C /* QR */,
 				CD38BD042BF11D7500FEE3C4 /* Receive */,
+				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
+				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD52EC0F2BF0CA7200A2F0FA /* Send */,
+				CD55BD342C1AF48400F4F02B /* SetPhrase */,
+				CD5DE4562C20311800E3D5F8 /* SetPin */,
 				CD4508722C005FCB00450234 /* TransactionDetails */,
 				CD483DB72C0F2AF900037A9A /* TwoFactorAuthentication */,
 				CD483DB02C0EEF0600037A9A /* WatchOnly */,
-				CD5048192BE4F9A5001C818F /* AllowDataCollection */,
-				CD44E0362BE8EB56007C6FF9 /* AppSettings */,
-				A005E1472BED6AA600DAD45B /* BeforeBackup */,
-				CD4E08D72BE9CD8B00837AFC /* Login */,
-				CD405A252BEA249A0045779A /* MainProfile */,
-				CD4DEF692BE8C1DC001150DD /* RestoreOrNew */,
-				CD2C7AE32BE7BB2D00A9403A /* SecureFunds */,
 				CD0DCE732BE3A23E008A5F27 /* Welcome */,
-				CD55BD342C1AF48400F4F02B /* SetPhrase */,
-				CD5DE4562C20311800E3D5F8 /* SetPin */,
-				CD4D19AA2C22B03E00021E7F /* CreateAccount */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -361,12 +361,12 @@
 		CD405A332BEA4CC00045779A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CDC4EF562C249BC7006F9DF0 /* AddWallet */,
 				CD405A322BEA4CB40045779A /* BottomMenu */,
 				CD55BD2D2C1AF11E00F4F02B /* Denomination */,
-				CD405A312BEA4CA40045779A /* TransactionViewCell */,
 				CD52EBE02BEE6BD500A2F0FA /* SideMenu */,
+				CD405A312BEA4CA40045779A /* TransactionViewCell */,
 				CD52EBE32BEE6FE100A2F0FA /* WalletTableViewCell */,
-				CDC4EF562C249BC7006F9DF0 /* AddWallet */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -420,7 +420,6 @@
 		CD483DB72C0F2AF900037A9A /* TwoFactorAuthentication */ = {
 			isa = PBXGroup;
 			children = (
-				CD483DB32C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift */,
 				CD483DB52C0F2AF500037A9A /* TwoFactorAuthentication.storyboard */,
 			);
 			path = TwoFactorAuthentication;
@@ -484,6 +483,7 @@
 			isa = PBXGroup;
 			children = (
 				CD52EBCB2BECC28600A2F0FA /* DataStore.swift */,
+				CD43F1092C25D6E8005D02A1 /* Utilities.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -709,7 +709,6 @@
 				CD52EBE22BEE6FD200A2F0FA /* WalletViewCell.swift in Sources */,
 				CD405A302BEA4C650045779A /* BottomMenuView.swift in Sources */,
 				CD52EBDD2BEE179400A2F0FA /* SideMenuViewController.swift in Sources */,
-				CD483DB42C0F2ACE00037A9A /* TwoFactorAuthenticationViewController.swift in Sources */,
 				CDC4EF552C249BC2006F9DF0 /* AddWalletViewController.swift in Sources */,
 				CD4BA1022C245B390025DA0B /* Policy.swift in Sources */,
 				CD44E0352BE8EB52007C6FF9 /* AppSettingsViewController.swift in Sources */,
@@ -733,6 +732,7 @@
 				CD52EBFA2BEFED4100A2F0FA /* MainSettingsViewController.swift in Sources */,
 				CD5048182BE4F99B001C818F /* AllowDataCollectionViewController.swift in Sources */,
 				CD367AC42C21BC9B0066DC02 /* CHIOTPFieldThree.swift in Sources */,
+				CD43F10A2C25D6E8005D02A1 /* Utilities.swift in Sources */,
 				CD52EC082BF0031C00A2F0FA /* TwoLineSettingCell.swift in Sources */,
 				CD0DCE5F2BE3A092008A5F27 /* SceneDelegate.swift in Sources */,
 				CD7B68912BE9D72500A36129 /* LoginViewController.swift in Sources */,

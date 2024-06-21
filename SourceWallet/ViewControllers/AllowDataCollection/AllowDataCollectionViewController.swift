@@ -13,7 +13,7 @@ final class AllowDataCollectionViewController: UIViewController {
     @IBOutlet private weak var learnMoreButton: UIButton!
     @IBOutlet private weak var dontCollectDataButton: UIButton!
     @IBOutlet private weak var collectButtonStack: UIStackView!
-    
+    @IBOutlet private weak var chevronImage: UIImageView!
     // MARK: Private properties
     private var whatsCollectedView: WhatsCollectedView!
     private var isTableViewExpanded = false
@@ -40,18 +40,19 @@ final class AllowDataCollectionViewController: UIViewController {
         
         UIView.animate(withDuration: 0.5) {
             self.whatsCollectedView.frame = CGRect(
-                x: 27,
-                y: self.showDetailsButton.frame.maxY,
+                x: self.collectButtonStack.frame.origin.x,
+                y: self.showDetailsButton.frame.maxY + 30,
                 width: self.showDetailsButton.frame.width,
                 height: self.isTableViewExpanded ? 238 : 0
             )
             
             self.learnMoreButton.frame.origin.y = self.whatsCollectedView.frame.maxY
             self.collectButtonStack.frame.origin.y = self.whatsCollectedView.frame.maxY
+            self.chevronImage.image = UIImage(systemName: self.isTableViewExpanded ? "chevron.up" : "chevron.down")
         }
     }
     
-    @IBAction func learnMoreButtonPressed() {
+    @IBAction private func learnMoreButtonPressed() {
         guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
         UIApplication.shared.open(url)
     }
@@ -63,8 +64,8 @@ private extension AllowDataCollectionViewController {
         whatsCollectedView = WhatsCollectedView()
         
         whatsCollectedView.frame = CGRect(
-            x: 0,
-            y: showDetailsButton.frame.maxY,
+            x: collectButtonStack.frame.origin.x,
+            y: showDetailsButton.frame.maxY + 30,
             width: showDetailsButton.frame.width,
             height: 0
         )
@@ -81,13 +82,14 @@ private extension AllowDataCollectionViewController {
     }
     
     func updatePositions() {
-        self.learnMoreButton.frame.origin.y = self.whatsCollectedView.frame.maxY + 25
-        self.collectButtonStack.frame.origin.y = self.whatsCollectedView.frame.maxY + 100
+        learnMoreButton.frame.origin.y = whatsCollectedView.frame.maxY + 20
+        collectButtonStack.frame.origin.y = whatsCollectedView.frame.maxY + 100
         
         let detent = UISheetPresentationController.Detent.custom { _ in
-            self.isTableViewExpanded ? 650 : 420
+            self.isTableViewExpanded ? 680 : 450
         }
-        self.sheetPresentationController?.animateChanges {
+        
+        sheetPresentationController?.animateChanges {
             self.sheetPresentationController?.detents = [detent]
         }
     }
@@ -99,7 +101,7 @@ extension AllowDataCollectionViewController: UISheetPresentationControllerDelega
         presentationController as? UISheetPresentationController
     }
     
-    func setSheet() {
+    private func setSheet() {
         sheetPresentationController?.delegate = self
         sheetPresentationController?.prefersGrabberVisible = true
     }

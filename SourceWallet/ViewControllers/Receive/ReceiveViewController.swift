@@ -17,6 +17,18 @@ final class ReceiveViewController: UIViewController {
         
         title = "Receive"
     }
+    
+    @IBAction private func editButtonPressed() {
+        Utilities.showAlertControllerUnsupportedAction(for: self)
+    }
+    
+    @IBAction private func shareButtonPressed() {
+        Utilities.showAlertControllerUnsupportedAction(for: self)
+    }
+    
+    @IBAction private func moreOptionsButtonPressed() {
+        Utilities.showAlertControllerUnsupportedAction(for: self)
+    }
 }
 
 // MARK: - UI

@@ -18,7 +18,7 @@ final class LoginViewController: UIViewController {
         setupAvailabilityContinueButton()
     }
     
-    @objc func textFieldDidChanged(_ textField: UITextField) {
+    @objc private func textFieldDidChanged(_ textField: UITextField) {
         var isContinueButtonEnabled = true
         
         for textField in textFields {

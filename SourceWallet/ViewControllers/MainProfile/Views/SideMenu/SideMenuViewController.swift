@@ -34,7 +34,7 @@ final class SideMenuViewController: UIViewController {
         delegate?.hideSideMenu()
     }
     
-    @IBAction func setupNewWalletButtonTapped() {
+    @IBAction private func setupNewWalletButtonTapped() {
         delegate?.hideSideMenu()
     }
 }

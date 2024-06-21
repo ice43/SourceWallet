@@ -59,10 +59,10 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aGG-wV-hvS">
-                                                                <rect key="frame" x="0.0" y="26.999999999999993" width="315.33333333333331" height="79.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="26.999999999999993" width="331" height="79.333333333333314"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00000000 BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uQ4-G5-d2d">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="260.33333333333331" height="37"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="276" height="37"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="276" id="7ba-q9-fj1"/>
                                                                         </constraints>
@@ -71,7 +71,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQG-f2-rI5">
-                                                                        <rect key="frame" x="280.33333333333331" y="0.0" width="35" height="35"/>
+                                                                        <rect key="frame" x="296" y="0.0" width="35" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="8P5-ke-ixm"/>
                                                                             <constraint firstAttribute="width" constant="35" id="iNZ-Or-2zb"/>
@@ -114,16 +114,14 @@
                                         </subviews>
                                         <color key="backgroundColor" name="backColor"/>
                                         <constraints>
-                                            <constraint firstItem="cpw-Ts-9ja" firstAttribute="leading" secondItem="hGh-es-rPX" secondAttribute="leading" constant="28" id="DDu-q1-lsw"/>
                                             <constraint firstItem="cpw-Ts-9ja" firstAttribute="top" secondItem="hGh-es-rPX" secondAttribute="top" constant="20" id="SqR-1f-1cr"/>
-                                            <constraint firstAttribute="trailing" secondItem="cpw-Ts-9ja" secondAttribute="trailing" constant="28" id="ft0-nR-9SM"/>
                                             <constraint firstAttribute="bottom" secondItem="cpw-Ts-9ja" secondAttribute="bottom" constant="20" id="nSU-kO-zq4"/>
+                                            <constraint firstItem="cpw-Ts-9ja" firstAttribute="centerX" secondItem="hGh-es-rPX" secondAttribute="centerX" id="tT5-kJ-VG4"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="hGh-es-rPX" secondAttribute="trailing" id="16K-rX-zyB"/>
-                                    <constraint firstItem="hGh-es-rPX" firstAttribute="width" secondItem="jtv-t1-BuX" secondAttribute="width" id="Fja-jB-hg7"/>
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="leading" secondItem="jtv-t1-BuX" secondAttribute="leading" id="Mmh-u5-YrV"/>
                                     <constraint firstItem="hGh-es-rPX" firstAttribute="top" secondItem="jtv-t1-BuX" secondAttribute="top" id="g5w-mA-CpM"/>
                                     <constraint firstAttribute="height" secondItem="hGh-es-rPX" secondAttribute="height" multiplier="0.810657" id="qWL-fP-1Ei"/>
@@ -176,6 +174,7 @@
                             <constraint firstItem="jtv-t1-BuX" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="Z8w-MM-9Tk"/>
                             <constraint firstAttribute="bottom" secondItem="7J1-um-6OI" secondAttribute="bottom" id="btj-1q-O6a"/>
                             <constraint firstAttribute="bottom" secondItem="Zsy-28-JbW" secondAttribute="bottom" id="eKr-Iv-le9"/>
+                            <constraint firstItem="hGh-es-rPX" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" id="rrT-qw-2jq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="W1X-UX-p6z">
@@ -442,7 +441,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

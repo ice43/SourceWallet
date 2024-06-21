@@ -21,7 +21,7 @@ extension QrViewController: UISheetPresentationControllerDelegate {
         presentationController as? UISheetPresentationController
     }
     
-    func setSheet() {
+    private func setSheet() {
         sheetPresentationController?.prefersGrabberVisible = true
         
         let detent = UISheetPresentationController.Detent.custom { _ in

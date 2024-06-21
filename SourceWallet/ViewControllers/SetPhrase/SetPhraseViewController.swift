@@ -51,7 +51,6 @@ private extension SetPhraseViewController {
         )
     }
     
-    
     func setupTopStackView() {
         topStackView.axis = .vertical
         topStackView.spacing = 8

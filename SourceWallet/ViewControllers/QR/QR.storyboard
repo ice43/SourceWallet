@@ -34,9 +34,8 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="backModalColor"/>
                         <constraints>
+                            <constraint firstItem="IIg-Hj-kOa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9ce-Xq-dN4"/>
                             <constraint firstItem="IIg-Hj-kOa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="KR3-2Z-fKl"/>
-                            <constraint firstItem="IIg-Hj-kOa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="131" id="Xex-8q-LbA"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="IIg-Hj-kOa" secondAttribute="trailing" constant="131" id="qJs-tI-W2s"/>
                             <constraint firstItem="UpW-7g-Zpu" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="skx-LM-Ndf"/>
                             <constraint firstItem="UpW-7g-Zpu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sun-tx-3SS"/>
                             <constraint firstItem="UpW-7g-Zpu" firstAttribute="top" secondItem="IIg-Hj-kOa" secondAttribute="bottom" constant="20" id="tdC-MX-K5Z"/>

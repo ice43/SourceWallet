@@ -64,7 +64,7 @@ extension AddWalletViewController: UISheetPresentationControllerDelegate {
         presentationController as? UISheetPresentationController
     }
     
-    func setSheet() {
+    private func setSheet() {
         sheetPresentationController?.prefersGrabberVisible = true
         
         let detent = UISheetPresentationController.Detent.custom { _ in
@@ -88,7 +88,7 @@ private extension AddWalletViewController {
     }
     
     // MARK: Changing the button depending on the presence of text in the text field
-    @objc private func walletTextFieldDidChanged(_ textField: UITextField) {
+    @objc func walletTextFieldDidChanged(_ textField: UITextField) {
         if textField.text == "" {
             setupDisabledSubmitButton()
         } else {

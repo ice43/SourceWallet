@@ -90,7 +90,7 @@ final class MainProfileViewController: UIViewController {
         hideSideMenu()
     }
     
-    @IBAction func denominationButtonTapped() {
+    @IBAction private func denominationButtonTapped() {
         let blurEffect = UIBlurEffect(style: .dark)
         let blurView = UIVisualEffectView(effect: blurEffect)
         

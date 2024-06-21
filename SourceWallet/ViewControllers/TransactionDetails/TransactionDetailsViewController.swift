@@ -44,7 +44,7 @@ final class TransactionDetailsViewController: UIViewController {
     }
     
     // MARK: IB Actions
-    @IBAction func addNoteButtonPressed() {
+    @IBAction private func addNoteButtonPressed() {
         guard let addNoteVC = storyboard?.instantiateViewController(withIdentifier: "AddNoteViewController") else {
             return
         }
@@ -52,12 +52,12 @@ final class TransactionDetailsViewController: UIViewController {
         present(addNoteVC, animated: true)
     }
     
-    @IBAction func viewInExplorerButtonPressed() {
+    @IBAction private func viewInExplorerButtonPressed() {
         guard let url = URL(string: "https://www.hackingwithswift.com") else { return }
         UIApplication.shared.open(url)
     }
     
-    @IBAction func shareTransactionButtonPressed() {
+    @IBAction private func shareTransactionButtonPressed() {
         let shareSheetVC = UIActivityViewController(
             activityItems: [
                 idLabel.text ?? ""
