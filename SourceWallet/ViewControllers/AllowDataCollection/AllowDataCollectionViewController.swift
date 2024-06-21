@@ -14,6 +14,7 @@ final class AllowDataCollectionViewController: UIViewController {
     @IBOutlet private weak var dontCollectDataButton: UIButton!
     @IBOutlet private weak var collectButtonStack: UIStackView!
     @IBOutlet private weak var chevronImage: UIImageView!
+    
     // MARK: Private properties
     private var whatsCollectedView: WhatsCollectedView!
     private var isTableViewExpanded = false
