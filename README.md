@@ -22,7 +22,7 @@ This **demo** is intended solely for demonstration purposes. Joint **team develo
 <img src="https://github.com/ice43/SourceWallet/assets/92436401/0fcbad2c-7ef6-498c-9bc3-ec492c5f8011" width="255" height="550"/>
 <img src="https://github.com/ice43/SourceWallet/assets/92436401/a73b5f22-a817-4d3c-ac79-b84056a9c4c0" width="255" height="550"/>
 
-## Send, Receive, Transaction details screen (scroll views)
+## Send, Receive, Transaction details screens (scroll views)
 <img src="https://github.com/ice43/SourceWallet/assets/92436401/b4825aac-7913-4dad-967c-8c2cad7a8ee4" width="255" height="550"/>
 <img src="https://github.com/ice43/SourceWallet/assets/92436401/912ea883-bdc9-4735-962d-fa68b344e69b" width="255" height="550"/> 
 <img src="https://github.com/ice43/SourceWallet/assets/92436401/a3923834-9e31-43b9-996a-4a32ab49773a" width="255" height="550"/> 
