@@ -14,6 +14,8 @@ final class SetPhraseViewController: UIViewController {
     private let bottomStackView = UIStackView()
     private let seedPhrase = DataStore.shared.seedPhrase
     
+    private var wordCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -236,9 +238,7 @@ extension SetPhraseViewController {
         let pageView = UIView()
         pageView.translatesAutoresizingMaskIntoConstraints = false
         
-        var wordCount = 0
         for (index, word) in words.enumerated() {
-            
             let attributedText = NSMutableAttributedString(string: "\(wordCount + 1) \(word)")
             
             let numberAttributes: [NSAttributedString.Key: Any] = [
